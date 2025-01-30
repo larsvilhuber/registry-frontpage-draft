@@ -9,8 +9,8 @@ This list shows the names of researchers who have been involved with any one of 
 
 
 <table class="display">
-  <!-- Proj ID,Status,Title,RDC,Start Year,End Year,PI,Researcher -->
-  {% for row in site.data.UniqueResearchers %}
+  <!-- Title,First registered on,RCT_ID,DOI Number,Primary Investigator -->
+  {% for row in site.data.trials %}
     {% if forloop.first %}
     <thead>
     <tr>
@@ -29,9 +29,11 @@ This list shows the names of researchers who have been involved with any one of 
   <!-- manually constructing table -->
   <!-- Name,PI,Researcher -->
   <tr>
-    <td> {{ row["Name"] }} </td>
-    <td> {{ row["PI"] }} </td>
-    <td> {{ row["Researcher"] }} </td>
+    <td> <a href="trials/{{ row["RCT_ID"] }}.html">{{ row["RCT_ID"] }}</a></td>
+    <td> {{ row["Title"] }} </td>
+    <td> {{ row["Primary Investigator"] }} </td>
+    <td> {{ row["DOI"] }} </td>
+    <td> {{ row["First registered on"] }} </td>
   </tr>
   {% endfor %}
 </table>

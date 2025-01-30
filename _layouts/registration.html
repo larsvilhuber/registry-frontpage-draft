@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  
+  </head>
+  <body>
+    {% include header.html %}
+     <div class="wrapper">
+      <section>
+
+        {% include title-doi.html %}
+<!-- Use the metadata to show an article -->
+<!-- Proj ID,Status,Title,RDC,Start Year,End Year,PI,Abstract -->
+
+        <p><strong>Investigator(s):</strong> {{ page.pi }}<sup>*</sup> {% if page.pi_other %}, {{ page.pi_other }} {% endif %}</p>
+        <p class="projectid">{{ site.registry }} RCT ID {{ page.rct_id }} </p>
+        <p class="published"><strong>Published</strong>: {{ page.date }} </p>
+        <p><strong>DOI:</strong> <a href="https://doi.org/{{ page.doi }}" alt="DOI: {{ page.doi }}"</a>https://doi.org/{{ page.doi }}</a></p>
+        <h3 id=""trialinfo">Trial information</h3>
+        <p class="trialinfo"><ul>
+          <li><strong>Start year:</strong> {{ page.start_year }}</li>
+          <li><strong>End year:</strong> {{ page.end_year }}</li>
+          <li><strong>Status:</strong> {{ page.status }}</li>
+        </ul></p>   
+        <h3 id="abstract">Abstract</h3>
+        <p class="abstract">{{ page.abstract }}</p>
+
+
+
+<!-- the Content will be the table of datasets used, as well as publications -->
+
+
+        {{ content }}
+
+      </section>
+      <footer>
+        {% include footer.html %}
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      createCitation();
+    </script>
+  </body>
+</html>
