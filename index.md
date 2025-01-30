@@ -29,7 +29,7 @@ This list shows the names of researchers who have been involved with any one of 
   <!-- manually constructing table -->
   <!-- Name,PI,Researcher -->
   <tr>
-    <td> <a href="trials/{{ row["RCT_ID"] }}.html">{{ row["RCT_ID"] }}</a></td>
+    <td> <a href="trials/{{ row["RCT_ID_num"] }}.html">{{ row["RCT_ID"] }}</a></td>
     <td> {{ row["Title"] }} </td>
     <td> {{ row["Primary Investigator"] }} </td>
     <td> {{ row["DOI"] }} </td>
