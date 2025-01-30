@@ -10,7 +10,7 @@ This list shows the names of researchers who have been involved with any one of 
 
 <table class="display">
   <!-- Title,First registered on,RCT_ID,DOI Number,Primary Investigator -->
-  {% for row in site.data.trials %}
+  {% for row in site.data.summary %}
     {% if forloop.first %}
     <thead>
     <tr>
