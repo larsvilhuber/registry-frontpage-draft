@@ -1,0 +1,16 @@
+{% include citation-block.html %} 
+<p><em>Authors:</em> 
+    {% if page.contributors %}
+      {% for c in page.contributors %}
+        {{ c }}{% if forloop.last == false %},{% endif %}
+      {% endfor %}
+      {% else %}
+      {{ site.github.owner_name }}
+      {% endif %}
+    </p>
+    {% if site.github.is_project_page %}
+    <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+  {% endif %}
+  <p><em><a href="/Disclaimer.html">Disclaimer</a></em> 
+  </p>
+  <!-- <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>-->
