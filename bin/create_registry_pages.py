@@ -31,13 +31,20 @@ for index, row in trials_df.iterrows():
             file.write(f"jel: \"\"\n")
         else:
             file.write(f"jel: \"{jel_code}\"\n")
-        file.write(f"start_year: \"{row['Start date']}\"\n")
-        # Handle NaN values for end year
+        
+        # Format start date
+        start_date = row['Start date']
+        if pd.isna(start_date):
+            file.write(f"start_year: \"\"\n")
+        else:
+            file.write(f"start_year: \"{pd.to_datetime(start_date).strftime('%Y-%m-%d')}\"\n")
+        
+        # Handle NaN values for end year and format it
         end_year = row['End date']
         if pd.isna(end_year):
             file.write(f"end_year: \"\"\n")
         else:
-            file.write(f"end_year: \"{end_year}\"\n")
+            file.write(f"end_year: \"{pd.to_datetime(end_year).strftime('%Y-%m-%d')}\"\n")
 
         # Remove email addresses from the "Primary Investigator" field
         primary_investigator = re.sub(r'\s*\S+@\S+\s*', '', row['Primary Investigator'])
