@@ -14,14 +14,11 @@ This list shows the names of researchers who have been involved with any one of 
     {% if forloop.first %}
     <thead>
     <tr>
-      {% for cell in row %}
-        {% if forloop.last %}
-        <th>{{ cell[0] }}</th>
-          {% continue %}
-        {% else %}
-        <th>{{ cell[0] }}</th>
-        {% endif %}
-      {% endfor %}
+      <td> RCT ID</td>
+    <td> Title </td>
+    <td> Primary Investigator </td>
+    <td> DOI </td>
+    <td> First published</td>
     </tr>
     </thead>
     {% endif %}
@@ -32,7 +29,7 @@ This list shows the names of researchers who have been involved with any one of 
     <td> <a href="trials/{{ row["RCT_ID_num"] }}.html">{{ row["RCT_ID"] }}</a></td>
     <td> {{ row["Title"] }} </td>
     <td> {{ row["Primary Investigator"] }} </td>
-    <td> {{ row["DOI"] }} </td>
+    <td> {{ row["DOI Number"] }} </td>
     <td> {{ row["First registered on"] }} </td>
   </tr>
   {% endfor %}
