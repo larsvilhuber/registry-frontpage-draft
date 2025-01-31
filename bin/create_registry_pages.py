@@ -52,23 +52,22 @@ for index, row in trials_df.iterrows():
         
         # Process the "Other Primary Investigators" field
         other_primary_investigators = row['Other Primary Investigators']
-        other_investigators_dict = {}
+        other_investigators_list = []
         if not pd.isna(other_primary_investigators):
-            for i, investigator in enumerate(other_primary_investigators.split(';'), start=1):
+            for investigator in other_primary_investigators.split(';'):
                 match = re.match(r'^(.*?)\s*\((.*?)\)\s*(.*)$', investigator.strip())
                 if match:
-                    other_investigators_dict[i] = {
+                    other_investigators_list.append({
                         'name': match.group(1),
                         'email': match.group(2),
                         'affiliation': match.group(3)
-                    }
+                    })
         
         file.write("pi_other:\n")
-        for key, value in other_investigators_dict.items():
-            file.write(f"  {key}:\n")
-            file.write(f"    name: {value['name']}\n")
-            file.write(f"    email: {value['email']}\n")
-            file.write(f"    affiliation: {value['affiliation']}\n")
+        for investigator in other_investigators_list:
+            file.write(f"  - name: {investigator['name']}\n")
+            file.write(f"    email: {investigator['email']}\n")
+            file.write(f"    affiliation: {investigator['affiliation']}\n")
         
         file.write(f"abstract: \"{row['Abstract']}\"\n")
         file.write(f"layout: registration\n")
