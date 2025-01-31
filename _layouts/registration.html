@@ -20,8 +20,8 @@
 
         <p><strong>Investigator(s):</strong> {{ page.pi }}<sup>*</sup>
         {% if page.pi_other %}
-          {% for key, value in page.pi_other %}
-            , {{ value.name }}
+          {% for key in page.pi_other %}
+            , {{ page.pi_other[key].name }}
           {% endfor %}
         {% endif %}
         </p>
