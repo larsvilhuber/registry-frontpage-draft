@@ -66,9 +66,9 @@ for index, row in trials_df.iterrows():
         file.write("pi_other:\n")
         for key, value in other_investigators_dict.items():
             file.write(f"  {key}:\n")
-            file.write(f"    - name: {value['name']}\n")
-            file.write(f"    - email: {value['email']}\n")
-            file.write(f"    - affiliation: {value['affiliation']}\n")
+            file.write(f"    name: {value['name']}\n")
+            file.write(f"    email: {value['email']}\n")
+            file.write(f"    affiliation: {value['affiliation']}\n")
         
         file.write(f"abstract: \"{row['Abstract']}\"\n")
         file.write(f"layout: registration\n")
