@@ -18,7 +18,13 @@
 <!-- Use the metadata to show an article -->
 <!-- Proj ID,Status,Title,RDC,Start Year,End Year,PI,Abstract -->
 
-        <p><strong>Investigator(s):</strong> {{ page.pi }}<sup>*</sup> {% if page.pi_other %}, {{ page.pi_other }} {% endif %}</p>
+        <p><strong>Investigator(s):</strong> {{ page.pi }}<sup>*</sup>
+        {% if page.pi_other %}
+          {% for key in page.pi_other %}
+            , {{ page.pi_other[key].name }}
+          {% endfor %}
+        {% endif %}
+        </p>
         <p class="projectid">{{ site.registry }} RCT ID {{ page.rct_id }} </p>
         <p class="published"><strong>Published</strong>: {{ page.date }} </p>
         <p><strong>DOI:</strong> <a href="https://doi.org/{{ page.doi }}" alt="DOI: {{ page.doi }}"</a>https://doi.org/{{ page.doi }}</a></p>
