@@ -39,8 +39,18 @@ for index, row in trials_df.iterrows():
         else:
             file.write(f"end_year: \"{end_year}\"\n")
 
-        file.write(f"pi: \"{row['Primary Investigator']}\"\n")
-        file.write(f"pi_other: \"{row['Other Primary Investigators']}\"\n")
+        # Remove email addresses from the "Primary Investigator" field
+        primary_investigator = re.sub(r'\s*\S+@\S+\s*', '', row['Primary Investigator'])
+        file.write(f"pi: \"{primary_investigator}\"\n")
+        
+        # Remove email addresses from the "Other Primary Investigators" field
+        other_primary_investigators = row['Other Primary Investigators']
+        if pd.isna(other_primary_investigators):
+            other_primary_investigators = ""
+        else:
+            other_primary_investigators = re.sub(r'\s*\S+@\S+\s*', '', other_primary_investigators)
+        file.write(f"pi_other: \"{other_primary_investigators}\"\n")
+        
         file.write(f"abstract: \"{row['Abstract']}\"\n")
         file.write(f"layout: registration\n")
         file.write('---\n\n')

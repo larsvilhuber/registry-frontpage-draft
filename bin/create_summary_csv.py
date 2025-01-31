@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import re
 
 def create_summary_csv(input_path, output_path):
     try:
@@ -8,8 +9,13 @@ def create_summary_csv(input_path, output_path):
         
         # Select the required columns
         summary_df = trials_df[['RCT_ID', 'Title', 'Primary Investigator', 'DOI Number', 'First registered on']].copy()
+        
+        # Remove email addresses from the "Primary Investigator" field
+        summary_df['Primary Investigator'] = summary_df['Primary Investigator'].apply(lambda x: re.sub(r'\s*\S+@\S+\s*', '', x))
+        
         # Extract the numerical part of the RCT_ID
         summary_df.loc[:, 'RCT_ID_num'] = summary_df['RCT_ID'].str.extract(r'(\d+)').astype(int)
+        
         # Write the selected columns to summary.csv
         summary_df.to_csv(output_path, index=False)
         print(f"Summary CSV created successfully at {output_path}")
