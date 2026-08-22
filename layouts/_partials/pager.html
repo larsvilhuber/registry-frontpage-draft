@@ -1,0 +1,29 @@
+{{/* Numbered pager.
+
+     A prev/next-only chain would bury page 197 of the browse index 196 clicks
+     deep, which crawlers follow poorly.  First/last plus a window around the
+     current page keeps every page within a couple of hops. */}}
+{{ $p := . }}
+{{ if gt $p.TotalPages 1 }}
+  <nav class="pager" aria-label="Registration pages">
+    {{ if $p.HasPrev }}
+      <a href="{{ $p.First.URL }}" aria-label="First page">&laquo; First</a>
+      <a href="{{ $p.Prev.URL }}" rel="prev">&lsaquo; Newer</a>
+    {{ end }}
+    {{ $window := 3 }}
+    {{ range $p.Pagers }}
+      {{ if le (math.Abs (sub .PageNumber $p.PageNumber)) $window }}
+        {{ if eq .PageNumber $p.PageNumber }}
+          <span class="pager-current" aria-current="page">{{ .PageNumber }}</span>
+        {{ else }}
+          <a href="{{ .URL }}">{{ .PageNumber }}</a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if $p.HasNext }}
+      <a href="{{ $p.Next.URL }}" rel="next">Older &rsaquo;</a>
+      <a href="{{ $p.Last.URL }}" aria-label="Last page">Last &raquo;</a>
+    {{ end }}
+    <span class="muted">Page {{ $p.PageNumber }} of {{ $p.TotalPages }}</span>
+  </nav>
+{{ end }}

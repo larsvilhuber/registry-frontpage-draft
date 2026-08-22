@@ -1,0 +1,37 @@
+baseURL = "https://larsvilhuber.github.io/registry-frontpage-draft/"
+languageCode = "en-us"
+title = "AEA RCT Registry"
+enableRobotsTXT = true
+
+# Jekyll draft of this site lives alongside the Hugo one; keep Hugo out of it.
+ignoreFiles = ['^_trials/', '^_data/', '^_includes/', '^_layouts/']
+
+[params]
+  description = "An alternate, static view onto the AEA RCT Registry."
+  disclaimer = "Not an official site."
+  # Used for the citation_journal_title meta tag Google Scholar reads.
+  registryName = "AEA RCT Registry"
+  registryURL = "https://www.socialscienceregistry.org"
+  # Shown on trial pages so readers can reach the authoritative record.
+  canonicalNote = "The authoritative record for each registration is held by the AEA RCT Registry."
+  # Keyword terms are mostly singletons; listing them would double the sitemap
+  # with thin pages. They stay crawlable via links from each trial page.
+  sitemapIncludeTerms = false
+
+[pagination]
+  pagerSize = 50
+
+[taxonomies]
+  keyword = "keywords"
+  country = "countries"
+  status = "statuses"
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5

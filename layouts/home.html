@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <h1>{{ site.Title }}</h1>
+  {{ .Content }}
+  {{ $trials := where site.RegularPages "Section" "trials" }}
+  <p class="muted">{{ len $trials }} registration{{ if ne (len $trials) 1 }}s{{ end }} in this build.
+    <a href="{{ "trials/" | relURL }}">Browse all registrations</a>.</p>
+  {{/* The landing page renders only the most recent records.  Dumping all ~10k
+       rows here is what made the old index slow; the full list is paginated at
+       /trials/ and searchable through the filter above it. */}}
+  {{ partial "trial-search.html" . }}
+  <div class="trial-browse">
+    <h2>Recently registered</h2>
+    {{ partial "trial-table.html" (first 25 $trials.ByDate.Reverse) }}
+    <p><a href="{{ "trials/" | relURL }}">All {{ len $trials }} registrations &rarr;</a></p>
+  </div>
+{{ end }}

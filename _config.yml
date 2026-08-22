@@ -49,4 +49,15 @@ collections:
   trials:
     output: true
 
-
+# The Hugo rebuild lives alongside this Jekyll draft (see HUGO.md).  Excluding
+# Hugo's directories keeps `bundle exec jekyll serve` working while both exist.
+exclude:
+  - archetypes/
+  - content/
+  - data/
+  - hugo.toml
+  - layouts/
+  - public/
+  - resources/
+  - static/
+  - HUGO.md

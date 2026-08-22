@@ -1,0 +1,10 @@
+{{/* Author list; the lead PI is first in the export and marked as such. */}}
+{{ $authors := .authors }}
+<p class="authors">
+  {{ range $i, $a := $authors }}
+    {{ if $i }}, {{ end }}<span class="author">{{ $a.name }}{{ if not $i }}<sup title="Primary investigator">*</sup>{{ end }}</span>
+  {{ end }}
+</p>
+{{ with (index $authors 0) }}
+  <p class="muted">* Primary investigator{{ with .affiliation }} &middot; {{ . }}{{ end }}</p>
+{{ end }}

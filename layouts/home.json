@@ -1,0 +1,20 @@
+{{- /* Slim search index for the client-side filter (static/js/search.js).
+
+       Deliberately minimal: with ~10k registrations every byte per row shows up
+       in the download.  Keys are short and the URL is omitted -- the browser
+       rebuilds it from the trial number -- which keeps the payload far smaller
+       than a verbose dump.
+
+       This file is a progressive enhancement only.  Google Scholar never needs
+       it: discovery runs through sitemap.xml and the static paginated browse at
+       /trials/, both of which work with JavaScript disabled.
+
+       Keys: n=number, t=title, a=lead author, d=first registered, s=status */ -}}
+{{- $out := slice -}}
+{{- range (where site.RegularPages "Section" "trials").ByDate.Reverse -}}
+  {{- $t := .Params.trial -}}
+  {{- $lead := "" -}}
+  {{- with (index $t.authors 0) -}}{{- $lead = .name -}}{{- end -}}
+  {{- $out = $out | append (dict "n" $t.number "t" $t.title "a" $lead "d" $t.registered "s" $t.status) -}}
+{{- end -}}
+{{- $out | jsonify -}}

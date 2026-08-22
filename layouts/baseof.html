@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{/* The Markdown prototype duplicates records published under /trials/.
+         Two indexable URLs for one registration would split Scholar's view of
+         it, so the prototype is kept out of the index and the sitemap. */}}
+    {{ if eq .Section "md-prototype" }}<meta name="robots" content="noindex,nofollow">{{ end }}
+    {{ with .OutputFormats.Get "rss" }}
+      <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+    {{ end }}
+    {{/* Google Scholar reads these; see layouts/_partials/citation-meta.html. */}}
+    {{ partial "citation-meta.html" . }}
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <main class="wrapper">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+    {{/* Deferred: the filter is an enhancement over the static table, so it must
+         never block rendering of the crawlable list. */}}
+    <script src="{{ "js/search.js" | relURL }}" defer></script>
+  </body>
+</html>

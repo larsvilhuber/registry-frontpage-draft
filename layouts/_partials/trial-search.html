@@ -1,0 +1,14 @@
+{{/* Client-side filter over the whole registry.
+
+     PROGRESSIVE ENHANCEMENT ONLY.  The form is marked hidden in the HTML and is
+     revealed by static/js/search.js, so a visitor (or crawler) without
+     JavaScript sees the static paginated table underneath and never a dead
+     control.  Nothing here is part of the crawl path -- see HUGO.md. */}}
+<div class="trial-search" data-index-url="{{ "index.json" | relURL }}" data-trial-base="{{ "trials/" | relURL }}">
+  <form class="trial-search-form" hidden role="search" onsubmit="return false;">
+    <label for="trial-q">Search all registrations</label>
+    <input type="search" id="trial-q" autocomplete="off" placeholder="Title, primary investigator, or AEARCTR ID">
+    <p class="muted trial-search-status" role="status" aria-live="polite"></p>
+  </form>
+  <div class="trial-search-results" hidden></div>
+</div>

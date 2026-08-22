@@ -1,0 +1,11 @@
+{{/* Registry text fields are plain text from the database, not Markdown.  Split
+     on blank lines for paragraphs and keep single newlines as <br> so numbered
+     lists in abstracts survive.  Every line is emitted through Hugo's normal
+     escaping -- only the <br> is literal markup -- so the untrusted database
+     string is never passed through safeHTML. */}}
+{{ $text := replace . "\r\n" "\n" }}
+{{ range (split $text "\n\n") }}
+  {{ with (trim . " \n\t") }}
+    <p>{{ range $i, $line := (split . "\n") }}{{ if $i }}<br>{{ end }}{{ $line }}{{ end }}</p>
+  {{ end }}
+{{ end }}

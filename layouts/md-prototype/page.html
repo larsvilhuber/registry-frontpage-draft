@@ -1,0 +1,8 @@
+{{/* Same body as a content-adapter trial page: the two content models must
+     stay visually identical for the comparison to mean anything. */}}
+{{ define "main" }}
+  <p class="muted"><strong>Prototype page.</strong> Same record as
+    <a href="{{ (printf "trials/%s/" .Params.trial.number) | relURL }}">the content-adapter version</a>,
+    rendered from a committed Markdown file instead of from <code>data/trials.json</code>.</p>
+  {{ partial "trial-detail.html" . }}
+{{ end }}

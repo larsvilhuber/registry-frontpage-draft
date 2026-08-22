@@ -1,0 +1,19 @@
+{{/* Plain server-rendered table: the crawlable index. No client-side table
+     library, so the list works with JavaScript disabled. */}}
+<table class="trials">
+  <thead>
+    <tr><th scope="col">Registry ID</th><th scope="col">Title</th>
+        <th scope="col">Primary investigator</th><th scope="col">First registered</th></tr>
+  </thead>
+  <tbody>
+    {{ range . }}
+      {{ $t := .Params.trial }}
+      <tr>
+        <td><a href="{{ .RelPermalink }}">{{ $t.rct_id }}</a></td>
+        <td><a href="{{ .RelPermalink }}">{{ $t.title }}</a></td>
+        <td>{{ with (index $t.authors 0) }}{{ .name }}{{ end }}</td>
+        <td><time datetime="{{ $t.registered }}">{{ $t.registered }}</time></td>
+      </tr>
+    {{ end }}
+  </tbody>
+</table>

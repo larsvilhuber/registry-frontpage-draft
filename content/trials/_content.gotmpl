@@ -1,0 +1,34 @@
+{{/*
+  Content adapter: turns data/trials.json (the database export) into one Hugo
+  page per registration.  No Markdown files are committed for trials -- the
+  export is the source of truth, so a rebuild after a fresh export needs no file
+  churn.  See HUGO.md for why this is preferred over one file per trial.
+*/}}
+{{ $trials := index site.Data "trials" }}
+{{ range $trials }}
+  {{ $title := .title }}
+  {{/* Scholar mis-parses records missing title/author/year, so skip rather
+       than publish an unindexable page. */}}
+  {{ if and $title .authors .year }}
+    {{ $.AddPage (dict
+      "path"    .number
+      "title"   $title
+      "kind"    "page"
+      "dates"   (dict
+        "date"    (time.AsTime .registered)
+        "lastmod" (time.AsTime (or .last_update .registered))
+      )
+      "params"  (dict
+        "trial"     .
+        "rct_id"    .rct_id
+        "doi"       .doi
+        "status"    .status
+        "keywords"  .keywords
+        "countries" .countries
+        "statuses"  (slice .status)
+      )
+    ) }}
+  {{ else }}
+    {{ warnf "skipping trial %q: missing title, author, or year" .rct_id }}
+  {{ end }}
+{{ end }}

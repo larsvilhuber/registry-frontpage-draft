@@ -1,0 +1,101 @@
+{{/* Shared body for a single registration.
+
+     Both content models in CLAUDE.md render through this one partial -- the
+     content adapter (content/trials/) and the one-file-per-trial prototype
+     (content/md-prototype/) -- so the two can be compared without the templates
+     drifting apart. */}}
+{{ $t := .Params.trial }}
+<article class="trial" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <h1 itemprop="headline">{{ $t.title }}</h1>
+  {{ partial "authors.html" $t }}
+
+  <dl class="trial-meta">
+    <dt>Registry ID</dt><dd>{{ $t.rct_id }}</dd>
+    {{ with $t.doi }}<dt>DOI</dt><dd><a href="https://doi.org/{{ . }}">https://doi.org/{{ . }}</a></dd>{{ end }}
+    <dt>First registered</dt><dd><time datetime="{{ $t.registered }}">{{ $t.registered }}</time></dd>
+    {{ with $t.last_update }}<dt>Last updated</dt><dd><time datetime="{{ . }}">{{ . }}</time></dd>{{ end }}
+    <dt>Status</dt><dd>{{ humanize (replace $t.status "_" " ") }}</dd>
+    {{ if or $t.start_date $t.end_date }}
+      <dt>Trial dates</dt><dd>{{ $t.start_date }} &ndash; {{ $t.end_date }}</dd>
+    {{ end }}
+    {{ with $t.countries }}
+      <dt>Countries</dt>
+      <dd>{{ range $i, $c := . }}{{ if $i }}, {{ end }}<a href="{{ (printf "countries/%s/" (urlize $c)) | relURL }}">{{ $c }}</a>{{ end }}</dd>
+    {{ end }}
+    {{ with $t.jel }}<dt>JEL codes</dt><dd>{{ delimit . ", " }}</dd>{{ end }}
+    {{ with $t.secondary_ids }}<dt>Secondary IDs</dt><dd>{{ . }}</dd>{{ end }}
+    {{ with $t.registry_url }}<dt>Registry record</dt><dd><a href="{{ . }}">{{ . }}</a></dd>{{ end }}
+  </dl>
+
+  {{ with $t.abstract }}
+    <section><h2>Abstract</h2>{{ partial "paragraphs.html" . }}</section>
+  {{ end }}
+  {{ with $t.intervention }}
+    <section><h2>Intervention</h2>{{ partial "paragraphs.html" . }}</section>
+  {{ end }}
+  {{ with $t.experimental_design }}
+    <section><h2>Experimental design</h2>{{ partial "paragraphs.html" . }}</section>
+  {{ end }}
+
+  {{ if or $t.randomization_method $t.sample_size_observations $t.primary_outcomes }}
+    <section>
+      <h2>Design details</h2>
+      <dl class="trial-meta">
+        {{ with $t.randomization_method }}<dt>Randomization method</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with $t.randomization_unit }}<dt>Randomization unit</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with $t.sample_size_clusters }}<dt>Clusters</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with $t.sample_size_observations }}<dt>Observations</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with $t.sample_size_arms }}<dt>Arms</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with $t.primary_outcomes }}<dt>Primary outcomes</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with $t.secondary_outcomes }}<dt>Secondary outcomes</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with $t.sponsors }}<dt>Sponsors</dt><dd>{{ . }}</dd>{{ end }}
+        {{ with $t.partners }}<dt>Partners</dt><dd>{{ . }}</dd>{{ end }}
+      </dl>
+    </section>
+  {{ end }}
+
+  {{ if or $t.public_data_url $t.program_files_url }}
+    <section>
+      <h2>Materials</h2>
+      <ul>
+        {{ with $t.public_data_url }}<li><a href="{{ . }}">Public data</a></li>{{ end }}
+        {{ with $t.program_files_url }}<li><a href="{{ . }}">Program files</a></li>{{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  {{ with $t.papers }}
+    {{/* Papers the registry itself records as arising from this trial. These
+         are part of the database record -- distinct from the incoming
+         citations below, which come from the separate citations process. */}}
+    <section>
+      <h2>Papers from this trial</h2>
+      <ol class="citation-list">
+        {{ range . }}
+          <li>
+            {{ with .citation }}{{ . }}{{ else }}{{ with .abstract }}{{ truncate 200 . }}{{ end }}{{ end }}
+            {{ with .url }} <a href="{{ . }}">{{ . }}</a>{{ end }}
+          </li>
+        {{ end }}
+      </ol>
+    </section>
+  {{ end }}
+
+  {{ partial "cited-by.html" $t }}
+
+  {{ with $t.keywords }}
+    <section class="keywords">
+      <h2>Keywords</h2>
+      <ul class="taglist">
+        {{ range . }}<li><a href="{{ (printf "keywords/%s/" (urlize .)) | relURL }}">{{ . }}</a></li>{{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  <section class="how-to-cite">
+    <h2>How to cite</h2>
+    <p>{{ range $i, $a := $t.authors }}{{ if $i }}; {{ end }}{{ $a.citation_name }}{{ end }}.
+      {{ $t.year }}. "{{ $t.title }}." <em>{{ site.Params.registryName }}</em>. {{ $t.rct_id }}.
+      {{ with $t.doi }}<a href="https://doi.org/{{ . }}">https://doi.org/{{ . }}</a>{{ end }}</p>
+  </section>
+</article>

@@ -1,0 +1,23 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{/* Scholar needs every registration page discoverable here.  Two kinds of
+       page are held back so the ~10k records aren't competing with filler:
+
+       - md-prototype: a duplicate of /trials/ kept only for comparison.
+       - taxonomy terms: keyword cardinality is very high (most keywords occur
+         on a single trial), which would more than double the sitemap with thin
+         pages.  They stay linked from trial pages, so a crawler can still reach
+         them; set params.sitemapIncludeTerms to list them explicitly. */}}
+  {{ range .Pages }}
+    {{ $isTerm := eq .Kind "term" }}
+    {{ $skip := or (eq .Section "md-prototype") (and $isTerm (not site.Params.sitemapIncludeTerms)) }}
+    {{ if not $skip }}
+      <url>
+        <loc>{{ .Permalink }}</loc>
+        {{ if not .Lastmod.IsZero }}<lastmod>{{ safeHTML (.Lastmod.Format "2006-01-02T15:04:05-07:00") }}</lastmod>{{ end }}
+        {{ with .Sitemap.ChangeFreq }}<changefreq>{{ . }}</changefreq>{{ end }}
+        {{ if ge .Sitemap.Priority 0.0 }}<priority>{{ .Sitemap.Priority }}</priority>{{ end }}
+      </url>
+    {{ end }}
+  {{ end }}
+</urlset>

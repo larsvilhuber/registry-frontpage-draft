@@ -1,0 +1,1539 @@
+[
+ {
+  "abstract": "The chapter combines novel survey, audit, and experimental data to illustrate how voter pessimism can undermine electoral accountability. It reconciles mixed findings in the literature by highlighting two conditions under which anti-corruption information campaigns are likely to improve electoral accountability: (1) voters have sufficient information about politician performance and (2) voters are not too pessimistic about the quality of the political class. The treatment provided factual information from audits of incumbent performance on Constituency Development Fund spending. Before treatment, public opinion data from Afrobarometer and Ipsos Synovate indicate that Kenyan voters believe that almost all politicians are corrupt. The treatment has no impact on voter beliefs about their own incumbent, but improves perceptions of the political class for voters who find out that their incumbent is clean. The findings suggest that although voter judgments about incumbent performance tend to be fixed, voter pessimism towards the political class does update with factual information.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Zhang, Kelly",
+    "name": "Kelly Zhang"
+   }
+  ],
+  "countries": [
+   "Kenya (National)"
+  ],
+  "doi": "10.1257/rct.5-8.0",
+  "end_date": "2014-05-31",
+  "experimental_design": "Treatment was randomly assigned at the individual level, in a nationwide sample.",
+  "intervention": "The intervention was embedded within a series of factual SMS messages. Information on how much money was allocated to the Constituency Development Fund (CDF) and how much money actually reached projects was provided to constituents. The intervention used audit data from the National Taxpayer's Association Citizen Report Cards.",
+  "jel": [],
+  "keywords": [
+   "electoral",
+   "public goods",
+   "corruption",
+   "audits",
+   "voting",
+   "accountability",
+   "information"
+  ],
+  "last_update": "2017-05-02",
+  "number": "5",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Information uptake, political support, beliefs about incumbent quality",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization done using Stata.",
+  "randomization_unit": "Individual",
+  "rct_id": "AEARCTR-0000005",
+  "registered": "2013-05-21",
+  "registry_url": "http://www.socialscienceregistry.org/trials/5",
+  "sample_size_arms": "N/A",
+  "sample_size_clusters": "N/A",
+  "sample_size_observations": "2500 individuals/1600 individuals",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2013-01-26",
+  "status": "completed",
+  "title": "Voter Pessimism and Electoral Accountability: Experimental Evidence from Kenya",
+  "year": "2013"
+ },
+ {
+  "abstract": "The objective of this cluster randomized controlled trial is to assess the impact of several community-based interventions that address the key factors underlying the high maternal mortality, as well as neonatal mortality and morbidity in northern Nigeria. The interventions, include:\n\n1. a Voluntary Health Worker Program (VHW)\n2. the VHW program with provision of a safe birth kit\n3. the VHW program with community folk media activities.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Sharma, Vandana",
+    "name": "Vandana Sharma"
+   },
+   {
+    "affiliation": "Stockholm School of Economics",
+    "citation_name": "Nyqvist, Martina",
+    "name": "Martina Nyqvist"
+   },
+   {
+    "affiliation": "",
+    "citation_name": "Leight, Jessica",
+    "name": "Jessica Leight"
+   }
+  ],
+  "countries": [
+   "Nigeria (Africa)"
+  ],
+  "doi": "10.1257/rct.6-3.0",
+  "end_date": "2016-10-31",
+  "experimental_design": "The study is a clustered randomized controlled field trial and is taking place in 24 Local Government Areas (LGAs) in Jigawa State Nigeria.  96 clusters of villages with a population of close to 300,000 inhabitants have been included in the study. 24 clusters of villages have been randomly assigned to one of the 4 study arms (3 treatment arms and 1 control arm). Fifteen percent of households with women of reproductive age have been sampled to take part in a baseline survey prior to implementation of the interventions.  These same households will participate in an endline survey, two years after initiation of the interventions.  According to population estimates, approximately 7,200 women will be surveyed as part of the baseline and endline surveys.\n\nIn addition, all pregnant women in the households sampled for the baseline survey will be asked to participate in post partum surveys (one within 72 hours after birth, and the other 4 weeks after birth) during the 2-year program implementation phase. Approximately 3,500 post-partum women will be surveyed as part of these surveys.\n\nMonitors will also keep track of all deaths of women of reproductive age and neonatal deaths in their respective villages via an SMS monitoring system.",
+  "intervention": "The study will be evaluating 3 primarily demand side community-based interventions aimed at increasing utilization of health care services offered at existing facilities in Jigawa state. Specifically, the following interventions are being evaluated:\n\nIntervention 1: Voluntary Health Worker (VHW) Program\nVoluntary Health Workers will conduct door-to-door campaigns on maternal and child health, and will visit pregnant women regularly to educate and to encourage use of antenatal care and facility-based deliveries.\n\nIntervention 2: VHW program plus distribution of Safe Birth Kits\nCommunities in this arm will receive the standard package of VHW services supplemented with distribution of safe birth kits to pregnant women. Safe birth kits contain sterile materials to diminish infection risk during delivery.\n\nIntervention 3: VHW program plus Community Engagement Strategies \nIn addition to the VHW program, communities in this arm will Community-wide media activities, including dramas, intended to address community norms regarding maternal and child health.",
+  "jel": [],
+  "keywords": [
+   "health",
+   "pregnancy",
+   "maternal mortality",
+   "neonatal mortality",
+   "community intervention",
+   "voluntary health worker",
+   "safe birth kit",
+   "maternal child health"
+  ],
+  "last_update": "2023-10-25",
+  "number": "6",
+  "papers": [
+   {
+    "abstract": "The slow pace of improvement in service delivery and health outcomes for pregnant women and newborns in developing countries has been a major concern for policy makers in recent decades. This paper presents the results from a randomized controlled trial of a community health worker program designed to enhance uptake of child and maternal health services in Northern Nigeria. Three interventions were evaluated: the deployment of community health educators, health educators with the provision of safe birth kits, and health educators with community dramas. The results suggest that the interventions increased utilization of antenatal, postnatal, and infant care. Maternal and newborn health practices improved as well as health knowledge. In addition, the community health worker program was more effective when supplemented with additional program components.",
+    "citation": "Martina Björkman Nyqvist, Jessica Leight & Vandana Sharma (2023) Community Health Educators and Maternal Health: Experimental Evidence from Northern Nigeria, The Journal of Development Studies, 59:1, 73-93,",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/00220388.2022.2110489"
+   }
+  ],
+  "partners": "",
+  "primary_outcomes": "Maternal Mortality Ratio (MMR), Neonatal Mortality Rate (NMR), Maternal Morbidity, birthweight, health seeking behaviour",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization was done in an office outside of the study area by computer.",
+  "randomization_unit": "clusters of villages with an average population size of 3,000 inhabitants",
+  "rct_id": "AEARCTR-0000006",
+  "registered": "2013-05-26",
+  "registry_url": "http://www.socialscienceregistry.org/trials/6",
+  "sample_size_arms": "24 clusters per study arm",
+  "sample_size_clusters": "96 clusters of villages",
+  "sample_size_observations": "7200 women",
+  "secondary_ids": "ClinicalTrials.gov ID: NCT01487707",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2012-02-01",
+  "status": "completed",
+  "title": "Community Based Strategies to Reduce Maternal Mortality in Northern Nigeria",
+  "year": "2013"
+ },
+ {
+  "abstract": "Under the Right to Education Act passed in 2009, which came into effect in April 2010, every child from the age of six to fourteen is guaranteed free and compulsory education, and no child can be held back, expelled or required to pass a board examination until the completion of elementary education. The Continuous and Comprehensive Evaluation scheme was formulated under the Act to replace test-based evaluations in government schools, with a view to introduce a more uniform and comprehensive pattern of assessment in education for children, as well as to decrease the accumulated stress of board exams and year-end assessments. The impact of CCE, however, has never been evaluated. The first arm of this study, undertaken in collaboration between J-PAL and the government of Haryana, examines whether training teachers to implement CCE and distributing the right material leads to (1) adoption of continuous evaluation (2) changes in pedagogy and (3) any change in learning. The second arm of this study evaluates the impact of another intervention conducted in the same set of schools, in collaboration between Pratham and the government of Haryana. One hour per day, students are organized not by formal grade but by level of competencies, and teachers are taught to focus on remedial learning adapted to students in each group. The study will examine whether training the teachers in this method, and supporting them with regular visits leads to (1) adoption of the \"teaching at the right level method\" and (2) changes in learning.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Duflo, Esther",
+    "name": "Esther Duflo"
+   },
+   {
+    "affiliation": "J-PAL South Asia",
+    "citation_name": "Mukerji, Shobhini",
+    "name": "Shobhini Mukerji"
+   },
+   {
+    "affiliation": "Cornell",
+    "citation_name": "Berry, James",
+    "name": "James Berry"
+   },
+   {
+    "affiliation": "MIT, J-PAL",
+    "citation_name": "Shotland, Marc",
+    "name": "Marc Shotland"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.8-1.0",
+  "end_date": "2014-12-31",
+  "experimental_design": "This is a three group design:\n-control (98 school campuses--126 schools)\n-CCE only (93 school campuses--127 schools)\n-RE only (94 school campuses--123 schools) \n-CCE+RE (100 school campuses--125 schools)\n\n\nThe intervention will be tested in Classes 1-5 and 7.",
+  "intervention": "There are two interventions:\n1) training teacher in the use of the CCE tools, and monitoring this use. The training component, conducted by the Government of Haryana's State Council Educational Research and Training (SCERT), will introduce teachers from randomly chosen schools to the goals of CCE and instruct them on CCE grading  and monitoring.  \n2)  training teachers in Pratham's method of \"teaching at the right level\". One our per day, students will be re-organized by level of achievement and not by grades, and teachers will be trained in simple technique effective for remedial education.",
+  "jel": [],
+  "keywords": [
+   "education",
+   "remedial education"
+  ],
+  "last_update": "2013-06-15",
+  "number": "8",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "test scores (written and oral)",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization in office computer (Stata)",
+  "randomization_unit": "School campus (which could include multiple schools).",
+  "rct_id": "AEARCTR-0000008",
+  "registered": "2013-06-15",
+  "registry_url": "http://www.socialscienceregistry.org/trials/8",
+  "sample_size_arms": "98 school campuses control, 93 school campuses CCE, 99 school campuses RE, 94 school campuses CCE+RE",
+  "sample_size_clusters": "500 primary and upper primary school campuses",
+  "sample_size_observations": "22,900",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2011-05-19",
+  "status": "on_going",
+  "title": "An Evaluation of Continuous Comprehensive Evaluation and Teaching at the Right Level",
+  "year": "2013"
+ },
+ {
+  "abstract": "This project evaluates an innovative policy intervention which aims at enhancing supply of public employment in Bihar, a state where the Indian employment guarantee faces severe implementation challenges. The new system of funds transfer and expenditures tracking is rolled out in randomly selected phases across Bihar districts. If the intervention successfully increases spending, we will use it as a way to evaluate the impact of NREGA on people's lives.  Detailed field surveys will measure the effect of increased access to public employment on households’ consumption smoothing and migration decisions, as well as its effect on private labour contracts and wages. Since the intervention could also reduce corruption by linking  more directly fund flow to payroll, we will also be looking at potential impacts on ghost workers and other measures of corruption.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Duflo, Esther",
+    "name": "Esther Duflo"
+   },
+   {
+    "affiliation": "MIT, J-PAL",
+    "citation_name": "Banerjee, Abhijit",
+    "name": "Abhijit Banerjee"
+   },
+   {
+    "affiliation": "Harvard",
+    "citation_name": "Pande, Rohini",
+    "name": "Rohini Pande"
+   },
+   {
+    "affiliation": "Paris School of Economics",
+    "citation_name": "Imbert, Clément",
+    "name": "Clément Imbert"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.9-1.0",
+  "end_date": "2014-06-01",
+  "experimental_design": "Panchayats in randomly selected blocks will either have access to the new fund flow or they will not (all households across the control and treatment villages will be eligible for MNREGA employment).\n\nThe proposed study involves a mixed methods approach of data collection. \nFirst, MG-NREGS expenditures and employment will be tracked through official administrative sources, and if over time there is a significant increase in expenditure, then outcomes such as household consumption, production and labor outcomes will be measured by surveying 25 households in 2 Panchayat villages randomly chosen within each blocks 9800 households in total. During the household survey, we will also collect qualitative data from households on perceived barriers to obtaining access to the scheme. We will also collect qualitative data from Panchayat heads on the perceived issues in implementing MNREGA. The proposed evaluation relies mostly on statistical analysis of administrative and household survey data. However, throughout the process, interviews of GoB staff in charge of MG-NREGS at the State and local level will also be conducted by the research team.  The research team will do field visits, and confirm through interviews of officials and intended beneficiaries if public employment provision has indeed improved. Informed consent will be ensured in all cases.",
+  "intervention": "In the new fund flow, the state pool of MNREGA funds automatically reimburses Panchayat for their expenditures on labor payments, provided they enter the beneficiary and payment details on a web portal. The financial structure and the portal are managed by the Central Plan Scheme Monitoring System (CPSMS).",
+  "jel": [],
+  "keywords": [
+   "governance",
+   "employment",
+   "welfare"
+  ],
+  "last_update": "2013-10-04",
+  "number": "9",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "expenditures on NREGA; household level employment through NREGA; \"leaks\" ; household consumption during lean season",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization done in office by a computer",
+  "randomization_unit": "Blocks",
+  "rct_id": "AEARCTR-0000009",
+  "registered": "2013-10-04",
+  "registry_url": "http://www.socialscienceregistry.org/trials/9",
+  "sample_size_arms": "69 treatment blocks,127 control blocks",
+  "sample_size_clusters": "12 districts",
+  "sample_size_observations": "196 blocks",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2012-01-01",
+  "status": "on_going",
+  "title": "Enhancing Local Public Service Delivery: Experimental Evidence on the National Rural Employment Guarantee Scheme in Bihar (BNREGA)",
+  "year": "2013"
+ },
+ {
+  "abstract": "Iron deficiency anemia (IDA) has been linked to low productivity in adults, slowing of cognitive and physical growth among children and, in the elderly, increased risk of cognitive impairment and physical disability, as well as decreased muscle strength. While iron deficiency anemia has been recognized to be a serious public health problem in developing countries for several years, something that both limits the working population and increases risks for cognitive impairment and health shocks in the elderly, not much progress has yet been made against it. Distributing iron supplements appears to be an impractical policy in resource-poor settings where the public health systems do not have the capacity to maintain a large-scale distribution system. Iron supplementation of foods is therefore an attractive alternative: it requires no additional effort on the part of the consumer, and can be done relatively cheaply in centralized locations. \n\nThis study measures the impact of giving free Double (Iron and Iodine) Fortified Salt to randomly assigned households in 62 villages, compared to households who were randomly assigned to no free salt.  The households which we give DFS will still choose whether to use free DFS or not, which will constrain potential health benefits.  We expect to observe increases in haemoglobin, particularly among  individuals anemic at baseline if households respond to the offer of free salt by using it to cook human food.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Barnhardt, Sharon",
+    "name": "Sharon Barnhardt"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Banerjee, Abhijit V.",
+    "name": "Abhijit V. Banerjee"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Duflo, Esther",
+    "name": "Esther Duflo"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.10-1.0",
+  "end_date": "2014-06-01",
+  "experimental_design": "We randomly selected 62 villages participating in another trial where Double Fortified Salt is being made available for sale in stores and where a baseline survey had been completed with all members of 15 households per village.   We randomly assigned 7 households per village to receive free DFS and the other 8 households  to not receive free DFS.",
+  "intervention": "We deliver free Double Fortified Salt manufactured in India by Tata Chemicals Ltd. to homes of subjects at the rate of 0.8 kg per month per treated household for approximately 7 - 11 months.",
+  "jel": [],
+  "keywords": [
+   "health",
+   "Nutrition",
+   "Anemia"
+  ],
+  "last_update": "2013-05-15",
+  "number": "10",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Hemoglobin level, physical health, cognition (memory), school/work attendance and time use.",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Computer generated randomization done in office outside study district.",
+  "randomization_unit": "Households",
+  "rct_id": "AEARCTR-0000010",
+  "registered": "2013-05-15",
+  "registry_url": "http://www.socialscienceregistry.org/trials/10",
+  "sample_size_arms": "2821 individuals free DFS,  3224 individuals no free DFS",
+  "sample_size_clusters": "930 households",
+  "sample_size_observations": "6045 individuals",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2011-04-04",
+  "status": "on_going",
+  "title": "Free DFS - Intervention to fight anemia and improve well-being in a very low income setting",
+  "year": "2013"
+ },
+ {
+  "abstract": "Iron deficiency anemia (IDA) has been linked to low productivity in adults, slowing of cognitive and physical growth among children and, in the elderly, increased risk of cognitive impairment and physical disability, as well as decreased muscle strength.  \n\nDistributing iron supplements appears to be an impractical policy in resource-poor settings where the public health systems do not have the capacity to maintain a large-scale distribution system. Iron supplementation of foods is therefore an attractive alternative: it requires no additional effort on the part of the consumer, and can be done relatively cheaply in centralized locations.  While NIN's Iron (and Iodine) Fortified Salt (DFS) has been studied extensively by the National Institute of Nutrition (Hyderabad) and others for safety and efficacy in humans, willingness to pay for this new technology has not been established.\n\nIn this experiment, we randomly assign discounts for Double (iron and iodine) Fortified Salt at the household level in order to estimate demand at various prices  among low-income rural households in India (Bihar).  We also assign three types of information campaign delivery at the village level to understand their relative effects on take-up.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Barnhardt, Sharon",
+    "name": "Sharon Barnhardt"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Banerjee, Abhijit",
+    "name": "Abhijit Banerjee"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Duflo, Esther",
+    "name": "Esther Duflo"
+   }
+  ],
+  "countries": [
+   "India (Bihar - Bhojpur District)"
+  ],
+  "doi": "10.1257/rct.11-1.0",
+  "end_date": "2011-12-09",
+  "experimental_design": "We proceed in this order:\n1. Random selection of 43 villages from one block within Bhojpur District.\n2. Random selection of 99 households from District Rural Development Authority census lists.\n3. Random assignment of 9 households per village to each voucher type.\n4. Random assignment of 14 or 15 villages to each information campaign type.\n5. Salt stocking and information campaign delivery.\n6. Baseline survey on demographics, anemia knowledge, DFS knowledge. Voucher delivery. \n7. After 4 weeks, redeemed voucher collection from stores.\n8. Endline household survey on knowledge of DFS, anemia, use of voucher, experience with product.",
+  "intervention": "We made Double Fortified Salt available for sale in 43 villages by approaching local stores to sell it.  We created 11 types of vouchers with showing prices net of discount, which varied in privates stores and/or government shops (the Public Distribution System).  These vouchers were randomly assigned to households that could use them to purchase DFS at a discount during a 4-week period.\n\nEach village was randomly assigned to one of three types of communications  delivery which informed people about the role of Double Fortified Salt in preventing anemia:\n- posters and other written promotional materials hung at shops\n- the above plus a street play conducted by actors\n- all of the above plus a household visit from a government health worker",
+  "jel": [],
+  "keywords": [
+   "health",
+   "voucher",
+   "nutrition",
+   "demand for health product",
+   "discount",
+   "information campaign"
+  ],
+  "last_update": "2013-05-15",
+  "number": "11",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Purchase of DFS by the household, Product knowledge",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Computer generated randomization in office outside study area.",
+  "randomization_unit": "Villages and households",
+  "rct_id": "AEARCTR-0000011",
+  "registered": "2013-05-15",
+  "registry_url": "http://www.socialscienceregistry.org/trials/11",
+  "sample_size_arms": "14 or 15 villages in each info campaign.  387 households per voucher type.",
+  "sample_size_clusters": "43 villages",
+  "sample_size_observations": "4257 households",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2011-10-01",
+  "status": "completed",
+  "title": "Pricing Experiment - Intervention to fight anemia and improve well-being in a very low income setting",
+  "year": "2013"
+ },
+ {
+  "abstract": "Iron deficiency anemia (IDA) has been linked to low productivity in adults, slowing of cognitive and physical growth among children and, in the elderly, increased risk of cognitive impairment and physical disability, as well as decreased muscle strength. While iron deficiency anemia has been recognized to be a serious public health problem in developing countries for several years, something that both limits the working population and increases risks for cognitive impairment and health shocks in the elderly, not much progress has yet been made against it. Distributing iron supplements appears to be an impractical policy in resource-poor settings where the public health systems do not have the capacity to maintain a large-scale distribution system. Iron supplementation of foods is therefore an attractive alternative: it requires no additional effort on the part of the consumer, and can be done relatively cheaply in centralized locations.\n\nThis study is a cluster-randomized trial in Bhojpur District (Bihar) of Double (iron and iodine) Fortified Salt (DFS), a fortified food designed to prevent anemia.  We randomly assign 200 villages where DFS is made available for purchase through private shops and PDS stores, and randomly assign 200 villages to no intervention.  We also conduct an information campaign in each treatment village to tell households about the new product.\n\nWe measure health impact using all individuals in 15 randomly selected households within each village.  They complete a baseline survey as well as an endline after approximately one year.  The main outcomes of interest are  haemoglobin level, anemia, weakness, absence from work/school and cognitive health.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Barnhardt, Sharon",
+    "name": "Sharon Barnhardt"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Banerjee, Abhijit",
+    "name": "Abhijit Banerjee"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Duflo, Esther",
+    "name": "Esther Duflo"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.13-1.0",
+  "end_date": "2014-09-01",
+  "experimental_design": "We are working in Bhojpur District of Bihar, and follow these procedures:\n- Randomly select 400 villages to be part of the trial.\n- Randomly assign 200 villages to be treated and 200 villages to serve as the control (where we do not intervene).\n- Conduct baseline survey in 15 randomly selected households per village.\n- Conduct information campaign and begin first round of salt stocking in stores.  Stocking repeats for approximately one year.\n- Every month, measure store sales, household take-up and hemoglobin in a small subset of villages for process monitoring.\n- Conduct endline survey with same households.",
+  "intervention": "We make Double (iron and iodine) Fortified Salt (DFS) available for purchase, at a discount from the MRP, in 200 villages randomly assigned to this treatment.  All 200 villages also receive an information/marketing campaign through posters and a street play conducted by actors.",
+  "jel": [],
+  "keywords": [
+   "health",
+   "nutrition",
+   "anemia",
+   "hemoglobin",
+   "cognition",
+   "fortified foods"
+  ],
+  "last_update": "2013-05-16",
+  "number": "13",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Hemoglobin & anemia, physical health, cognition, productivity.",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Random assignment done by computer in office outside the study area.",
+  "randomization_unit": "Villages",
+  "rct_id": "AEARCTR-0000013",
+  "registered": "2013-05-16",
+  "registry_url": "http://www.socialscienceregistry.org/trials/13",
+  "sample_size_arms": "3000 households in treatment and 3000 in control",
+  "sample_size_clusters": "400 villages",
+  "sample_size_observations": "6000 households (about 39,000 individuals)",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2011-04-04",
+  "status": "on_going",
+  "title": "Intervention to fight anemia and improve well-being in a very low income setting",
+  "year": "2013"
+ },
+ {
+  "abstract": "By offering means-tested secondary school scholarships to a randomly selected subset of youth in Ghana, and comparing school enrollment and longer-term outcomes in cognition, health, employment, as well as attitudes and beliefs, between scholarship winners and a similar group of youth not offered a scholarship, this study aims to provide evidence on the barriers to enrollment and estimate the longer-run impacts of secondary education. \n\nStarting in 2017, we began tracking children of the respondents to assess the inter-generational impact of secondary education on cognitive development. This project is conducted in collaboration with Professor Elizabeth Spelke's Laboratory for Development Studies at Harvard University and Mark Walsh.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Duflo, Esther",
+    "name": "Esther Duflo"
+   },
+   {
+    "affiliation": "Stanford University",
+    "citation_name": "Dupas, Pascaline",
+    "name": "Pascaline Dupas"
+   },
+   {
+    "affiliation": "Harvard University",
+    "citation_name": "Kremer, Michael",
+    "name": "Michael Kremer"
+   },
+   {
+    "affiliation": "Harvard University",
+    "citation_name": "Elizabeth, Spelke",
+    "name": "Spelke Elizabeth"
+   },
+   {
+    "affiliation": "Stanford University",
+    "citation_name": "Mark, Walsh",
+    "name": "Walsh Mark"
+   }
+  ],
+  "countries": [
+   "Ghana (Africa)"
+  ],
+  "doi": "10.1257/rct.15-2.3",
+  "end_date": "2023-12-31",
+  "experimental_design": "We sampled 2,064 students (evenly split between males and females) who had completed junior high school and earned admission into a 4-year secondary school (“senior high school”) but had not enrolled by the Fall 2008 due to financial constraints. Out of these 2,064 students, 682 students were selected (by lottery) to receive a scholarship that covered 100% of the tuition and fees at a local public senior high school. The scholarships were announced during the 2008/2009 academic year and over 75% of scholarship winners enrolled in senior high school that year. \nThe goal is to compare the outcomes of those offered the scholarship (the treatment group) with those who did not win the lottery (the comparison group) for at least 10 years in order to estimate the impacts of lowering the financial barriers to secondary school enrollment and the returns to secondary education. We will track each of the 2,064 students in the baseline sample (both scholarships winners and losers) three times over 10 years to conduct short-, medium-, and long-run follow-ups.\n\n** In addition, as of 2017 we started tracking their children and administering an assessment of cognitive development, based on frontier research in cognitive science and developed for use in Ghana. We are administering assessments when a child reaches the following critical age windows: 14-22 months old,  30-36 months old, 3-4 years old, 5-6 years old, 7-8 years old.",
+  "intervention": "682 youths who had just completed senior high school and qualified for secondary school on the basis of the gateway exam were randomly selected among 2,054 academically qualified but poor students to receive a 4-year scholarship to cover tuition and fees for senior high school.",
+  "jel": [],
+  "keywords": [
+   "education",
+   "gender",
+   "health",
+   "labor",
+   "other",
+   "Early Childhood Development"
+  ],
+  "last_update": "2022-03-29",
+  "number": "15",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "educational attainment, cognitive skills, health, fertility and marriage outcomes, labor market participation, attitudes, beliefs, political participation, time and risk preferences, technology adoption\n\nFor offspring study focused on intergenerational effects: Children's cognitive development, child survival.",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization done in office by a computer",
+  "randomization_unit": "Individual",
+  "rct_id": "AEARCTR-0000015",
+  "registered": "2013-06-15",
+  "registry_url": "http://www.socialscienceregistry.org/trials/15",
+  "sample_size_arms": "682 treatment students/households and 1382 control students/households",
+  "sample_size_clusters": "2064 students and their baseline household co-members (guardians, siblings)",
+  "sample_size_observations": "2064 students and their baseline household co-members (guardians, siblings)\n+ their children",
+  "secondary_ids": "",
+  "secondary_outcomes": "For offspring study focused on intergenerational effects: Child stunting, caregiver-child interactions, child's socio-economic status, family investment in child, caregiver's aspirations for child, child education, child preventive health, child health, child engagement and stimulation, caregiver depression, child's neighborhood quality",
+  "sponsors": "",
+  "start_date": "2008-11-01",
+  "status": "on_going",
+  "title": "Measuring the Returns to Secondary Education",
+  "year": "2013"
+ },
+ {
+  "abstract": "Ethnic polarization is often linked to underdevelopment and poor governance. What amplifies and what mitigates ethnic tensions amongst individuals in a society? This project aims to understand how subtle and moderate changes in context can impact economic behavior. We use behavioral economics experiments to measure altruism, cooperation, and expected generosity in within-group and across-group interactions. Using “priming” within the lab, we identify if these behavioral outcomes vary with the increased situational salience of ethnic identity, national identity, or political competition. We replicate our design at two time points in Nairobi, Kenya (with the second round being close in time to the 2013 national elections) to examine how election proximity might affect behavior, and in the capital (Dar es Salaam) of neighboring Tanzania to explore how differing political histories can shape current social interactions.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Miguel, Edward",
+    "name": "Edward Miguel"
+   },
+   {
+    "affiliation": "Stanford University",
+    "citation_name": "Zhang, Kelly",
+    "name": "Kelly Zhang"
+   },
+   {
+    "affiliation": "Norwegian School of Economics",
+    "citation_name": "Tungodden, Bertil",
+    "name": "Bertil Tungodden"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Posner, Daniel",
+    "name": "Daniel Posner"
+   },
+   {
+    "affiliation": "Norwegian School of Economics",
+    "citation_name": "Berge, Lars Ivar Oppedal",
+    "name": "Lars Ivar Oppedal Berge"
+   },
+   {
+    "affiliation": "University of California, Berkeley",
+    "citation_name": "Galle, Simon",
+    "name": "Simon Galle"
+   },
+   {
+    "affiliation": "Norwegian School of Economics",
+    "citation_name": "Bjorvatn, Kjetil",
+    "name": "Kjetil Bjorvatn"
+   }
+  ],
+  "countries": [
+   "Kenya ()",
+   "Tanzania, United Republic of ()"
+  ],
+  "doi": "10.1257/rct.16-1.0",
+  "end_date": "2013-02-14",
+  "experimental_design": "See the attached pre-analysis plan for details.",
+  "intervention": "Different subject priming treatments in the lab. See the attached pre-analysis plan for details.",
+  "jel": [],
+  "keywords": [
+   "electoral",
+   "governance",
+   "post-conflict",
+   "Ethnic politics",
+   "Lab experiment",
+   "Priming",
+   "IAT"
+  ],
+  "last_update": "2013-05-28",
+  "number": "16",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Choices in multiple lab experimental games. See the attached pre-analysis plan for details.",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Computer random number generator. See the attached pre-analysis plan for details.",
+  "randomization_unit": "Individual",
+  "rct_id": "AEARCTR-0000016",
+  "registered": "2013-05-28",
+  "registry_url": "http://www.socialscienceregistry.org/trials/16",
+  "sample_size_arms": "See the attached pre-analysis plan for details.",
+  "sample_size_clusters": "2098 individuals (across Kenya and Tanzania)",
+  "sample_size_observations": "2098 individuals (across Kenya and Tanzania)",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2012-07-16",
+  "status": "completed",
+  "title": "Understanding Ethnic Cooperation: Evidence from Experiments in Kenya and Tanzania",
+  "year": "2013"
+ },
+ {
+  "abstract": "This randomized controlled trial (RCT) evaluates the Unconditional Cash Transfer (UCT) of GiveDirectly, Inc in Western Kenya. Between June 2011 and January 2013, GiveDirectly distributed unconditional cash transfers to 500 poor rural households. The transfers were sent to recipients' mobile phones using the M-Pesa technology. The present RCT includes three treatments: first, the transfers were randomly chosen to be sent to either the primary female or the primary male member of the household. Second, the transfers were randomly assigned to be sent as either a large lump-sum payment, or a series of nine monthly installments of the same total amount. Third, the magnitude of the total transfer to each treatment household was randomly chosen to be either $300 or $1,100. The outcome variables include expenditure, food security, assets, income and enterprise activity, intrahousehold bargaining, domestic violence, education, health, and preferences, as well as psychological well-being and neurobiological measures of stress.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Haushofer, Johannes",
+    "name": "Johannes Haushofer"
+   },
+   {
+    "affiliation": "Princeton University",
+    "citation_name": "Shapiro, Jeremy",
+    "name": "Jeremy Shapiro"
+   }
+  ],
+  "countries": [
+   "Kenya (Rarieda)"
+  ],
+  "doi": "10.1257/rct.17-1.1",
+  "end_date": "2013-02-28",
+  "experimental_design": "Evaluation questions \n\nOur main questions are: (i) What are the overall impacts of UCTs on various dimensions of household welfare? (ii) How should UCTs be structured to maximize impact? In particular, how do outcomes vary with three key, yet understudied, design parameters: recipient gender, transfer frequency, and transfer size? The intervention therefore contains the following treatment arms: \n\n1. Transfers to the woman vs. the man in the household. First, half of the transfers were made to the woman, while the other half were made to the man. This feature allows us to identify the differential welfare effects of gender-specific cash transfers. \n\n2. Lump-sum transfers vs. monthly installments. Second, half of the transfers were lump sum, and the other half was paid in 9 monthly installments. By randomizing the month in which the lump sum transfer was made, we kept the discounted present value of the lump-sum and installment transfers similar across the overall lump sum and monthly installment groups.\n\n3. Large vs. small transfers. Finally, a proportion (28%) of the transfers were $1,100 in magnitude, while the remainder were $300. This manipulation allows us to estimate the effect of transfer magnitude on welfare outcomes. \n\nThese three treatment arms are fully crossed with each other, except that the $1,100 transfers were made to existing recipients of $300 transfers in the form of a $800 top-up that was delivered as a stream of payments after respondents had already been told that they would receive $300 transfers. The pre-analysis plan outlines how this issue is dealt with in the analysis. \n\nEvaluation Design \n\nSampling and Identification strategy \n\nTo establish a causal relationship between the program and changes in outcomes, this study uses a Randomized Control Trial (RCT). We first identified Rarieda as an intervention area because it has (i) high poverty rates according to census data, and (ii) sufficient M-Pesa access to make transfers feasible. We then identified 100 villages based on the overall prevalence of eligible households in the village. In these villages, we identified 1,500 eligible households, with eligibility determined by residing in a home made of mud, grass, and other non-solid materials. These criteria are simple, objective, and transparent, maximizing accountability. The criteria were not pre-announced to avoid “gaming” of the eligibility rules. We then randomized on two levels -- across villages, and within villages. Specifically, 50 villages were randomly assigned to be treatment villages, while the other 50 were pure control villages. In each of the latter, we surveyed 10 households that did not receive a cash transfer. Within treatment villages, we conducted a within-village randomization: 50% of eligible households were randomly assigned a cash transfer; the other 50% received no transfer (GD will seek to make transfers to this group after the study). This strategy allows us to identify spillover effects (detailed in the pre-analysis plan). \n\nSpillover effects \n\nWe use three approaches to quantify spillover effects. First, we used pure control villages to quantify within-village spillovers. Comparing control households in treatment villages to those in pure control villages identifies within-village spillover effects. Second, we identify spillover effects across villages. Note that these effects could potentially be even more pronounced than within villages, if, for instance, entire villages are affected by weather shocks. Using GPS data on village location, we can identify cross-village spillovers, under the assumption that these spillovers are geographically correlated. Third, a separate village-level survey elicited general equilibrium effects of the intervention at the level of the local economy; we surveyed residents of the village on prices, labor supply, wages, crime, investment, community relations (e.g. perceived fairness of targeting criteria) and power dynamics. \n\nData collection methods and instruments \n\nData was collected at baseline and one year after the intervention. A midline with a subset of questions was administered to a sample of respondents each month after the intervention. Trained interviewers visited the households; both the primary male and the primary female of the household were interviewed (separately). Surveys were administered on Netbooks using the Blaise survey software. Following standard IPA procedure, we performed backchecks consisting of 10% of the survey, with a focus on non-changing information, on 10% of all interviews. This procedure was known to field officers ex ante. Saliva samples were collected using the Salivette (Sarstedt, Germany), which has been used extensively in psychological and medical research, and more recently in randomized trials in developing countries similar to this one. It requires the respondent to chew on a sterile cellulose swab, which is then centrifuged and analyzed for salivary cortisol. \n\nPower calculation \n\nThe sample size of 500 individuals in each of the treatment, control, and pure control conditions was chosen based on a power calculation, which showed that a sample of 1,000 individuals is sufficient to detect effect sizes of 0.2 SD for all treatment vs. pure control households with 89% power. Different treatment arms within the treatment groups (male vs. female recipient, lump-sum vs. monthly, large vs. small transfers) can be compared with 60% power. \n\nRisk and treatment of attrition \n\nAttrition was not a significant concern in this study because it became evident early on in GD’s work in Kenya that respondents were highly interested in maintaining relations with GiveDirectly in the hope of receiving future transfers (although these are never promised). Nevertheless, we used five approaches to control attrition. First, the survey contained a detailed tracking module developed by Innovations for Poverty Action (IPA), the NGO implementing the fieldwork. IPA and GD collaborated closely throughout the study to facilitate tracking. Second, we incentivized survey completion through a small appreciation gift (a jar of cooking fat); in addition, respondents earned money from the economic games in the survey. Third, in our power calculations, an attrition rate of 20% would still result in a power of 80%. In fact, we only observed 3% attrition between the two visits of the baseline. Finally, we control for attrition econometrically in the analysis, as detailed in the pre-analysis plan.",
+  "intervention": "The UCT Program implemented by GiveDirectly Inc. (GD) targets impoverished households in Kenya. The study evaluates GD’s intervention in the Rarieda District, in Western Kenya. GD’s intended beneficiaries are especially disadvantaged households, with per capita incomes below $1 per day. Households are identified as eligible using objective and transparent criteria that are highly correlated with poverty: dwellings lacking solid walls, floors, or roofs.\n\nGD’s goal is to provide flexible financial assistance to those in greatest need, while maximizing cost efficiency by transferring cash electronically using M-Pesa mobile money technology, a key innovative feature of the program. M-Pesa is a mobile money system offered by Safaricom, the largest Kenyan mobile phone operator. GD transfers the money from GD’s M-Pesa account to that of the recipient. To facilitate the transfers, GD distributes a SIM card and asks the recipient to sign up for M-Pesa; then, money is transferred to the SIM card, and the recipient can withdraw the balance at an M-Pesa agent by putting the SIM card into the agent's cell phone, or using their own phone. \n\nThis delivery method drastically cuts the costs of reaching the recipient: GD transfers 90% of the program’s total budget directly to a poor household, with the remainder covering recipient identification, including staff costs (7%), and mobile transfer fees for both GD and recipients (3%). Not only is the intervention cheap; the insights from the study can also be applied broadly, as the program can be implemented in any area with access to mobile money technology. As such technology spreads throughout the developing world, the program will become increasingly scalable.",
+  "jel": [
+   "C93",
+   "D13",
+   "I15",
+   "I25",
+   "O12"
+  ],
+  "keywords": [
+   "agriculture",
+   "education",
+   "finance",
+   "health",
+   "welfare",
+   "unconditional cash transfers",
+   "psychological welfare",
+   "cortisol"
+  ],
+  "last_update": "2020-12-08",
+  "number": "17",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Assets, expenditure, psychological well-being and neurobiological markers of stress, food security, education, health, intra-household bargaining and domestic violence, enterprise",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Computerized randomization in office.",
+  "randomization_unit": "household (treatment vs. spillover households) and village (treatment/spillover vs. pure control villages)",
+  "rct_id": "AEARCTR-0000017",
+  "registered": "2014-12-04",
+  "registry_url": "http://www.socialscienceregistry.org/trials/17",
+  "sample_size_arms": "500 households treatment, 500 households spillover, 500 households pure control",
+  "sample_size_clusters": "100 villags",
+  "sample_size_observations": "1500 households",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2011-05-01",
+  "status": "completed",
+  "title": "Welfare Effects of Unconditional Cash Transfers",
+  "year": "2014"
+ },
+ {
+  "abstract": "This randomized controlled trial (RCT) evaluates the Unconditional Cash Transfer (UCT) of GiveDirectly, Inc in Western Kenya. Between June 2011 and January 2013, GiveDirectly distributed unconditional cash transfers to 500 poor rural households. The transfers were sent to recipients' mobile phones using the M-Pesa technology. The present RCT includes three treatments: first, the transfers were randomly chosen to be sent to either the primary female or the primary male member of the household. Second, the transfers were randomly assigned to be sent as either a large lump-sum payment, or a series of nine monthly installments of the same total amount. Third, the magnitude of the total transfer to each treatment household was randomly chosen to be either $300 or $1,100. The outcome variables include expenditure, food security, assets, income and enterprise activity, intrahousehold bargaining, domestic violence, education, health, and preferences, as well as psychological well-being and neurobiological measures of stress.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Haushofer, Johannes",
+    "name": "Johannes Haushofer"
+   },
+   {
+    "affiliation": "McKinsey & Co.",
+    "citation_name": "Shapiro, Jeremy",
+    "name": "Jeremy Shapiro"
+   }
+  ],
+  "countries": [
+   "Kenya (Rarieda)"
+  ],
+  "doi": "10.1257/rct.19-5.0",
+  "end_date": "2013-02-28",
+  "experimental_design": "Evaluation questions \n\nOur main questions are: (i) What are the overall impacts of UCTs on various dimensions of household welfare? (ii) How should UCTs be structured to maximize impact? In particular, how do outcomes vary with three key, yet understudied, design parameters: recipient gender, transfer frequency, and transfer size? The intervention therefore contains the following treatment arms: \n\n1. Transfers to the woman vs. the man in the household. First, half of the transfers were made to the woman, while the other half were made to the man. This feature allows us to identify the differential welfare effects of gender-specific cash transfers. \n\n2. Lump-sum transfers vs. monthly installments. Second, half of the transfers were lump sum, and the other half was paid in 9 monthly installments. By randomizing the month in which the lump sum transfer was made, we kept the discounted present value of the lump-sum and installment transfers similar across the overall lump sum and monthly installment groups.\n\n3. Large vs. small transfers. Finally, a proportion (28%) of the transfers were $1,100 in magnitude, while the remainder were $300. This manipulation allows us to estimate the effect of transfer magnitude on welfare outcomes. \n\nThese three treatment arms are fully crossed with each other, except that the $1,100 transfers were made to existing recipients of $300 transfers in the form of a $800 top-up that was delivered as a stream of payments after respondents had already been told that they would receive $300 transfers. The pre-analysis plan outlines how this issue is dealt with in the analysis. \n\nEvaluation Design \n\nSampling and Identification strategy \n\nTo establish a causal relationship between the program and changes in outcomes, this study uses a Randomized Control Trial (RCT). We first identified Rarieda as an intervention area because it has (i) high poverty rates according to census data, and (ii) sufficient M-Pesa access to make transfers feasible. We then identified 100 villages based on the overall prevalence of eligible households in the village. In these villages, we identified 1,500 eligible households, with eligibility determined by residing in a home made of mud, grass, and other non-solid materials. These criteria are simple, objective, and transparent, maximizing accountability. The criteria were not pre-announced to avoid “gaming” of the eligibility rules. We then randomized on two levels -- across villages, and within villages. Specifically, 50 villages were randomly assigned to be treatment villages, while the other 50 were pure control villages. In each of the latter, we surveyed 10 households that did not receive a cash transfer. Within treatment villages, we conducted a within-village randomization: 50% of eligible households were randomly assigned a cash transfer; the other 50% received no transfer (GD will seek to make transfers to this group after the study). This strategy allows us to identify spillover effects (detailed in the pre-analysis plan). \n\nSpillover effects \n\nWe use three approaches to quantify spillover effects. First, we used pure control villages to quantify within-village spillovers. Comparing control households in treatment villages to those in pure control villages identifies within-village spillover effects. Second, we identify spillover effects across villages. Note that these effects could potentially be even more pronounced than within villages, if, for instance, entire villages are affected by weather shocks. Using GPS data on village location, we can identify cross-village spillovers, under the assumption that these spillovers are geographically correlated. Third, a separate village-level survey elicited general equilibrium effects of the intervention at the level of the local economy; we surveyed residents of the village on prices, labor supply, wages, crime, investment, community relations (e.g. perceived fairness of targeting criteria) and power dynamics. \n\nData collection methods and instruments \n\nData was collected at baseline and one year after the intervention. A midline with a subset of questions was administered to a sample of respondents each month after the intervention. Trained interviewers visited the households; both the primary male and the primary female of the household were interviewed (separately). Surveys were administered on Netbooks using the Blaise survey software. Following standard IPA procedure, we performed backchecks consisting of 10% of the survey, with a focus on non-changing information, on 10% of all interviews. This procedure was known to field officers ex ante. Saliva samples were collected using the Salivette (Sarstedt, Germany), which has been used extensively in psychological and medical research, and more recently in randomized trials in developing countries similar to this one. It requires the respondent to chew on a sterile cellulose swab, which is then centrifuged and analyzed for salivary cortisol. \n\nPower calculation \n\nThe sample size of 500 individuals in each of the treatment, control, and pure control conditions was chosen based on a power calculation, which showed that a sample of 1,000 individuals is sufficient to detect effect sizes of 0.2 SD for all treatment vs. pure control households with 89% power. Different treatment arms within the treatment groups (male vs. female recipient, lump-sum vs. monthly, large vs. small transfers) can be compared with 60% power. \n\nRisk and treatment of attrition \n\nAttrition was not a significant concern in this study because it became evident early on in GD’s work in Kenya that respondents were highly interested in maintaining relations with GiveDirectly in the hope of receiving future transfers (although these are never promised). Nevertheless, we used five approaches to control attrition. First, the survey contained a detailed tracking module developed by Innovations for Poverty Action (IPA), the NGO implementing the fieldwork. IPA and GD collaborated closely throughout the study to facilitate tracking. Second, we incentivized survey completion through a small appreciation gift (a jar of cooking fat); in addition, respondents earned money from the economic games in the survey. Third, in our power calculations, an attrition rate of 20% would still result in a power of 80%. In fact, we only observed 3% attrition between the two visits of the baseline. Finally, we control for attrition econometrically in the analysis, as detailed in the pre-analysis plan.",
+  "intervention": "The UCT Program implemented by GiveDirectly Inc. (GD) targets impoverished households in Kenya. The study evaluates GD’s intervention in the Rarieda District, in Western Kenya. GD’s intended beneficiaries are especially disadvantaged households, with per capita incomes below $1 per day. Households are identified as eligible using objective and transparent criteria that are highly correlated with poverty: dwellings lacking solid walls, floors, or roofs.\n\nGD’s goal is to provide flexible financial assistance to those in greatest need, while maximizing cost efficiency by transferring cash electronically using M-Pesa mobile money technology, a key innovative feature of the program. M-Pesa is a mobile money system offered by Safaricom, the largest Kenyan mobile phone operator. GD transfers the money from GD’s M-Pesa account to that of the recipient. To facilitate the transfers, GD distributes a SIM card and asks the recipient to sign up for M-Pesa; then, money is transferred to the SIM card, and the recipient can withdraw the balance at an M-Pesa agent by putting the SIM card into the agent's cell phone, or using their own phone. \n\nThis delivery method drastically cuts the costs of reaching the recipient: GD transfers 90% of the program’s total budget directly to a poor household, with the remainder covering recipient identification, including staff costs (7%), and mobile transfer fees for both GD and recipients (3%). Not only is the intervention cheap; the insights from the study can also be applied broadly, as the program can be implemented in any area with access to mobile money technology. As such technology spreads throughout the developing world, the program will become increasingly scalable.",
+  "jel": [
+   "C93",
+   "D13",
+   "I15",
+   "I25",
+   "O12"
+  ],
+  "keywords": [
+   "agriculture",
+   "education",
+   "finance",
+   "health",
+   "welfare",
+   "unconditional cash transfers",
+   "psychological welfare",
+   "cortisol"
+  ],
+  "last_update": "2016-07-06",
+  "number": "19",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Assets, expenditure, psychological well-being and neurobiological markers of stress, food security, education, health, intra-household bargaining and domestic violence, enterprise",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Computerized randomization in office.",
+  "randomization_unit": "household (treatment vs. spillover households) and village (treatment/spillover vs. pure control villages)",
+  "rct_id": "AEARCTR-0000019",
+  "registered": "2013-06-28",
+  "registry_url": "http://www.socialscienceregistry.org/trials/19",
+  "sample_size_arms": "500 households treatment, 500 households spillover, 500 households pure control",
+  "sample_size_clusters": "100 villages",
+  "sample_size_observations": "1500 households",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2011-05-01",
+  "status": "completed",
+  "title": "Welfare Effects of Unconditional Cash Transfers",
+  "year": "2013"
+ },
+ {
+  "abstract": "Despite ongoing efforts from both the Government of Uganda and the international donor community, many children in Uganda still are not acquiring literacy skills at a satisfactory level. This project evaluates an innovative new educational paradigm, the Northern Uganda Literacy Project (NULP), which currently focuses on P1 to P3 (first- to third-grade) students, employing a mother-tongue-first instructional approach and extensive teacher support and training. Using a randomized controlled trial this study measures the effects of the NULP on learning outcomes. We study 128 schools, which were randomly assigned to either the full NULP, a half-program that includes the materials from the NULP but where the training is provided through government-employed coordinating centre tutors (CCTs), or a control group. Outcomes are to be measured principally in terms of improvements in Early Grade Reading Assessment (EGRA) and Early Grade Writing Assessment (EGWA) scores. The results of this study will be used to further improve the NULP, helping to maximize both its academic benefits and cost-effectiveness; we also conduct classroom observations (using rubrics and/or videos), surveys of teachers and surveys of parents in order to capture additional outcomes.\n\nThe trial was revised to account for a substantial expansion in its length and scope. The original study followed 38 schools for one year, 2013, focusing solely on P1. In the expanded study, we follow 128 schools (including the first 38) for up to five years, 2013 to 2017, following students from P1 all the way up to P3. We have an additional sample of 30 pure control schools originally sampled that we plan on collecting outcomes near the end of the study.\n\nThis study will also include a longitudinal subsample of students from the evaluation, followed from grade one in 2014, to ~age 18 in 2024, and ~age 21 in 2027. The study will examine the long-term effects of improved literacy on subsequent educational, holistic skills, and life outcomes. We will further study how these impacts vary across students, providing critical evidence on how early reading impacts transition to adulthood.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Kerwin, Jason",
+    "name": "Jason Kerwin"
+   },
+   {
+    "affiliation": "Copenhagen Business School",
+    "citation_name": "Buhl-Wiggers, Julie",
+    "name": "Julie Buhl-Wiggers"
+   },
+   {
+    "affiliation": "University of Wisconsin",
+    "citation_name": "Smith, Jeff",
+    "name": "Jeff Smith"
+   },
+   {
+    "affiliation": "Baylor University",
+    "citation_name": "Thornton, Rebecca",
+    "name": "Rebecca Thornton"
+   },
+   {
+    "affiliation": "University of Minnesota",
+    "citation_name": "Piedra, Ricardo Montero de la",
+    "name": "Ricardo Montero de la Piedra"
+   },
+   {
+    "affiliation": "University of Washington",
+    "citation_name": "Wang, Eric",
+    "name": "Eric Wang"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.21-6.0",
+  "end_date": "2027-12-31",
+  "experimental_design": "Our experiment is an impact evaluation that randomly assigns schools to either receive the complete PLP intervention, partial PLP intervention or to receive the current standard educational serves, serving as a control.\n\nA.\tSite and School Selection \nEligible schools will include primary schools from the Lango Sub-region. There are two sets of schools in the study, with slightly different selection criteria – Phase 1 schools and Phase 2 schools. Phase 1 schools were selected in late 2012 for participation in an initial phase of the RCT during the 2013 school year. Phase 2 schools were selected in late 2013 for participation in an expanded phase of the RCT from 2014 to 2016. The Phase 1 schools will also remain in the study through 2016.\n\n•\tThe Phase 1 schools had to meet the following criteria to be eligible for the study:\n•\tMust be in Aculbanya, Adel, Adyel, Ayer, or Loro coordinating centre (CC)\n•\tAt least two P1 classes\n•\tAn early primary (P1 to P3) student-to-teacher ratio of 135 or less during the 2012 school year\n•\tP1 classes must have desks\n•\t15 km or less from the CC\n•\tA head teacher regarded as “engaged” by the CCT\n•\tSchool must be accessible by road including during the rainy season\n•\tMust not currently or previously be involved in Mango Tree’s project activities\n\nThere were 36 schools that met these criteria. This number was later expanded to 38: two schools were dropped and four more were added by relaxing the distance criterion to 20 km instead of 15.\n\n•\tThe Phase 2 schools had to meet the following criteria to be eligible for the study:\n•\tMust be in the Lango Sub-region\n•\tMust have desks in P1, P2 and P3 classrooms\n•\tMust have blackboards in P1, P2 and P3 classrooms\n•\tMust have 150 or fewer students per class in each of P1, P2 and P3 classrooms in the 2013 school year\n\nThere were 120 schools that met these criteria. Of these, 90 were selected (using stratified random selection) to participate in the study. 30 were selected to remain pure control schools for later evaluation of Hawthorne effects, or effects of the resources provided to the CCTs.\n\nB.\tRandomization - Treatment and Control Schools and Classrooms\n42 of the 128 schools are randomly assigned as controls, 44 schools as CCT treatment and another 42 schools assigned to the MT treatment. Beyond the data used to select the schools, additional school data – available from district education officers – including location in the Lango sub-region, average performance on previous national exams, the share of female students, and total P1 students, was used for stratified assignment of the treatment.\n\nThe random assignment of the treatment was stratified across the 128 target schools in order to ensure a similar distribution of school characteristics across the experimental arms. The 128 schools were divided into stratification groups that were as similar as possible; these sets of 3 schools are known as “stratification groups”. These groups were formed by matching schools on a list of school-level factors. \n•\tFor the Phase 1 schools, the stratification groups were formed by matching schools on CC, total P1 enrollment, and distance to the coordinating center (CC). \n•\tFor the Phase 2 schools, the stratification groups were formed by matching schools on CC, then on whether they had more than one P1 stream, then on whether they had smaller-than-median class sizes (less than 94.33 students/class from P1 to P3), then on whether they had a higher-than-median PLE pass rate (more than 4.47%), and then on whether they were closer than the median school to the CC (less than 9 km away).  \nWithin each stratification group, treatment status was assigned at random at a public meeting of school officials - during December 2012 for the Phase 1 schools and during January 2014 for the Phase 2 schools. For every stratification group three colored tokens, one representing each study arm, were placed into an opaque bag and withdrawn one at a time by a neutral party in full view of all stakeholders. Different color tokens were used to represent the MT treatment, the CCT treatment, and the control group. The three schools were assigned to a specific order, with the first token drawn corresponding to the first school and so forth. Therefore the first token withdrawn determined the study arm assignment of the first school, the second token determined the assignment of the second school, and the third and final remaining token determined the assignment for the third school. This process yielded assignments of schools to study arms. \n\nThe schools randomly assigned to the MT treatment group receive the full NULP intervention, comprising materials, instructional videos, training by Mango Tree’s expert trainers, and classroom support supervision along with continuous professional development by expert trainers. The classrooms in the CCT treatment schools will receive the teaching and learning materials, including instructional videos. Their teachers will be trained and supported by the CCTs as part of their routine teacher training and support supervision duties. Beginning with the 2014 school year, the control schools also receive a set of wall charts covering topics unrelated to our main outcomes, as a gift to thank them for their participation in the study; we can evaluate any effects of these charts using the 30 pure control schools mentioned above.\n\nFor all classrooms, we will conduct both baseline and endline exams using the standardized EGRA and EGWA examinations as a measure of literacy competency. The table below shows the components of the NULP received by each study arm as well as the data to be collected from each arm. Wall clocks and slates were randomly allocated among schools in the CCT treatment and control arms. Among these, 20 received slates only, 23 received clocks only, 20 received both, and 23 received none. The control schools are affected both by the CCT training conducted by Mango Tree, and also by the data collection activities themselves. The set of 30 “pure” control schools will help us measure these potential effects.\n\nIn addition to the school-level randomizations of variants of the program and of materials, we will also randomize the provision, type, and content of report cards at the individual household level. The NULP provides report cards that are quite different from the typical report cards given out by Uganda’s Ministry of Education and Sports. We will randomize whether households in all three study arms receive regular report cards or NULP-style report cards, and also cross-randomize whether the report cards provide additional information on the returns to schooling. \n\n\nC.\tSelection and Assignment of Teachers\n•\tFor the Phase 1 schools, the NULP intervention involved asking the head teacher for the school to choose the two best early primary teachers in the school and assign them to the two P1 classrooms. Typically these are the highest skilled teachers in the school who are in good health and are very committed to their work. In order to make each evaluation group equivalent, this was done in each of the 38 study schools for 2013. Head teachers agreed to assign the two best teachers to P1 classrooms, and to submit the names of those teachers at the stakeholder meeting prior to the public random assignment of the intervention. Baseline surveys of all teachers were conducted prior to the beginning of the school year. In addition, information on teacher attendance and performance was collected during random checks over the course of the school year. Compliance with this procedure was very high, and the data collection team noted all deviations from the pre-assignment of teachers to classrooms. \n\n•\tFor the Phase 2 schools, head teachers were asked to nominate teachers prior to learning their school’s treatment status by whatever process they normally use, and then provide their names to Mango Tree prior to the lottery that was done to determine which schools are assigned to which study arm.\n\n   \nD.\tAssignment of Students to Classrooms\n\nOne potential concern with the presence of two P1-P3 classrooms in each school is that the effect of an individual teacher may be hard to separate from that of the overall program. In particular, students may attempt to switch into the classroom with the stronger teacher, exaggerating the NULP’s effects. To mitigate this issue, students in schools with two (or more) classrooms will be randomly assigned to one of the two classrooms by the school’s head teacher. This will prevent any potential confounding from classroom-switching. It also helps ensure that the classroom assignments are fair, with each student having an equal chance of being paired with each teacher. This is particularly important in situations where more than two P1-P3 classrooms exist at a school.\n\nThis randomization will happen during two school years: 2013 and 2016. In 2013, the random assignment was conducted by using specialized enrollment rosters for the P1 classes in all 38 Phase 1 schools. Mango Tree staff carried pre-printed rosters with spaces for each students’ name and other details, along with an assignment to stream A or stream B. The assignments were generated at random using the runiform() function in Stata 11 SE.  The head teachers were instructed to copy over the student names onto these rosters in order from their own records, and use the listed assignment for each student. Any late-enrolling students were added in the order they arrived. This process was validated by Mango Tree staff field visits, and a copy of each roster was collected and used to select students for examinations. We aim to follow the same procedure in 2016, for all 128 schools in the MT program, CCT program, and control groups, as long as the school has more than one classroom.",
+  "intervention": "",
+  "jel": [],
+  "keywords": [
+   "education"
+  ],
+  "last_update": "2024-09-25",
+  "number": "21",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Test scores, functional literacy and numeracy, holistic skills, attendance, classroom observations, teacher/parent/child attitudes and behavior toward schooling, administrative records from schools (enrollment, marks, attendance)",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Public lottery, stratified on baseline school attributes including geography.",
+  "randomization_unit": "School",
+  "rct_id": "AEARCTR-0000021",
+  "registered": "2013-11-20",
+  "registry_url": "http://www.socialscienceregistry.org/trials/21",
+  "sample_size_arms": "Main Randomization: 42 schools full treatment, 44 schools half-treatment, 42 schools control, 30 schools pure control (no testing)\nCross-Randomization A: All full treatment schools research wall clocks and slates. Wall clocks and slates were randomly allocated among schools (in any grade in the sample) in the half-treatment and control arms. 20 received slates only, 23 received clocks only, 20 received both, and 23 received none.\nCross-Randomization B: Individual-level randomization of households (parents) to receive different types of report cards on their child’s performance in school. These report cards will be provided at school meetings. While the exact attendance at these meetings is hard to forecast, our best estimate is that an average of 70 parents per school to attend from each of the 128 schools in the full treatment, half-treatment, and control groups. This would yield a total sample size of roughly 9000.",
+  "sample_size_clusters": "158 schools (30 are pure controls with no students sampled, except at the end of the study)\n\nNumber of students by cluster:\n•\tCohort 1 sample - 50 P1 students selected and tested in February 2014 at all 38 of the Phase 1 schools, stratified by gender.\n\n•\tCohort 2 sample - \n- up to 100 P1 students were selected and tested in all 90 of the Phase 2 schools, stratified by gender.\n- up to 100 P1 students were sampled in all 38 of the Phase 1 schools.\n\no\tIn some cases, fewer than the target number of students were available at the school when we went in for testing\no\tThe Cohort 2 sample was smaller for the 38 Phase 1 schools because we also tracked as many of the Cohort 1 students as possible from those schools, limiting the time available for testing new students. \n\n•\tCohorts 3, 4, and 5 – up to 100 P1 students will be selected and tested at each of the 128 schools",
+  "sample_size_observations": "84,000 students",
+  "secondary_ids": "",
+  "secondary_outcomes": "Long-run educational attainment, labor market outcomes, broader life outcomes such as fertility, marriage, migration, happiness, and well-being",
+  "sponsors": "",
+  "start_date": "2013-02-04",
+  "status": "on_going",
+  "title": "Evaluating the Effect of the Northern Uganda Literacy Project on Literacy and Academic Achievement",
+  "year": "2013"
+ },
+ {
+  "abstract": "The purpose of this study is to understand the determinants of men’s preferences for fertility and family planning. Surveys such as the Demographic and Health Surveys have shown that men in developing countries report a higher desired total fertility than their wives (Becker, 1999). However, little is known about what forces drive such preferences.  \nA previous study “Intra-household Decision-making and Excess Fertility:  An Experimental Study of Concealable Contraceptives” conducted by this research team in Lusaka (Ashraf et al. 2009) assigned married women to receive a voucher, which guaranteed ease of access to a range of modern contraceptives, either alone or in the presence of their husbands. The study revealed that women who received the voucher alone were 23% more likely to visit a family planning nurse and 38% more likely to receive a concealable form of contraception than women who received the voucher in the presence of their husbands, leading to a 57% reduction in unwanted births 9-14 months later. This behavior was mainly observed among women who had lower desired number of children than their husbands.   \nDiscordant preferences in the ideal number of children seem thus to have an important effect on household decisions about family planning. Understanding where such differences originate can inform policy-makers who intend to implement family planning policies that target men, and ultimately can contribute to reducing women’s unmet need for contraceptives.  \nThis new study thus builds upon the findings of the previous study in attempting to understand the cause of, and potential trigger factors to impact, and differential fertility preferences among men and women.  The final study design that we are submitting with this proposal is the result of two years of exploratory research to refine both the research questions and the research/treatment design, so that the study results will be best suited to inform policy in a meaningful way.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Ashraf, Nava",
+    "name": "Nava Ashraf"
+   },
+   {
+    "affiliation": "University of Chicago",
+    "citation_name": "Voena, Alessandra",
+    "name": "Alessandra Voena"
+   },
+   {
+    "affiliation": "Aix-Marseille University",
+    "citation_name": "Ziparo, Roberta",
+    "name": "Roberta Ziparo"
+   },
+   {
+    "affiliation": "Duke University",
+    "citation_name": "Field, Erica",
+    "name": "Erica Field"
+   }
+  ],
+  "countries": [
+   "Zambia (Africa)"
+  ],
+  "doi": "10.1257/rct.22-2.0",
+  "end_date": "2017-04-30",
+  "experimental_design": "a) Baseline\nThe sample size for this study is approximately 750 couples (1500 people) from the Chipata and Chaisa catchment area in Lusaka, Zambia. The couples were first screened (check exclusion criteria below) by community health workers (CHWs) who visited house numbers that were randomly generated from a list of all houses in the sample area. These CHW’s later returned to the households they had successfully screened and who were eligible to participate in the study with enumerators who proceeded to interview the couple (separately), after obtaining consent from both the husband and the wife using consent forms.\nThe baseline survey took approximately 2 hours for the men and 2.5 hours for the women and was conducted separately to ensure complete privacy of each respondent.\nDuring the baseline, the respondents were also informed about a community meeting that they would be invited to a couple of months later and two additional follow –up surveys.\n\t\nb) Intervention\nAfter the baseline survey, these respondents will be invited to attend community meetings (intervention) at a common location where each spouse will attend a different type of meeting and receive a different informational curriculum. \n\nThe intervention will consist of three intervention arms (approximately 250 couples will be randomly assigned to each arm for invitation). Random assignment will be stratified by the following:\n1) A binary variable that represents discordant preferences for children : does the man want more children than the woman or not.\n2) A binary variable showing if the couple has children or not.\n3) Husband knows someone in the family who died at child- bearing\n4) Woman aged over 35\n\nThe three intervention arms are:\n\n1. Wife receives maternal mortality (MM) curriculum, husband receives family planning (FP) curriculum\n2. Husband receives MM curriculum, wife receives FP curriculum\n3. Both husband and wife receive FP curriculum\n\nSince we faced numerous challenges tracking husbands at baseline, we have developed new measures of demand for family planning that will be recorded at the time of intervention. These measures will allow us to accommodate the reduced sample by offering additional statistical power as well as answer new questions that have emerged through our analysis of baseline data. These new measures include:\n\n-\tWife’s willingness to pay (WTP) for her spouse to receive MM treatment:\nThe women that receive access to the MM curriculum will be asked for their WTP for a ticket that will provide their husband access to the same meeting that they just attended. \nThis will shed light on the barriers to communication about maternal risk in the household and the existence of demand for the services provided by the intervention.\n-\tHusband’s WTP for a voucher to get priority access to FP services: \nThe men will be asked to declare their WTP for a voucher that provides free access to family planning counseling and services at the clinic.In order to ensure that a large enough number of men from the sample get access to the voucher, so that we have sufficient power to measure voucher take up, we want to ensure that 60% of them get access to the voucher at zero price. This will be randomly determined as the 10 men in each community meeting will select a sealed envelope from amongst 10 sealed envelopes. 6 of these envelopes (or 60% of the meeting attendance) will have a zero price written within it and the prices in the rest of the envelopes will be randomly determined by the computer. Thus, this allocation of prices is completely random and depends on the envelope selected by each respondent.\nThe respondent will use up to 15 kwacha from their transport reimbursement (25 ZMK) for participating in the WTP experiment.\n\nc) Midline\nA midline survey will be conducted  after the community meetings are held. At the conclusion of this second lengthy survey, 10 ZMK will be offered as a token of appreciation, as previously suggested by the ethics review board; the late-stage timing of this is designed so that it can in no way influence the couple’s decision to participate in the study or community meeting. \n\nd) The Endline survey conducted approximately one year after participation in the community meetings, will collect the same information as the baseline survey, and is intended to track changes. \nTo make sure that no confidential information about previous surveys provided by the women in the previous study will be revealed, the enumerator will not be given any information regarding past answers given by household members. \n\nd) Exclusion criteria\nThe following is the exclusion criteria for this study:\n1.      Any household whose wife had diabetes, heart disease or high blood pressure at baseline (screened from self-reports and all participants who use the voucher for family planning services will be evaluated by a nurse to determine the safety of contraceptive use); \n2.      Any household whose wife was younger than 18 years of age or older than 40 at baseline, since bone accretion is particularly important in the former group and there is a greater risk of osteoporosis in the latter group;  \n3.  Any household whose wife is less than 8 weeks postpartum (since the medication is excreted in breast milk and it is not known whether this could affect child development; screened from initial visit by CHWs);\n4.  Any household whose wife has been sterilized or had a hysterectomy (screened from initial visit by CHWs);\n5.      Any household whose wife is currently using permanent or semi-permanent forms of contraception such as loops, implants, and Intra- uterine devices.\n6.     Men or women who are not currently married (screened by initial visit by CHWs);\n7.      Any household whose wife is currently pregnant (screened from initial visit by CHWs); \n8.      Any household where the couple is currently actively trying to get pregnant.\n9.     Households who have not been found at the address they provided and whose new address could not be found or is no longer in the Chipata Clinic catchment area (for the follow-up sample only).\n\nPower calculations\nPower calculations were performed based on men's willingness to pay for a voucher to access family planning estimated from our pilot study. Observations were clustered at the level of the community workshop, assuming a 5% intra-cluster correlation. Compliance rates (attendance of the community meeting and non-attrition) were assumed to be 80%. Conditioning on the sub-sample of households for which the husband is eligible to participate in the study ((MM + FP)h and FPh), we are able to detect a 0.95  difference in WTP between the treatment and control group at 5% significance with 0.9 power with 250 observations per treatment arm. Assuming the same intra-cluster correlation and compliance rate for women, we are able to detect a 2.07 difference in willingness to pay for the intervention, again, at 5% significance with 0.9 power with 250 observations per treatment arm.",
+  "intervention": "After the baseline survey, the study respondents will be invited to attend community meetings (intervention) at a common location where each spouse will attend a different type of meeting and receive a different informational curriculum. \n\nThe intervention will consist of three intervention arms (approximately 250 couples will be randomly assigned to each arm for invitation). Random assignment will be stratified by the following:\n1) A categorical variable that represents the husband's ideal birth spacing for children as perceives by their wives\n2) A binary variable showing if the couple has children or not.\n3) Husband knows someone in the family who died at child- bearing\n4) Woman aged over 35\n\nThe three intervention arms are:\n\n1. Wife receives maternal mortality (MM) curriculum, husband receives family planning (FP) curriculum\n2. Husband receives MM curriculum, wife receives FP curriculum\n3. Both husband and wife receive FP curriculum\n\nMeasures of demand for family planning are going to be recorded at the time of intervention.  These new measures include:\n\n-\tWife’s willingness to pay (WTP) for her spouse to receive MM treatment:\nThe women that receive access to the MM curriculum will be asked for their WTP for a ticket that will provide their husband access to the same meeting that they just attended. \nThis will shed light on the barriers to communication about maternal risk in the household and the existence of demand for the services provided by the intervention.\n\n-\tHusband’s WTP for a voucher to get priority access to FP services: \nThe men will be asked to declare their WTP for a voucher that provides free access to family planning counseling and services at the clinic.In order to ensure that a large enough number of men from the sample get access to the voucher, so that we have sufficient power to measure voucher take up, we want to ensure that 60% of them get access to the voucher at zero price. This will be randomly determined as the 10 men in each community meeting will select a sealed envelope from amongst 10 sealed envelopes. 6 of these envelopes (or 60% of the meeting attendance) will have a zero price written within it and the prices in the rest of the envelopes will be randomly determined by the computer. Thus, this allocation of prices is completely random and depends on the envelope selected by each respondent.\nThe respondent will use up to 15 kwacha from their transport reimbursement (25 ZMK) for participating in the WTP experiment.",
+  "jel": [],
+  "keywords": [
+   "health",
+   "Maternal Mortality",
+   "family planning",
+   "fertility",
+   "women's health"
+  ],
+  "last_update": "2020-11-30",
+  "number": "22",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "(1) Take-up/continuation of contraceptive use (regularity of use, satisfaction with chosen method); (2) Pregnancy; (3) Spousal negotiating over fertility and birth control use ; (4) Joint family planning goals, including number of offspring and desired spacing (5) Husband’s willingness to pay for family planning services at the point of intervention to gauge change in demand for these services as a result of the intervention.",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization done in office by computer",
+  "randomization_unit": "couples",
+  "rct_id": "AEARCTR-0000022",
+  "registered": "2019-05-07",
+  "registry_url": "http://www.socialscienceregistry.org/trials/22",
+  "sample_size_arms": "250 couples invited per treatment arm",
+  "sample_size_clusters": "No clusters",
+  "sample_size_observations": "750 couples around the Chipata clinic in Lusaka, Zambia",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2014-04-01",
+  "status": "completed",
+  "title": "Understanding Male Fertility Preferences in Zambia",
+  "year": "2019"
+ },
+ {
+  "abstract": "The Paris School of Economics proposed a project to the Haut-Commissariat aux Solidarités Actives (French Minister for Active Solidarity against Poverty) to evaluate the impact of one of Adie’s programs, CréaJeunes. The “Association pour le droit à l’initiative économique” (Adie), is an NGO that aids people in creating their own business. The program is designed to encourage and support young people employment and entrepreneurship, particularly in poorer neighborhoods. The start of this new program is a unique opportunity to put in place a system that will allow us to rigorously measure its impact. Indeed, the impact of existing programs designed to augment business creation in France have never been evaluated in a rigorous manner and thus evidence is lacking on whether these programs improve youth employment and reduce inequality and exclusion. The study analyzes the impact of the program by taking advantage of a lottery at the time of application to create two identical groups which allows a rigorous evaluation of the impact of the program.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Duflo, Esther",
+    "name": "Esther Duflo"
+   },
+   {
+    "affiliation": "Centre de Recherche en Économie et Statistique (CREST)",
+    "citation_name": "Crépon, Bruno",
+    "name": "Bruno Crépon"
+   },
+   {
+    "affiliation": "Sciences Po, J-PAL",
+    "citation_name": "Huillery, Elise",
+    "name": "Elise Huillery"
+   },
+   {
+    "affiliation": "Université Catholique de Louvain",
+    "citation_name": "Pariente, William",
+    "name": "William Pariente"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.23-1.0",
+  "end_date": "2013-11-30",
+  "experimental_design": "The random selection will works as follows:\n\nIndividuals call the CréaJeunes number. The operator will ask questions in order to gauge the individual’s eligibility. There are then two scenarios:\n\n•\tIf the individual is not eligible they will be either directed to another service or turned away.\n\n•\tIf the individual meets the eligibility requirements for CréaJeunes, the following steps take place:\n-\tThe individual is informed about the limited number of places available in the program; \n-\tThe operator will tell them that they will be contacted if he or she is selected for the program\n-\tRegardless of the individual’s selection status, they will then be asked whether they agree that their data can be used for a study on CréaJeunes\n\nEligible individuals are then randomly allotted into one of two groups.\n\nThe targeted demographic is young people in poor neighborhoods in six cities in France: Lille, Saint-Denis, Lyon, Marseille, Toulouse and Bordeaux.",
+  "intervention": "Eligible individuals randomly allotted into one of two groups: \n\n1. Treatment group: the operator calls to inform them that their application has been accepted. They are then told to contact the program director. \n\n2. Control group: the individual isn’t contacted again. If the individual contacts an Adie office directly he or she may still be admitted to the program.",
+  "jel": [],
+  "keywords": [
+   "labor",
+   "youth",
+   "entrepreneurship",
+   "employment",
+   "business creation"
+  ],
+  "last_update": "2013-08-26",
+  "number": "23",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "employment, entrepreneurship, business creation, income, consumption, spirit and motivatio",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "in office by a computer",
+  "randomization_unit": "individual",
+  "rct_id": "AEARCTR-0000023",
+  "registered": "2013-08-26",
+  "registry_url": "http://www.socialscienceregistry.org/trials/23",
+  "sample_size_arms": "1,000 treatment and 500 control",
+  "sample_size_clusters": "1,500 young people",
+  "sample_size_observations": "1,500 young people",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2008-11-14",
+  "status": "on_going",
+  "title": "CréaJeunes - Small Business Training",
+  "year": "2013"
+ },
+ {
+  "abstract": "We study the intersection of two research areas: educational subsidies and migrant remittances. We implement a randomized experiment offering Salvadoran migrants subsidies for education, which are channeled directly to a beneficiary student in El Salvador chosen by the migrant. The subsidies – in the form of matching grants – lead to increases in educational expenditures, higher private school attendance, and lower labor supply of youths in El Salvador households connected to migrant study participants. We find substantial “crowd in” of household educational investments, particularly for female students: for each $1 received by female beneficiary students, educational expenditures on that student increase by close to $5. There is no evidence of shifting of educational expenditures from other students in the household to the target student, and the subsidy has no substantial effect on remittances sent by the migrant.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Yang, Dean",
+    "name": "Dean Yang"
+   },
+   {
+    "affiliation": "Universidad Francisco Marroquín",
+    "citation_name": "Aycinena, Diego",
+    "name": "Diego Aycinena"
+   },
+   {
+    "affiliation": "University of Michigan",
+    "citation_name": "Ambler, Kate",
+    "name": "Kate Ambler"
+   }
+  ],
+  "countries": [
+   "El Salvador (Central America)",
+   "United States of America (North America)"
+  ],
+  "doi": "10.1257/rct.24-1.0",
+  "end_date": "2013-01-31",
+  "experimental_design": "Recruitment: Subjects will be recruited at two Salvadoran consulates in the DC area. Those meeting the participation criteria will be invited to participate in the baseline survey and give verbal informed consent as described on the survey form. Immediately following the baseline survey, the treatment will be described and offered to the migrant. The El Salvador baseline survey will ask the migrants to choose a student in the correct age range to be entered into a lottery to win a scholarship. Following the baseline survey, those in the treatment groups who express an interest are followed up with by project staff. For those who wish to take-up the project, they can remit funds through Viamericas (a local remittance organization) at any time for a student of their choosing. IPA will conduct an end-line survey with migrants and matching households in El Salvador. These follow-up surveys will gather information on remittances, educational expenditures, relationships, school attendance, and labor force participation.",
+  "intervention": "i.\tControl Group (Information Only): The control group will not receive any product offer, but will receive information on the importance of education for youth in El Salvador  and suggestions on how to maximize assistance provided to students in El Salvador (e.g., channeling funds to students directly, and spreading payments for student support over the school year).\n\nii.\tTreatment 1 (EduRemesa, no match): Migrants will be offered the ability to pay for a student’s education through FEPADE.  The treatment consists of a transfer of a set amount (that varies by student level) that is financed by the migrant and administered by FEPADE.  The migrant will identify the student to be financed in El Salvador, and upon receipt of the funds from the migrant and required documents from the student, the student will receive a debit card to which scholarship funds will be deposited on a monthly basis.  Only students at the high school or tertiary level are eligible.\n\niii.\tTreatment 2 (EduRemesa, 1:1 match): Migrants will be offered the EduRemesa product and, additionally, the project will match each dollar sent by the migrant with one project dollar.\n\niv.\tTreatment 2 (EduRemesa, 3:1 match): Migrants will be offered the EduRemesa product and, additionally, the project will match each dollar sent by the migrant with three project dollars.\n\nGrades:  In addition to the EduRemesa offer migrants in the three treatment groups were also cross randomized two groups: migrants were also be offered the ability to receive official reports detailing the beneficiary’s grades from FEPADE or not offered the grade service.",
+  "jel": [
+   "C93",
+   "F22",
+   "F24",
+   "H24",
+   "I22",
+   "J15",
+   "O15"
+  ],
+  "keywords": [
+   "education",
+   "finance",
+   "education",
+   "subsidy",
+   "crowd in",
+   "migration",
+   "remittances",
+   "transnational household",
+   "El Salvador"
+  ],
+  "last_update": "2013-07-22",
+  "number": "24",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "take-up, educational expenditures, school attendance, labor force participation, remittance behaviors",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization done in office on a computer using Stata prior to implementation.",
+  "randomization_unit": "Day-location of recruitment for treatment/control, and individual for division into three treatment groups",
+  "rct_id": "AEARCTR-0000024",
+  "registered": "2013-07-22",
+  "registry_url": "http://www.socialscienceregistry.org/trials/24",
+  "sample_size_arms": "360 pairs in control, 210 pairs in each treatment group",
+  "sample_size_clusters": "1,000 migrant-student pairs (126 day-location cells)",
+  "sample_size_observations": "1,000 migrant-student pairs",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2011-08-14",
+  "status": "completed",
+  "title": "Channeling Remittances toward Human Capital Accumulation in Central America",
+  "year": "2013"
+ },
+ {
+  "abstract": "The mismatch between credit repayments and income seasonality implies a challenge for micro-finance institutions (MFIs) working in developing countries. For instance in northern Bangladesh, income and consumption downfalls during the lean season after the transplanting of major paddy crops are a serious threat to the household economy. Poor landless agricultural wage laborers suffer the most due to this seasonality as they face difficulty to smooth their consumption. In designing micro-credit products, MFIs do not usually provide any flexibility or seasonal adjustment during the lean season, however. This is mainly because MFIs are afraid of the possibility that such flexibility might break the repayment discipline of borrowers, resulting in higher default rates. We thus conducted a randomized controlled trial in 2011-12 in northern Bangladesh to test empirically whether seasonality adjusted flexible micro-credit leads to an increase in repayment problems for MFIs and whether it can increase and stabilize consumption of borrower households. Our results suggest no statistically discernible difference among the treatment arms in case of default, overdue amount, or repayment frequency. This is in favor of seasonality adjusted flexible design of micro-credit.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Shonchoy, Abu",
+    "name": "Abu Shonchoy"
+   },
+   {
+    "affiliation": "Hitotsubashi University, Tokyo.",
+    "citation_name": "Kurosaki, Takashi",
+    "name": "Takashi Kurosaki"
+   }
+  ],
+  "countries": [
+   "Bangladesh (North (Gaibandha))",
+   "Bangladesh (North (Kurigram))"
+  ],
+  "doi": "10.1257/rct.25-2.0",
+  "end_date": "2014-09-15",
+  "experimental_design": "2.1 RCT Strategy\n(1) Inflexible Microcredit as the Control \nA typical Grameen-style microcredit scheme proceeds as follows (Armendariz and Morduch 2010): individuals eligible for microcredit first form a group wherein its members are expected to help each other in times of difficulty. Not all members can borrow immediately. It is usually the case that only some of them are offered credit after all members have saved a small amount of money on a regular basis; the rest of them are given credit after the first borrowers successfully repay several installments and all members have continued to save the same small amount on a regular basis. Weekly repayments begin without a long grace period. With typical Grameen-type microcredit, the first lent amount is small, and it is to be repaid in 50 weekly installments within a 12-month period. \nSeveral rationales have been offered for this rigidly designed repayment schedule (Armendariz and Morduch 2010). The success of frequent repayment in minimizing default and delay could be attributed to the early warning mechanism, the lender’s capture of information vis-à-vis the income flow of the borrower, and the borrower’s commitment to save regularly. Repayment in group meetings in front of others also drives regular repayment by those borrowers who would like to maintain their reputation within the village. \nProbably on account of these mechanisms, classic Grameen-type microcredit has been successful in maintaining high repayment rates.  However, attending weekly meetings regularly puts a high burden on the borrowers in terms of the opportunity costs of their time and financial stress (Field et al. 2012). Relaxing several of the classic Grameen-type features is thus being demanded from borrowers. Academic research has responded to this request, to identify the key element that was the most critically important in guaranteeing high repayment rates. For example, using a field experiment approach, Giné and Karlan (2011) evaluate the impact of removing group liability in the Philippines; they find there was no adverse impact on repayment, as long as public and frequent repayment systems were maintained. On the other hand, recent studies comparing weekly versus monthly installments and based on RCT designs show mixed results. In India, Field and Pande (2008) show no difference between microfinance schemes with weekly and monthly repayment frequencies, as long as repayments were made in public meetings. The same RCT also shows that the change from weekly to monthly repayment greatly reduced borrowers’ financial stress (Field et al. 2012). In contrast, in Indonesia, Feigenberg et al. (2011) find that repayment performance was better when repayments were collected weekly rather than monthly. \nGiven this background, we adopted the following borrowing and repayment scheme as the control. Borrowers obtain credit of BDT 3,000  and begin repayment after a short, two-week grace period. Repayments are made in 45 installments, each of which is BDT 75 (except for the last one, which is BDT 60), implying a gross interest payment of BDT 360 that is spread throughout the borrowing period of approximately one year. Each of the weekly installments is to be repaid by the borrower at a weekly meeting. The borrower is obliged to attend the weekly meeting, even during the monga period. This design of a traditional or inflexible microcredit scheme is denoted as the “Control.”\n\n(2) Flexible Microcredit as the Treatment \nDuring the monga period, microcredit borrowers may face difficulties in preparing the money needed for regular repayment. To facilitate the demand for repayment flexibility within this context, the treatment relaxes the repayment schedule in two ways during the monga period, which for this purpose is designated as September 20–December 20.\nUnder the first treatment, “Flexible 1,” a moratorium is temporarily applied to repayments during the designated monga period. During that moratorium, households within the Flexible 1 groups do not pay any installment. After the monga period, the borrowers begin to pay BDT 100 per week, so that their total repayment amount and repayment period would be identical to those of the Control group.\n\nUnder the second flexibility treatment, the repayment schedule is changed to feature three monthly installments of BDT 300 each during the designated monga period, instead of 12 weekly repayments of BDT 75 each. After the monga period, borrowers resume paying BDT 75 per week, so that their total repayment amount and repayment period would be the same as those of the control group. We refer to this treatment as “Flexible 2.” This treatment arm provides less flexibility than Flexible 1 (in terms of loan repayment obligation), while it provides better loan collection discipline than Flexible 1. \n\n(3) Randomization of Treatment Arms\nTo preclude unequal treatment among members within a group, we randomized the four treatment statuses at the borrower-group level. Since our counterpart NGO usually forms one group in one village, our randomization took place at the village level. \nOf the list of 90 villages that were under potential treatment by the counterpart NGO, we randomly selected 12 villages for “Control,” 36 for “Flexible 1,” and 24 for “Flexible 2.” In the randomization, we stratified the villages based on their distance from the closest bus station and the location type of the village. \n\nIn each village, our counterpart NGO formed a borrower group known as samity, which comprised 20 members who satisfied the NGO’s microcredit criteria and had voiced an interest in receiving microcredit. The member names were then recorded in the samity formation book by the loan officers. In the book, each samity member was assigned a number in ascending order; the members who happened to hold numbers 1–15 were to be offered credit, while those holding numbers 16–20 were kept in the group as observers. This design of randomization was not known to the samity members before the announcement of the treatments. This randomization thus implies the following sample distribution: there are 72 sample villages and 1,440 sample households, one-sixth or one-third of which falls into one of the four treatment arm categories; three-fourths of the sample households (1,080 households) were actual borrowers of microcredit.",
+  "intervention": "",
+  "jel": [],
+  "keywords": [
+   "finance",
+   "Seasonality",
+   "Flexible Microcredit"
+  ],
+  "last_update": "2023-10-11",
+  "number": "25",
+  "papers": [
+   {
+    "abstract": "The mismatch between credit repayments and income seasonality poses a challenge for microfinance institutions (MFIs) working in developing countries. For instance, in northern Bangladesh, income and consumption downfalls during the lean season after the transplanting of major paddy crops are a serious threat to a household’s economy. Poor landless agricultural wage laborers suffer the most owing to this seasonality as they face difficulties in smoothing their consumption. However, in designing microcredit products, MFIs do not usually provide flexibility or seasonal adjustment during the lean season. This is mainly because MFIs are afraid that such flexibility might break the repayment discipline of borrowers, resulting in higher default rates. We thus conducted a randomized controlled trial in 2011–12 in northern Bangladesh to empirically test whether seasonality-adjusted flexible microcredit leads to an increase in repayment problems for MFIs as well as whether it can increase and stabilize the consumption of borrower households. Our results suggest no statistically discernible difference among the treatment arms in case of default, overdue amount, or repayment frequency. On the other hand, we find no positive impact of repayment flexibility on immediate food consumption during the period of seasonality, except for the in-kind full moratorium treatment group. After a year of initial intervention, however, we see positive changes in food intake during the lean season. Thus, our preliminary results are in favor of seasonality-adjusted flexible microcredit.",
+    "citation": "Shonchoy Abu, S., & Takashi, K. (2014). Impact of seasonality-adjusted flexible microcredit on repayment and food consumption: Experimental evidence from rural Bangladesh.",
+    "url": "https://www.ide.go.jp/English/Publish/Reports/Dp/460.html"
+   }
+  ],
+  "partners": "",
+  "primary_outcomes": "-\tDefault 1: binary variable if loan is not repaid at the end of the loan cycle\n-\tDefault 2: amount in default at end of the loan cycle, and various intervals after the end of the loan cycle, e.g. 1 month after end of loan cycle, 2 months after, etc.\n-\tRepayment discipline 1: number of weekly repayments missed\n-\tRepayment discipline 2: share of repayments made on time (relative to total number of repayments)\n-\tSavings 1: amount of savings accumulated\n-\tSavings 2: amount of savings withdrawn\n-\tSavings 3: binary indicator if savings have been used for loan repayment\n-       Various measures of food consumption\n-       portfolio choice, investment decision and income generating activities\n-       Coping with shock\n-       Borrowing\n-       Seasonal Migration and remittance",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization done in office by a computer.",
+  "randomization_unit": "Borrowing group level cluster randomization.",
+  "rct_id": "AEARCTR-0000025",
+  "registered": "2017-08-05",
+  "registry_url": "http://www.socialscienceregistry.org/trials/25",
+  "sample_size_arms": "12 villages for “Control,” 36 for “Flexible 1,” and 24 for “Flexible 2.",
+  "sample_size_clusters": "72 Micro-credit borrowing group",
+  "sample_size_observations": "1440",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2013-07-01",
+  "status": "completed",
+  "title": "Impacts of Seasonality Adjusted Flexible Micro-credit in Northern Bangladesh",
+  "year": "2017"
+ },
+ {
+  "abstract": "This research program explores two main questions: (i) Does providing information on incumbent performance to centralized political parties influence candidate selection? and (ii) Do structured debates provide credible information to voters about candidates’ competencies, and if so, does this improve voting returns for better qualified candidates in the short run and public sector performance in the long run?  In order to answer these questions, we are working with local partners to execute a series of initiatives during the 2012 Parliamentary and local government elections in Sierra Leone: i) a nonpartisan incumbent performance evaluation campaign; ii) structured, inter-party debates between candidates; and iii) several individual-level treatment arms that unpack the different types of information delivered by the debates.  We will use exit polls and official electoral data to assess the impact of these programs on candidate selection, and voter knowledge, engagement and behavior.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Casey, Katherine",
+    "name": "Katherine Casey"
+   },
+   {
+    "affiliation": "Abdul Latif Jameel Poverty Action Lab",
+    "citation_name": "Glennerster, Rachel",
+    "name": "Rachel Glennerster"
+   },
+   {
+    "affiliation": "Post-Conflict Recovery and Fragile States Initiative, Innovations for Poverty Action",
+    "citation_name": "Bidwell, Kelly",
+    "name": "Kelly Bidwell"
+   }
+  ],
+  "countries": [
+   "Sierra Leone (Africa)"
+  ],
+  "doi": "10.1257/rct.26-7.0",
+  "end_date": "2014-06-30",
+  "experimental_design": "Part I: Incumbent Scorecards\nRandomization into treatment (scorecard shared with party officials) and control groups (no scorecard) was stratified by incumbent political party, competitiveness of the constituency and overall performance rank, conducted separately for MPs and Local Councillors.\n\nPart II: Debate Screenings\nWe randomly selected 14 of what we estimated to be the 28 most competitive MP constituencies for participation in the debates.  Within these constituencies, 112 polling centers were randomly assigned to the debate screening treatment, 40 to the individual-level treatments, and 112 to the control group.  Polling center randomization was stratified by number of registered voters and distance to the nearest neighboring polling center.\n\nPart III: Individual Screenings\nWithin each polling center assigned to individual-level treatments, we randomly assigned households into the treatment arms above and randomly selected individual participants (based on an earlier household listing) stratified by age and gender.",
+  "intervention": "Part I. Incumbent Scorecards\nIn collaboration with Campaign for Good Governance, we compiled scorecards on incumbent Members of Parliament (MP) and Local Councillors that combine objective performance measures with public opinion data.  We distributed scorecards for a randomly selected subset of politicians to political party officials in advance of candidate nominations. \n\nPart II. Debate Screenings\nIn partnership with Search for Common Ground, we hosted inter-party debates between Parliamentary candidates in 14 randomly selected constituencies.  Debates covered a series of national and local policy issues.  We took videotapes of the debates on a community \"road show,\" where we screened the debates in a randomly selected sample of polling centers within the targeted constituencies.  We estimate that 19,000 people saw the debates.\n\nPart III. Individual Screenings\nTo unpack the effects of different types of information delivered by the debates, we implemented the following treatment arms at the individual level in a separate set of polling centers.\n1. Debate: Individuals were shown the exact same debate screened in polling centers on a personal handheld device.\n2. Getting to Know You: Individuals were shown a “getting to know you” video of the same two candidates speaking informally about their hobbies and interests.\n3. Radio Report: Individuals listened to a recording of an independent moderator or journalist summarizing the main policy positions articulated by the two candidates during the debates.\n4. Thin Slice Evaluations: Individuals participated in a “lab” experiment where they were exposed to pairs of isolated images, voice recordings, video clips, and names of candidates from other constituencies across the country and asked to rate them along a variety of metrics, such as who they thought would be a better leader.\n5. Control group: No media. Some respondents were surveyed before the election, others only after the election.",
+  "jel": [],
+  "keywords": [
+   "electoral",
+   "governance",
+   "transparency",
+   "accountability"
+  ],
+  "last_update": "2017-03-06",
+  "number": "26",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Part I: Candidate retention on the party symbol; Parts II and III: vote choice (including across ethnic lines), voter knowledge and behavior",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "All randomizations were conducted in the office using Stata.",
+  "randomization_unit": "Part I Scorecards: individual politicians; Part II Debate Screenings: first at the level of constituency, second at the level of polling centers; Part III Individual Screenings: first at the level of polling center, second at the level of individual",
+  "rct_id": "AEARCTR-0000026",
+  "registered": "2013-07-23",
+  "registry_url": "http://www.socialscienceregistry.org/trials/26",
+  "sample_size_arms": "Part I: 159 T, 159 C politicians; Part II: 112 treatment polling centers (2,800 voters) and 112 control polling centers (2,800 voters); Part III: 400 voters per treatment arm plus 600 controls with pre-survey and 400 pure controls with no pre-survey",
+  "sample_size_clusters": "Part I: N/A; Part II: 224 polling centers in 14 constituencies; Part III: 40 polling centers in 8 constituencies",
+  "sample_size_observations": "Part I: 108 MPs and 210 Local Councillors; Part II: 5,600 voters; Part III: 2,600 voters",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2011-09-07",
+  "status": "completed",
+  "title": "The Impact of Voter Knowledge Initiatives in Sierra Leone",
+  "year": "2013"
+ },
+ {
+  "abstract": "While most children in developing countries now receive a primary education, the performance of primary schools is weak, especially for the poor (Banerjee & Duflo, 2011). Part of the problem is that many poor children are neither prepared for nor receive support with schoolwork, and initial gaps in performance are reinforced by a tendency for teachers to focus on “high – performers.”  There is very little evidence of effective school-readiness curricula for poor children to combat this issue. If effective curricula could be devised, the achievement gap in mathematics between rich and poor children could be dramatically reduced as learning school mathematics depends on the exercise of numerical and geometric concepts that emerge in infancy and that are equally accessible to children of all cultures (Dehaene et al., 2006) across the socioeconomic spectrum (Gilmore et al., 2010). These early-developing mathematical concepts are greatly enhanced by exercise, which leads to measurable gains in school math performance (Griffin & Case, 1997). \n\nThis project aims to develop and evaluate a game-based preschool curriculum to enhance children's: (1) core numerical and geometric abilities in relation to the symbol systems of elementary school mathematics; (2) awareness of their own mathematical abilities and of the growth of those abilities with exercise; (3) appreciation of the link between everyday cognition and school-based skills. The ultimate goal is to prepare disadvantaged children – cognitively and motivationally – for success in school.\n\nWe will evaluate the games together as a curriculum, by introducing them to children in Indian preschools in the framework of a randomized controlled trial (RCT) to assess whether the group of games together produces changes in children's mathematical competence or motivation both at the end of preschool and for at least one year later. \n\nTo asses the effect of the mathematical games themselves, in contrast to simply playing games in school, we will be introducing \"social games\", which could develop skills that are also by-product of the math games (attention to rules, ability to stay on task, etc) without a focus on mathematics. There are thus 3 groups: control, social games, and math games.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Duflo, Esther",
+    "name": "Esther Duflo"
+   },
+   {
+    "affiliation": "Harvard University",
+    "citation_name": "Dillon, Moira",
+    "name": "Moira Dillon"
+   },
+   {
+    "affiliation": "Harvard University",
+    "citation_name": "Spelke, Elizabeth",
+    "name": "Elizabeth Spelke"
+   },
+   {
+    "affiliation": "Pratham",
+    "citation_name": "Banerji, Rukmini",
+    "name": "Rukmini Banerji"
+   }
+  ],
+  "countries": [
+   "India (Delhi)"
+  ],
+  "doi": "10.1257/rct.27-10.0",
+  "end_date": "2015-12-31",
+  "experimental_design": "We will test the impact of our intervention using a randomized controlled trial. We will form three groups of 70 preschools operating in schools in the slums of Delhi. These preschools are operated by Pratham, our partner, either in premises rented in the community, or inside the government schools (if we use both types of schools, we will stratify the randomization by type of school). \n(1) In the first group (status quo), Pratham will implement its regular curriculum. \n(2) In the second group (math games), Pratham will implement its regular curriculum, with the same type of teachers, but three hours per week, the math games assistant will play the math games with the older children, who would be gearing up to attend school that spring (the teacher will be free to play the math games with the younger children as well, so those children may be indirect beneficiaries of the intervention, but they will not be part of the formal study). \n(3) In the third group (social games), a trained assistant will implement “social games.” Six social games, each equivalent in gameplay and teacher/peer engagement to one math game but lacking in numerical or geometric content, will be introduced to classrooms following the same schedule as the math games. Social games aim to enhance children's pedagogical learning by training basic communicative skills such as evaluating emotions on a face or determining the object of a person's attention. This condition will allow us to distinguish the impact of structured play from the focus on non-symbolic mathematics per se. To minimize halo effects, social and math games will be presented as equally beneficial (as, indeed, they may be).",
+  "intervention": "The proposed innovation is a battery of games that will be organized in a curriculum and implemented in preschools run by Pratham in Delhi. We will focus on children aged 5 years, and run the games for four months (Nov. 18, 2013 – Mar. 7, 2014), in three weekly one-hour sessions. The \"math games\" will be played in the math games treatment group, and the social games will be played in the social games treatment group. \n\nA group of Pratham staff will be specially trained to conduct the games. \nOur experience from piloting is that working with a group of approximately 10 children for one hour (with two games played for 30 minutes each) keeps children entertained and focused. Four months will be enough to play all the games at progressively higher levels of difficulty. In April, these children will join primary school, where they will be exposed to the traditional curriculum in mathematics.",
+  "jel": [],
+  "keywords": [
+   "education",
+   "Early childhood",
+   "mathematics",
+   "preschool",
+   "number",
+   "geometry"
+  ],
+  "last_update": "2022-03-25",
+  "number": "27",
+  "papers": [
+   {
+    "abstract": "Many poor children are underprepared for demanding primary school curricula. Research in cognitive science suggests that school achievement could be improved by preschool pedagogy in which numerate adults engage children’s spontaneous, nonsymbolic mathematical concepts. To test this suggestion, we designed and evaluated a game-based preschool curriculum intended to exercise children’s emerging skills in number and geometry. In a randomized field experiment with 1540 children (average age 4.9 years) in 214 Indian preschools, 4 months of math game play yielded marked and enduring improvement on the exercised intuitive abilities, relative to no-treatment and active control conditions. Math-trained children also showed immediate gains on symbolic mathematical skills but displayed no advantage in subsequent learning of the language and concepts of school mathematics.",
+    "citation": "Dillon, M. R., Kannan, H., Dean, J. T., Spelke, E. S., & Duflo, E. (2017). Cognitive science in the field: A preschool intervention durably enhances intuitive but not formal mathematics. Science, 357(6346), 47-55.",
+    "url": "http://science.sciencemag.org/content/357/6346/47"
+   }
+  ],
+  "partners": "",
+  "primary_outcomes": "Performance in Mathematics, performance in other subjects",
+  "program_files_url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LCLKDT",
+  "public_data_url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LCLKDT",
+  "randomization_method": "Randomization done by a computer program.",
+  "randomization_unit": "Pre-schools",
+  "rct_id": "AEARCTR-0000027",
+  "registered": "2013-10-04",
+  "registry_url": "http://www.socialscienceregistry.org/trials/27",
+  "sample_size_arms": "70 pre-schools control, 70 pre-schools Math Games, 70 pre-schools Social Games",
+  "sample_size_clusters": "210",
+  "sample_size_observations": "4000",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2013-10-14",
+  "status": "completed",
+  "title": "Does Non-symbolic Math Practice in Young Children Improve Symbolic Mathematics Ability in Later Life?",
+  "year": "2013"
+ },
+ {
+  "abstract": "The Oregon Health Insurance Experiment is a randomized evaluation of the effect of expanding access to Medicaid. In 2008, the state of Oregon drew names by lottery for its Medicaid program for low-income, uninsured adults. This ongoing study represents a collaborative effort between researchers and the state of Oregon to use this opportunity to learn about the impact of Medicaid on a variety of outcomes including health care use, health outcomes, financial strain, and well-being of low income adults.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Finkelstein, Amy",
+    "name": "Amy Finkelstein"
+   },
+   {
+    "affiliation": "Harvard",
+    "citation_name": "Baicker, Kate",
+    "name": "Kate Baicker"
+   },
+   {
+    "affiliation": "National Bureau of Economic Research",
+    "citation_name": "Taubman, Sarah",
+    "name": "Sarah Taubman"
+   }
+  ],
+  "countries": [
+   "United States of America (North America)"
+  ],
+  "doi": "10.1257/rct.28-12.1",
+  "end_date": "2013-12-31",
+  "experimental_design": "In early 2008, Oregon opened a waiting list for its Medicaid program for low-income adults that had previously been closed to new enrollment. Approximately 90,000 people signed up for the available 10,000 openings. The state drew names from this waiting list by lottery to fill the openings. Persons who were selected won the opportunity — for themselves and any household member — to apply for Oregon Health Plan Standard and were sent an application. Those who sent back their application and met eligibility requirements were enrolled in Oregon Health Plan Standard. This random selection allows researchers to gauge the causal effects of Medicaid. The study compiles rich data from many sources to examine a wide range of potential effects of insurance. Data include mail surveys, in-person interviews and health exams, and administrative data such as hospital records.",
+  "intervention": "Treatment group: 29,834 people and 24,912 households selected in the lottery (the lottery winners)\nControl group: 45,088 and 41,473 households not selected (the control group). \n\nAdults randomly selected in the lottery were given the option to apply for Medicaid (specifically Oregon Health Plan Standard).Oregon Health Plan Standard provides comprehensive medical benefits, including prescription drugs, with no patient cost-sharing and low monthly premiums ($0 to $20, based on income), mostly through managed-care organizations.",
+  "jel": [],
+  "keywords": [
+   "health",
+   "health insurance",
+   "Medicaid"
+  ],
+  "last_update": "2020-04-21",
+  "number": "28",
+  "papers": [
+   {
+    "abstract": "In 2008, Oregon initiated a limited expansion of a Medicaid program for uninsured, low-income adults, drawing names from a waiting list by lottery. This lottery created a rare opportunity to study the effects of Medicaid coverage using a randomized controlled design. Using the randomization provided by the lottery and emergency department records from Portland-area hospitals, we study the emergency department use of about 25,000 lottery participants over approximately 18 months after the lottery. We find that Medicaid coverage significantly increases overall emergency use by 0.41 visits per person, or 40 percent relative to an average of 1.02 visits per person in the control group. We find increases in emergency department visits across a broad range of types of visits, conditions, and subgroups, including increases in visits for conditions that may be most readily treatable in primary care settings.",
+    "citation": "Sarah Taubman, Heidi Allen, Bill Wright, Katherine Baicker, Amy Finkelstein, and the Oregon Health Study Group, \"Medicaid Increases Emergency Department Use: Evidence from Oregon's Health Insurance Experiment\", Science, 2014 Jan 17; 343(6168): 263-268.",
+    "url": "http://www.sciencemag.org/content/343/6168/263.full.pdf?keytype=ref&siteid=sci&ijkey=GoMYHyTTSQ4.Q"
+   },
+   {
+    "abstract": "In 2008, a group of uninsured low-income adults in Oregon was selected by lottery for the chance to apply for Medicaid. We use this randomized design and 2009 administrative data to evaluate the effect of Medicaid on labor market outcomes and participation in other social safety net programs. We find no significant effect of Medicaid on employment or earnings: our 95 percent confidence intervals allow us to reject that Medicaid causes a decline in employment of more than 4.4 percentage points, or an increase of more than 1.2 percentage points. We find that Medicaid increases receipt of food stamps, but has little, if any, impact on receipt of other government benefits, including SSDI.",
+    "citation": "Baicker, Katherine, Amy Finkelstein, Jae Song, and Sarah Taubman, \"The Impact of Medicaid on Labor Force Activity and Program Participation: Evidence from the Oregon Health Insurance Experiment\", NBER Working Paper 19547, October 2013.",
+    "url": "http://www.nber.org/oregon/files/oregon_hie_LF_WP.pdf"
+   },
+   {
+    "abstract": "Despite imminent expansion of Medicaid to low-income adults, the effects of expanding coverage are unclear. Oregon’s 2008 Medicaid expansion using lottery drawings from a waiting list provides an opportunity to evaluate the effects of Medicaid using random assignment. Approximately two years after the lottery, we collected data from 6,387 adults randomly selected to be able to apply for Medicaid coverage and 5,842 not selected. Measures included blood pressure, cholesterol and glycosylated hemoglobin; a depression screen; medication catalogs; and self-reported diagnoses, health, health care utilization and out-of-pocket spending. We use the lottery’s random assignment to calculate the effect of Medicaid coverage.We found no statistically significant effect of Medicaid on the prevalence, diagnosis, or medication of hypertension or high cholesterol. Medicaid coverage significantly increased the diagnosis of diabetes and use of diabetes medication, but we observed no significant effect on average glycosylated hemoglobin levels nor on the percent with levels >6.5%. Medicaid coverage decreased the probability of screening positive for depression (-9.15 percentage points; 95% CI: -16.70 to -1.60; P=0.018), increased use of preventive services, and almost eliminated catastrophic out-of-pocket medical expenditures. Thus, evidence using a randomized controlled design showed that Medicaid coverage generated no statistically significant improvements in measured physical health outcomes in the first two years, but did generate increased health care use, higher rates of diabetes detection and management, lower rates of depression, and lower financial strain.",
+    "citation": "Katherine Baicker, Sarah Taubman, Heidi Allen, Mira Bernstein, Jonathan Gruber, Joseph P. Newhouse, Eric Schneider, Bill Wright, Alan Zaslavsky, Amy Finkelstein, and the Oregon Health Study Group, \"The Oregon Experiment – Effects of Medicaid on Clinical Outcomes\" New England Journal of Medicine, 2013 May; 368(18): 1713-1722.",
+    "url": "http://www.nejm.org/doi/full/10.1056/NEJMsa1212321"
+   },
+   {
+    "abstract": "In 2008, a group of uninsured low-income adults in Oregon was selected by lottery to be given the chance to apply for Medicaid. This lottery provides an opportunity to gauge the effects of expanding access to public health insurance on the health care use, financial strain, and health of low-income adults using a randomized controlled design. In the year after random assignment, the treatment group selected by the lottery was about 25 percentage points more likely to have insurance than the control group that was not selected. We find that in this first year, the treatment group had substantively and statistically significantly higher health care utilization (including primary and preventive care as well as hospitalizations), lower out-of-pocket medical expenditures and medical debt (including fewer bills sent to collection), and better self-reported physical and mental health than the control group.",
+    "citation": "Amy Finkelstein, Sarah Taubman, Bill Wright, Mira Bernstein, Jonathan Gruber, Joseph P. Newhouse, Heidi Allen, Katherine Baicker, and the Oregon Health Study Group, \"The Oregon Health Insurance Experiment: Evidence from the First Year\" Quarterly Journal of Economics, 2012 Aug; 127(3): 1057-1106.",
+    "url": "http://qje.oxfordjournals.org/content/127/3/1057"
+   }
+  ],
+  "partners": "",
+  "primary_outcomes": "health care use, health, financial strain",
+  "program_files_url": "http://www.nber.org/oregon/data.html",
+  "public_data_url": "http://www.nber.org/oregon/data.html",
+  "randomization_method": "In 2008, the state of Oregon drew names by lottery. Randomization was done on state computer.",
+  "randomization_unit": "Household",
+  "rct_id": "AEARCTR-0000028",
+  "registered": "2013-07-17",
+  "registry_url": "http://www.socialscienceregistry.org/trials/28",
+  "sample_size_arms": "Treatment= 29,834 people and 24,912 households Control= 45,088 people and 41,473 households.",
+  "sample_size_clusters": "66,385 households",
+  "sample_size_observations": "74,922 people",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2008-03-10",
+  "status": "completed",
+  "title": "The Oregon Health Insurance Experiment",
+  "year": "2013"
+ },
+ {
+  "abstract": "This study analyzes the impact of different sets of text messages (SMS) on voter turnout in Kenya. Kenya held a general election on March 4, 2013, where 6 different officials were elected. The six different positions were President, Member of National Assembly, Senator, Governor, Ward Representative, and Women's Representative. The content of the text messages was varied across treatment groups.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Suri, Tavneet",
+    "name": "Tavneet Suri"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Pons, Vincent",
+    "name": "Vincent Pons"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Marx, Benjamin",
+    "name": "Benjamin Marx"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.30-1.0",
+  "end_date": "2014-12-01",
+  "experimental_design": "12,160 polling stations (out of 24,560 polling stations in the country) were selected to be part of the experiment. Half of these polling stations were randomly picked to receive get-out-the-vote text messages. The recipients of the text messages were voters registered in these “treatment” polling stations. The group of “treatment” polling stations was further subdivided into 3 groups, as already described. All messages were sent during the week leading to the election on March 4, 2013. Only individuals who provided their phone number during the voter registration were contacted.",
+  "intervention": "This study analyzes the impact of different sets of text messages (SMS) on voter turnout in Kenya during the March 2013 election. There were three main treatments in terms of the content of the text messages as described below. In each group, voters received an SMS every day for the five days leading up to Election Day, and one on Election Day itself (thus six messages were sent in total). The randomization was conducted at the level of the polling station. For each treatment, there were two different sub-groups of polling stations: (i) polling stations where all individuals who had registered at the polling station and had provided a phone number were treated, and (ii) polling stations where a random half of the individuals who had provided a phone number at registration were treated (this adds some individual randomization within this set of polling stations). \n\nTreatment 1: Voters received generic mobilization messages encouraging them to vote on Election Day.\n\nTreatment 2: Voters received a message about each of the five positions aside from President (Member of National Assembly, Senator, Governor, Ward Representative and Women's Representative) and were reminded of the significance of each of the positions.  \n\nTreatment 3: Voters received information about the monitoring role and the independence of the electoral commission (the IEBC) responsible for tallying the votes and announcing the results.",
+  "jel": [],
+  "keywords": [
+   "electoral",
+   "governance",
+   "post-conflict",
+   "voter education",
+   "voter turnout"
+  ],
+  "last_update": "2014-04-20",
+  "number": "30",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "voter turnout, vote shares, political attitudes, political participation, information, trust in organizations, implementation outcomes",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Polling stations were stratified by county. The randomization code was written in Stata.",
+  "randomization_unit": "Polling station level",
+  "rct_id": "AEARCTR-0000030",
+  "registered": "2014-04-20",
+  "registry_url": "http://www.socialscienceregistry.org/trials/30",
+  "sample_size_arms": "A cluster was a polling station. The number of clusters was as follows:\nControl: 6,086 polling stations \nT1: 2,016 polling stations \nT2: 2,035 polling stations \nT3: 2,023 polling stations \n\nIn half of the polling stations in each treatment group, only a random half of the individuals were treated. Therefore the number of individuals in the experiment was as follows:\n\nControl: 2,447,876 phone numbers registered at these stations\nT1: 626,703 phone numbers treated and 212,333 phone numbers not treated\nT2: 617,365 phone numbers treated and 210,181 phone numbers not treated\nT3: 599,294 phone numbers treated and 195,223 phone numbers not treated",
+  "sample_size_clusters": "The experiment was conducted with 6,086 polling stations in the control group and 2,016, 2,035 and 2,023 polling stations in the three treatment groups.",
+  "sample_size_observations": "Approximately 5 million people",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2013-02-19",
+  "status": "on_going",
+  "title": "Electing to Vote: Strengthening the Credibility of New Kenyan Institutions",
+  "year": "2014"
+ },
+ {
+  "abstract": "The rural healthcare market in much of the developing world, and especially in South Asia, is composed largely of informal private providers. These private providers often have little to no certifiable medical training. Recent studies, using medical vignettes (or hypothetical medical situations) to measure clinical competence and direct observations of doctor-patient interactions to measure clinical practice, highlight the deplorably low standards in rural healthcare.  To address such standards, the Liver Foundation in Kolkata, West Bengal over the last two years has been working with private rural health care providers through capacity building activities to improve quality in the private sector. The program consists of multiple-week training to private rural health care providers on the basis of a well-developed curriculum in the district of Birbhum, West Bengal.\n\nThis study aims to assess the impact of this training program using a randomized evaluation.  We employ medical vignettes, provider diaries, direct observation, and standardized patients to assess how such a training program can effect clinical competence, practice, caseload and case types, and fee structures in the short run. It is worth noting that this study will not be able to capture long run effects, such as general equilibrium price or location changes, on health care for the rural poor.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Hussam, Reshmaan",
+    "name": "Reshmaan Hussam"
+   },
+   {
+    "affiliation": "MIT and Jameel Poverty Action Lab",
+    "citation_name": "Banerjee, Abhijit",
+    "name": "Abhijit Banerjee"
+   },
+   {
+    "affiliation": "World Bank",
+    "citation_name": "Das, Jishnu",
+    "name": "Jishnu Das"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.34-1.0",
+  "end_date": "2014-04-01",
+  "experimental_design": "The experimental design involves an RCT with two arms: the control arm in which providers are left alone and the treatment arm in which providers are offered training classes on basic clinical knowledge and competence.  We run a baseline prior to randomization, randomize, have our partner organization (Liver Foundation) administer the treatment (training program), run a midline survey involving provider diaries, and run an endline survey three months after the completion of the training program.",
+  "intervention": "",
+  "jel": [],
+  "keywords": [
+   "education",
+   "health",
+   "Rural healthcare",
+   "training program",
+   "clinical competence"
+  ],
+  "last_update": "2013-09-09",
+  "number": "34",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Clinical knowledge/competence, clinical practice, caseload, patient and medicine fees",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization was done in the office through a computer program.",
+  "randomization_unit": "Individual (provider)",
+  "rct_id": "AEARCTR-0000034",
+  "registered": "2013-09-09",
+  "registry_url": "http://www.socialscienceregistry.org/trials/34",
+  "sample_size_arms": "150 providers in control, 150 providers in treatment.",
+  "sample_size_clusters": "300 providers.",
+  "sample_size_observations": "300 providers.",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2012-09-01",
+  "status": "on_going",
+  "title": "Improving the Quality of Private Sector Health Care in West Bengal",
+  "year": "2013"
+ },
+ {
+  "abstract": "The “Schooling Income and Health Risk” (SIHR) project is a randomized evaluation of a conditional/unconditional cash transfer intervention targeting young women in Malawi that provided incentives (in the form of school fees and cash transfers) to current schoolgirls and recent dropouts to stay in or return to school.  The program, known as the Zomba Cash Transfer Program (ZCTP), took place in Zomba, Malawi during 2008 and 2009.  The evaluation began with baseline data collection in late 2007, with the most recent round of data collection (Round 4) taking place in 2012-2013.   \n\nThe SIHR study includes four rounds of interviews with over 3,500 young women.  The data collection effort includes household surveys, individual quantitative and qualitative interviews, academic assessments, Voluntary Counseling and Testing, school surveys, market surveys, community surveys, and health facility assessments.\n\nThe SIHR project was specifically designed to answer a number of important questions about cash transfer programs for which we had little prior evidence. First, almost all that we know about the impacts of these programs come from Latin America, where income levels are much higher and institutional capacity is vastly superior compared with many poor countries in Sub-Saharan Africa (SSA). Second, the evidence base to effectively choose program design parameters (such as conditionality, transfer size, and the specific identity of the program beneficiary within households) is severely limited.  Third, evidence on final outcomes, such as learning, labor market outcomes, and HIV risk is lacking. Finally, long term evaluations of cash transfer programs are rare – mainly because the control groups in these evaluations are treated after a short period of time.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Baird, Sarah",
+    "name": "Sarah Baird"
+   },
+   {
+    "affiliation": "University of Malawi",
+    "citation_name": "Chirwa, Ephraim",
+    "name": "Ephraim Chirwa"
+   },
+   {
+    "affiliation": "University of Otago/World Bank",
+    "citation_name": "Ozler, Berk",
+    "name": "Berk Ozler"
+   },
+   {
+    "affiliation": "University of California, San Diego",
+    "citation_name": "McIntosh, Craig",
+    "name": "Craig McIntosh"
+   }
+  ],
+  "countries": [
+   "Malawi ()"
+  ],
+  "doi": "10.1257/rct.36-3.0",
+  "end_date": "2014-12-30",
+  "experimental_design": "Between October 2007 and January 2008, baseline surveys were conducted with 3,796 girls in 176 Enumeration Areas (EAs) in Zomba district of Malawi. These girls were selected based on information collected during a listing exercise, which involved going door to door to all households in these 176 EAs. This listing exercise identified all never-married, 13-22 year old females living in the area. We sampled all dropouts and 75-100% of current school girls, where the percentage sampled depended on the age of the girl.\n\nOut of the 3,796 girls sampled in 176 EAs, 1,225 girls in 88 treatment EAs were sampled to receive cash transfers. From December 2007 through January 2008 offers were made to all these girls and, except for a few girls who turned out to be ineligible, close to 100% accepted. The offer consisted of a household transfer and a transfer directly to the girl, as well as full payment of school fees for girls in secondary school. The household amount was randomly varied across EAs from $4/month to $10/month, with all recipients in a given EA receiving the same amount. To determine the individual transfer amount, girls participated in a lottery where they picked bottle caps out of an envelope to win an amount between $1/month and $5/month. \n\nWe randomly assigned half of the 176 EAs to receive the intervention (treatment), and the rest serve as the control group. Within each treatment community, all never-married 13-22 year-old recent dropouts who are eligible to return to primary or secondary school are identified and always treated (with conditional cash transfers). We denote this core treatment group as T1. The same universe of would-be-eligible girls was identified in control communities, denoted by C1. Our second group of eligible girls are never married 13-22 year old school girls who are eligible to return to Standard 7-Form 4. We randomly assigned treatment communities into three categories: those where school girls receive transfers conditional on school attendance (T2.a), those where school girls receive unconditional transfers (T2.b), and finally those where no school girls receive any cash transfers (S2). In addition, within T2.a and T2.b communities, a randomly selected subset of school girls receives no transfers. The sample of untreated school girls in treatment villages, i.e. in T2.a, T2.b, and S2 only, will allow us to identify any spillover effects of the program. This same universe of would-be-eligible school girls are also identified in the control communities, denoted by C2. Within treatment communities, we provide monthly cash transfers separately to the school girl and her parents/guardians as described above, and randomly vary the amount transferred to the parents/guardians across EAs, and the amount transferred to the girls within each EA.",
+  "intervention": "",
+  "jel": [],
+  "keywords": [
+   "education",
+   "health",
+   "Gender"
+  ],
+  "last_update": "2018-05-17",
+  "number": "36",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Details in pre-analysis plan",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization of the treatment status of the cluster was done in office by a computer; as was the household amount.  Individual amounts were done by public lottery",
+  "randomization_unit": "Cluster for treatment status (Conditional, Unconditional, Control), as well as % treated.  Individual level for amount.",
+  "rct_id": "AEARCTR-0000036",
+  "registered": "2013-08-06",
+  "registry_url": "http://www.socialscienceregistry.org/trials/36",
+  "sample_size_arms": "88 clusters control:\n\nBaseline Schoolgirls: 46 Conditional Cash Transfer, 27 Unconditional Cash Transfer; 15 no baseline schoolgirls treated\nBaseline Dropouts:  88 Conditional Cash Transfer",
+  "sample_size_clusters": "176",
+  "sample_size_observations": "3796",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2007-10-01",
+  "status": "completed",
+  "title": "Schooling Income and Health Risk in Malawi",
+  "year": "2013"
+ },
+ {
+  "abstract": "The primary goals of this study are: (1) to measure the effect of access to finance on willingness to pay (WTP) for sanitary latrines among residents of rural Cambodia; (2) to determine whether this effect is particularly important for the poor. The design is a cluster-randomized trial: from a sample of 30 representative villages (1,383 households, stratified by IDPoor status) of Kampong Thom province, 15 villages were assigned to a financing arm, while 15 villages were controls. Residents in both treatments were offered an opportunity to purchase a low-cost, sanitary latrine. Residents of financing villages were offered a 12-month loan, while residents of control villages were required to pay cash on delivery. The sale was conducted using the Becker-DeGroot-Marschak mechanism, allowing direct observation of WTP.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Guiteras, Raymond",
+    "name": "Raymond Guiteras"
+   },
+   {
+    "affiliation": "University of New South Wales",
+    "citation_name": "BenYishay, Ariel",
+    "name": "Ariel BenYishay"
+   },
+   {
+    "affiliation": "Dept. of Economics, University of Maryland",
+    "citation_name": "Palloni, Giordano",
+    "name": "Giordano Palloni"
+   }
+  ],
+  "countries": [
+   "Cambodia ()"
+  ],
+  "doi": "10.1257/rct.37-2.0",
+  "end_date": "2014-01-31",
+  "experimental_design": "See Pre-Analysis Plan.",
+  "intervention": "See Pre-Analysis Plan.",
+  "jel": [
+   "D14",
+   "G21",
+   "H23",
+   "I15",
+   "O13",
+   "O16",
+   "Q56"
+  ],
+  "keywords": [
+   "environment_and_energy",
+   "finance",
+   "health",
+   "Sanitation",
+   "Becker-DeGroot-Marschak mechanism"
+  ],
+  "last_update": "2017-02-08",
+  "number": "37",
+  "papers": [
+   {
+    "abstract": "Low willingness to pay (WTP) for environmental quality in developing countries is a key research question in environmental economics. One explanation is that missing credit markets may suppress WTP for environmental improvements that require large up-front investments. We test the impact of microloans on WTP for hygienic latrines via a randomized controlled trial in 30 villages in rural Cambodia. We find that microcredit dramatically raises WTP for improved latrines, with 60% of households in the Financing arm willing to purchase at an unsubsidized price, relative to 25% in the Non-financing arm. Effects on latrine installation are positive but muted by several factors, including a negative peer effect: randomly induced purchases by neighbors reduce a household's probability of installing its own latrine. On methodological grounds, this paper shows that a “decision-focused evaluation” can be integrated into academic analysis to provide insight into questions of general interest.",
+    "citation": "Ariel Ben Yishay, Andrew Fraker, Raymond Guiteras, Giordano Palloni, Neil Buddy Shah, Stuart Shirrell, Paul Wang, \"Microcredit and willingness to pay for environmental quality: Evidence from a randomized-controlled trial of finance for sanitation in rural Cambodia,\" Journal of Environmental Economics and Management, 2017. ISSN 0095-0696; doi:10.1016/j.jeem.2016.11.004.",
+    "url": "http://dx.doi.org/10.1016/j.jeem.2016.11.004"
+   }
+  ],
+  "partners": "",
+  "primary_outcomes": "Willingness to pay for sanitary latrines, by IDPoor and non-IDPoor status; latrine coverage at various prices / subsidy amounts, by IDPoor and non-IDPoor status",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization in office on Stata.",
+  "randomization_unit": "Village",
+  "rct_id": "AEARCTR-0000037",
+  "registered": "2013-07-30",
+  "registry_url": "http://www.socialscienceregistry.org/trials/37",
+  "sample_size_arms": "15 treatment (financing) villages; 15 control (cash-on-delivery) villages.",
+  "sample_size_clusters": "30 villages",
+  "sample_size_observations": "1,400 households",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2013-01-01",
+  "status": "completed",
+  "title": "The Impact of Finance on Willingness to Pay for Low-Cost Latrines in Rural Cambodia: Evidence from a Randomized-Controlled Trial",
+  "year": "2013"
+ },
+ {
+  "abstract": "This experiment assesses whether financial incentives can increase healthcare counselors’ motivation, and therefore their detection and treatment of TB. Ninety-six counselors from Operation ASHA and 51 field extension workers from CARE India were randomly assigned to either the treatment group—which received financial rewards for each new patient enrolled in the DOTS system—or the comparison group—which received a fixed salary. After six months, the health workers were re-assigned at random to either a new treatment group, in which they were financially penalized for each patient that defaulted on their treatment, or the comparison group, in which they received a fixed salary. We are evaluating the impact of the incentives—both positive and negative—on counselors’ motivation and commitment to their job, and on the detection of and treatment compliance for TB.\n\nIn another arm of the project, we are testing the impact of improving monitoring of health worker’s efforts and patient compliance through the introduction of biometric technology in TB control centers. Operation ASHA has developed a biometric system based on a fingerprint scanner connected to a low-end computer and cellphone. Health workers as well as patients identify themselves when they come to the center. The data is then sent by SMS several times per day to a server located in Delhi, and alerts and reminders are sent to health workers when noncompliance is detected. \nWe are evaluating the impact of these two strategies (performance-based incentives and the biometric monitoring tool) on the number of TB patients detected, the number of defaults, and a range of intermediary outcomes such as health workers’ motivation, provider absenteeism, and the quality of service delivery perceived by patients.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Delavallade, Clara",
+    "name": "Clara Delavallade"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.38-1.0",
+  "end_date": "2015-12-31",
+  "experimental_design": "Incentives Study\nThe randomization\nAfter their first three months, counselors hired by Operation ASHA are offered one of the two types of contract 1 described below between three and nine months, and one of the two types of contract 2 after nine months.\nContracts 1: months 3-9\n• Contract 1a: Fixed salary\n• Contract 1b: Fixed salary (75% of contract 1a) + incentives based on detection \nContracts 2: months 9 – onwards\n• Contract 2a: Fixed salary\n• Contract 2b: Fixed salary (75% of contract 2a) + incentives based on default \n\nAt the end of three months, a counselor, who agrees to participate, can either be on a fixed salary scheme or a fixed plus detection based incentive salary scheme. Similarly, at the end of nine months, the counselors are re-randomized and they can either be on the fixed scheme or a fixed plus default based incentive salary scheme. Therefore, assignments to contracts 1 and 2 are cross-randomized, which gives a total of 4 different cases (1a – 2a; 1a – 2b; 1b – 2a; 1b – 2b). \n\nBiometrics:\nThis intervention will also be evaluated using the randomized controlled trial methodology: once they have gone through the first intervention, Operation ASHA counselors will be once again randomly allocated to two groups- counselors that receive a Biometric device at their center (treatment) and counselors that do not(control).\n\nSince most counselors will have been included in the evaluation of both the first and the second interventions, our estimates of their impacts, obtained for identical workers and under very similar contexts, will be very comparable. This will make our cost-effectiveness calculations particularly informative, to decide which of the two traditional alternatives available to increase performance at work – incentives or monitoring – is most efficient in the context of TB eradication.",
+  "intervention": "The program- Incentives\nOperation ASHA hires community-based health workers, who are each responsible for operating two DOTS centers. During the first three months, CHWs all receive a fixed salary. Indeed, centers often take a slow start, irrespective of the involvement of the CHW. This initial 3-month period also enables the CHWs to get their bearings in a new place and for the center to be identified by the population. The experiment starts after the initial three months of a center lifespan. Between 3 and approximately 9 months, CHWs have to grow their center until they have reached the optimal size (not more than 50 patients), where they are cost-effective and where patients can be effectively followed-up. Half of the CHWs, randomly chosen, receive a fixed component and a variable amount based on their performance regarding detection of new patients, while the other half receives a fixed salary. \n\nAfter nine months of work, CHWs should focus on preventing defaults. The CHW's compensation scheme is randomized again. Half of them receive a fixed salary for the following 6 months of their contract while the other half receive an incentivized scheme where the variable component no longer depends on the number of detections, but on the number of defaults they prevent. If the number of patients keeps growing, Operation ASHA opens a new center and the detection work is taken over by another CHW operating that newly open center. \nThese incentives (for detection) or penalties (for default) come in addition to a base salary, that guarantees the health workers that they will get a minimum amount for their work, whatever happens, and thereby contains the amount of risk and stress they are facing. The introduction of financial incentives explicitly linked to the outcome of their counselling work is aimed at increasing their motivation, effort, and performance, and in turn their impact on TB treatment in slums. \n\nThe Program- Biometrics\nAdditionally, there is a second intervention designed to enhance treatment compliance: biometric devices enabling to monitor the absenteeism of Operation ASHA’s health workers, as well as the pills intake by the patients, patient satisfaction, and patient health outcomes.Operation Asha (OA), developed a biometric identification system, eCompliance, based on a fingerprint scanner connected to a low-end computer and cellphone, which were randomly assigned to each counselor.",
+  "jel": [],
+  "keywords": [
+   "health",
+   "labor"
+  ],
+  "last_update": "2014-08-18",
+  "number": "38",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Incentives Study\nThe main outcomes of interest are new patient detection as well as the number of defaults. Some of the other outcomes of interest are counselor absenteeism, treatment compliance, interaction between counselor and patients which will be determined through patient surveys as well as counselor job commitment and satisfaction, which will be captured through counselor surveys.\n\nBiometrics Study\nOur main outcomes of interest will be counselors’ absenteeism, patients’ compliance with the treatment and number of defaults. \nIn addition to the data also collected for the first experiment, we will conduct frequent random checks in centers operated both by treatment and control counselors. Indeed, while the biometric devices will give us data of great quality about counselors' absenteeism and the number of pills missed by the patients, our evaluation should be based on data of comparable quality across treatment and control counselors.The richness of the patient and counselor surveys will enable us to disentangle the role of various channels (including for instance more intensive follow-up with patients who missed their pill) through which the biometric devices might affect our outcomes of interest.",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization done in office by a computer,",
+  "randomization_unit": "Individual level randomization: Health Provider (Counselor)",
+  "rct_id": "AEARCTR-0000038",
+  "registered": "2014-08-18",
+  "registry_url": "http://www.socialscienceregistry.org/trials/38",
+  "sample_size_arms": "Incentives: Total number of counselors enrolled: 104; \nPhase 1 detection: 45 Incentives; 39 Fixed \nPhase 2 default: 30 Incentives 30 Fixed\nBiometrics: Total number of counselors randomized: 66\n\nBiometrics: Total enrolled 73 \nControl: 40 Treatment 33.",
+  "sample_size_clusters": "Incentives Experiment: \nOperation ASHA - 104 Counselors\nCARE - 29 Counselors\n\nBiometrics Experiment: \nOperation ASHA - 66 Counselors",
+  "sample_size_observations": "6000 TB patients",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2009-09-01",
+  "status": "on_going",
+  "title": "The Impact of Performance Based Incentives and Biometric Devices on Improving Tuberculosis Treatment through Community Based Counselors in India",
+  "year": "2014"
+ },
+ {
+  "abstract": "The Annual Status of Education Report (ASER), 2012 reports that less then 47% of students enrolled in class 5 can read a class 2 level text. The situation with respect to mathematics is worse with less than 25% of students in class 5 being able to solve simple questions on division. Alarmingly, this situation has been worsening across most states in India over time; the corresponding figures in 2007 were 59% and 42%.\n\nA variety of \"interventions\" have been devised and tested to improve educational outcomes in India. A series of rigorous impact evaluations of Pratham’s (India's leading NGO in the sphere of education) work over the past decade have consistently found two effects: first, that volunteers make a difference in learning outcomes of children; and second, that learning gains in basic skills are greater and faster if children are taught based on their learning ability rather than by grade. \n\nBased on previous evidence from RCTs and Pratham's accumulated field experience from across India, intensive short burst \"learning camps\" with a duration of 10 to 20 days have emerged as a promising strategy since late 2011. The environment of the camp is different from normal teaching - more fun and participatory. In India, the idea of a \"learning camp\" is a new one. The potential of a learning camp to achieve several objectives is high, as it provides a dynamic demonstration of how visibly learning can change in a short period of time. Thus the learning camp has the chance of being a \"game changer\" as people, parents and teachers can see in front of their eyes and in their own village that change is possible without a huge amount of resources.\n\nThe proposed project is for one school year. The aim is to test several models of learning camps on scale- to understand the optimal duration, periodicity, intensity and follow up that is needed to accelerate basic reading and arithmetic for primary school children and to sustain and build on these learning gains over time. The overall aim is to ensure that all children in Grade 3, 4 and 5 in the intervention schools are reading fluently and confidently doing basic arithmetic at the end of one school year.",
+  "authors": [
+   {
+    "affiliation": "",
+    "citation_name": "Kannan, Harini",
+    "name": "Harini Kannan"
+   },
+   {
+    "affiliation": "MIT",
+    "citation_name": "Banerjee, Abhijit",
+    "name": "Abhijit Banerjee"
+   },
+   {
+    "affiliation": "Pratham",
+    "citation_name": "Banerji, Rukmini",
+    "name": "Rukmini Banerji"
+   }
+  ],
+  "countries": [
+   "Private"
+  ],
+  "doi": "10.1257/rct.39-1.0",
+  "end_date": "2016-11-01",
+  "experimental_design": "The evaluation of different interventions will be conducted in the form of randomized control trials where equal number of participating villages (444 villages) will be randomly assigned to any one of the following groups:\n\n1. Receiving a 10 day Learning Camp four times in a school year;\n2. Receiving a 20 day Learning Camp twice in a school year;\n3. Receiving only materials for reading periodically in a school year;\n4. Control group which is not exposed to any of these treatments;\n\nThe random assignment will follow a stratified design where villages in each of the administrative blocks in the study will be divided into clusters of 12 each. The villages in each cluster will equally divided and assigned to any of the 4 above mentioned groups on a random basis.",
+  "intervention": "The Learning camps project will be implemented across 2 districts - Sitapur and Unnao in the northern Indian state of Uttar Pradesh. 2 blocks from each district will be the areas in which these camps will be run - Hilouli and Ashoha in Unnao and Sakaran and Biswan in Sitapur. \n\n444 villages from these areas will be randomly chosen to receive \n1. A 10 day Learning Camp four times in a school year\n2. A 20 day Learning Camp twice in a school year\n3. Materials for reading periodically in a school year\n4. Control group which is not exposed to any of these treatments\n\nThe camps would be run in government primary schools (pending permissions) or elsewhere in the village.",
+  "jel": [],
+  "keywords": [
+   "education"
+  ],
+  "last_update": "2013-08-12",
+  "number": "39",
+  "papers": [],
+  "partners": "",
+  "primary_outcomes": "Student test scores on language and math (learning outcomes)",
+  "program_files_url": "",
+  "public_data_url": "",
+  "randomization_method": "Randomization will be done in office using statistical program in Stata.",
+  "randomization_unit": "Village",
+  "rct_id": "AEARCTR-0000039",
+  "registered": "2013-08-12",
+  "registry_url": "http://www.socialscienceregistry.org/trials/39",
+  "sample_size_arms": "111 villages in 10-day learning camps 4 times a school year;\n111 villages in 20-day learning camps 2 times in a school year;\n111 villages in materials only treatment;\n111 villages in control",
+  "sample_size_clusters": "483 schools in 444 villages",
+  "sample_size_observations": "30,000",
+  "secondary_ids": "",
+  "secondary_outcomes": "",
+  "sponsors": "",
+  "start_date": "2013-07-01",
+  "status": "on_going",
+  "title": "Using Learning Camps to Improve Basic Learning Outcomes of Primary School Children",
+  "year": "2013"
+ }
+]

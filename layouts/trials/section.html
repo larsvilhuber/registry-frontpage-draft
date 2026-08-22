@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ $paginator := .Paginator }}
+  <p class="muted">{{ len .Pages }} registration{{ if ne (len .Pages) 1 }}s{{ end }}.
+    Every one is listed across these pages and in
+    <a href="{{ "sitemap.xml" | relURL }}">the sitemap</a>, so a crawler reaches
+    each record without JavaScript.</p>
+  {{ partial "trial-search.html" . }}
+  <div class="trial-browse">
+    {{ partial "trial-table.html" $paginator.Pages }}
+    {{ partial "pager.html" $paginator }}
+  </div>
+{{ end }}
