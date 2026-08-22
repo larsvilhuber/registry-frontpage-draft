@@ -1,8 +1,13 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
+  {{/* Keyword cardinality is high (thousands of terms), so this index is
+       paginated too rather than listing every term on one page. */}}
+  {{ $paginator := .Paginator }}
+  <p class="muted">{{ len .Pages }} {{ lower .Title }}.</p>
   <ul class="taglist">
-    {{ range .Pages }}
+    {{ range $paginator.Pages }}
       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="muted">({{ len .Pages }})</span></li>
     {{ end }}
   </ul>
+  {{ partial "pager.html" $paginator }}
 {{ end }}
