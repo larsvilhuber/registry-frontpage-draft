@@ -1,0 +1,29 @@
+{{/*
+  Incoming citations ("cited by"), looked up by DOI in data/citations.json.
+
+  That file is produced by a separate, asynchronous process and is currently
+  STUBBED -- see HUGO.md.  Nothing here calls an API at build time, and the
+  exact article-to-citation linkage (DOI matching vs. ID reconciliation) is
+  still an open question, so this partial treats a missing key as "no data yet"
+  rather than as "zero citations".
+*/}}
+{{ $doi := .doi }}
+{{ $index := (index site.Data "citations").citations }}
+{{ $citations := index $index $doi }}
+<section class="cited-by" id="cited-by">
+  <h2>Cited by</h2>
+  {{ with $citations }}
+    <p class="muted">{{ len . }} work{{ if ne (len .) 1 }}s{{ end }} citing this registration.</p>
+    <ol class="citation-list">
+      {{ range . }}
+        <li>
+          {{ with .authors }}<span class="cite-authors">{{ delimit . "; " }}</span>. {{ end }}
+          {{ with .year }}({{ . }}). {{ end }}
+          <span class="cite-title">{{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</span>{{ with .venue }}. <em>{{ . }}</em>{{ end }}{{ with .doi }}. <a href="https://doi.org/{{ . }}">doi:{{ . }}</a>{{ end }}
+        </li>
+      {{ end }}
+    </ol>
+  {{ else }}
+    <p class="muted">No citation data available for this registration yet.</p>
+  {{ end }}
+</section>

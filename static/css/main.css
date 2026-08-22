@@ -1,0 +1,65 @@
+/* Deliberately plain CSS in static/: no SCSS, so a non-extended Hugo binary
+   builds the site too. */
+:root {
+  --fg: #1a1a1a; --muted: #5b6470; --bg: #ffffff; --accent: #10456b;
+  --rule: #d8dde3; --band: #f4f6f8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--fg); background: var(--bg);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.wrapper { max-width: 54rem; margin: 0 auto; padding: 0 1.25rem; }
+a { color: var(--accent); }
+h1 { font-size: 1.65rem; line-height: 1.25; margin: 1.5rem 0 .5rem; }
+h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; padding-bottom: .25rem; border-bottom: 1px solid var(--rule); }
+.muted { color: var(--muted); font-size: .9rem; }
+
+.site-header { border-bottom: 1px solid var(--rule); background: var(--band); }
+.site-header .wrapper { display: flex; flex-wrap: wrap; gap: 1rem; align-items: baseline; padding-top: .9rem; padding-bottom: .9rem; }
+.site-title { font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+.site-nav { margin-left: auto; display: flex; gap: 1rem; }
+
+main { padding-bottom: 3rem; }
+.authors { margin: .25rem 0; font-size: 1.02rem; }
+.trial-meta { display: grid; grid-template-columns: 12rem 1fr; gap: .3rem 1rem; margin: 1rem 0; }
+.trial-meta dt { color: var(--muted); font-size: .88rem; }
+.trial-meta dd { margin: 0; overflow-wrap: anywhere; }
+
+table.trials { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .93rem; }
+table.trials th, table.trials td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+table.trials thead th { background: var(--band); }
+/* Wide tables scroll inside the page rather than pushing the body sideways. */
+main { overflow-x: auto; }
+
+.citation-list { padding-left: 1.2rem; }
+.citation-list li { margin-bottom: .6rem; }
+.taglist { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+.taglist li a {
+  display: inline-block; padding: .15rem .55rem; background: var(--band);
+  border: 1px solid var(--rule); border-radius: 999px; font-size: .85rem; text-decoration: none;
+}
+.how-to-cite p { background: var(--band); border-left: 3px solid var(--accent); padding: .7rem .9rem; }
+.pager { display: flex; gap: 1rem; align-items: baseline; margin: 1.5rem 0; }
+.site-footer { border-top: 1px solid var(--rule); background: var(--band); padding: 1.25rem 0; font-size: .9rem; }
+
+@media (max-width: 40rem) { .trial-meta { grid-template-columns: 1fr; } .trial-meta dd { margin-bottom: .4rem; } }
+
+/* Search box is revealed by static/js/search.js; [hidden] keeps it out of the
+   no-JS rendering entirely. */
+.trial-search-form { margin: 1.25rem 0; }
+.trial-search-form label { display: block; font-size: .88rem; color: var(--muted); margin-bottom: .25rem; }
+.trial-search-form input[type="search"] {
+  width: 100%; padding: .5rem .65rem; font-size: 1rem;
+  border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);
+}
+.trial-search-status { margin: .4rem 0 0; min-height: 1.2em; }
+[hidden] { display: none !important; }
+
+.pager { display: flex; flex-wrap: wrap; gap: .5rem; align-items: baseline; margin: 1.5rem 0; }
+.pager a, .pager-current { padding: .15rem .5rem; border: 1px solid var(--rule); border-radius: 3px; text-decoration: none; }
+.pager-current { background: var(--accent); color: #fff; border-color: var(--accent); }
+.pager .muted { border: 0; margin-left: auto; }
+
+.license { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; font-size: .9rem; }
+.license img { display: block; }

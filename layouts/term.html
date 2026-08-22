@@ -1,0 +1,5 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <p class="muted">{{ len .Pages }} registration{{ if ne (len .Pages) 1 }}s{{ end }}.</p>
+  {{ partial "trial-table.html" .Pages.ByDate.Reverse }}
+{{ end }}

@@ -1,0 +1,8 @@
+# Hugo build output and caches
+/public/
+/resources/_gen/
+.hugo_build.lock
+
+# Registry CSV export, downloaded at build time by bin/download_data.py.
+# Only the small sample in data/trials.json is version-controlled.
+/exports/

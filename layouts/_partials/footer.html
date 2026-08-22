@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <p>{{ site.Params.disclaimer }} {{ site.Params.canonicalNote }}
+      The registry itself is at <a href="{{ site.Params.registryURL }}">{{ site.Params.registryURL }}</a>.</p>
+    {{ with site.Params.license }}
+      <p class="license">
+        <a rel="license" href="{{ .url }}">
+          {{/* Intrinsic size is set so the badge does not shift layout while
+               the page paints. */}}
+          <img src="{{ .badge | relURL }}" alt="{{ .name }}" width="80" height="15">
+        </a>
+        <span>{{ .scope }} is licensed under
+          <a rel="license" href="{{ .url }}">{{ .name }}</a>.</span>
+      </p>
+    {{ end }}
+    <p class="muted">Built {{ now.Format "2006-01-02" }} from the registry export.</p>
+  </div>
+</footer>

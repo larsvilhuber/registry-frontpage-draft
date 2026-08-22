@@ -1,0 +1,77 @@
+name: Build and deploy Hugo site
+
+on:
+  push:
+    branches: [main]
+  # The registry gains new registrations continuously and the citations dataset
+  # updates on its own cadence, so the site rebuilds on a schedule as well as on
+  # code changes.
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it midway.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  HUGO_VERSION: 0.148.2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Hugo
+        run: |
+          curl -sSLf -o /tmp/hugo.tar.gz \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          tar -xzf /tmp/hugo.tar.gz -C /tmp hugo
+          sudo install /tmp/hugo /usr/local/bin/hugo
+          hugo version
+
+      - uses: actions/configure-pages@v5
+        id: pages
+
+      - name: Download the registry export
+        run: |
+          python3 bin/download_data.py
+          ls -lh exports/trials.csv
+
+      - name: Sanity-check the export
+        run: |
+          # A truncated or error response would otherwise publish a site that
+          # silently drops thousands of registrations.
+          rows=$(python3 -c "import csv,sys;csv.field_size_limit(10**9);print(sum(1 for _ in csv.DictReader(open('exports/trials.csv',newline='',encoding='utf-8'))))")
+          echo "rows in export: $rows"
+          if [ "$rows" -lt 5000 ]; then
+            echo "::error::Registry export has only $rows rows; refusing to deploy."
+            exit 1
+          fi
+
+      - name: Build the trial data
+        run: python3 bin/export_hugo_data.py --indent 0
+
+      - name: Build the site
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

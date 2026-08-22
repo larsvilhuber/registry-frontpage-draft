@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <h1>Page not found</h1>
+  <p>There is no page at this address. It may have been a registration that was
+    withdrawn, or a mistyped registry ID.</p>
+  <ul>
+    <li><a href="{{ "trials/" | relURL }}">Browse all registrations</a></li>
+    <li><a href="{{ "" | relURL }}">Return to the front page</a></li>
+    <li>Search the authoritative record at
+      <a href="{{ site.Params.registryURL }}">{{ site.Params.registryURL }}</a></li>
+  </ul>
+{{ end }}

@@ -1,0 +1,34 @@
+{{/*
+  Google Scholar citation_* metadata.  Emitted only on trial pages -- Scholar
+  ignores (and can be confused by) citation tags on list pages.
+
+  Field rules that matter for indexing, per Scholar's inclusion guidelines:
+    - citation_title, citation_author and a publication date are mandatory;
+      a record missing any of them is mis-parsed, so the page is skipped in the
+      content adapter rather than published without them.
+    - citation_author is repeated once per author, "Last, First", no
+      affiliations and no email addresses.
+    - Dublin Core is deliberately not emitted; Scholar prefers citation_* and
+      mixing schemes invites mis-parsing.
+  Changes here take 6-9 months to show up in Scholar, so treat this as stable.
+*/}}
+{{ $trial := .Params.trial }}
+{{ with $trial }}
+  <meta name="citation_title" content="{{ .title }}">
+  {{ range .authors }}
+    <meta name="citation_author" content="{{ .citation_name }}">
+  {{ end }}
+  <meta name="citation_publication_date" content="{{ replace .registered "-" "/" }}">
+  <meta name="citation_online_date" content="{{ replace .registered "-" "/" }}">
+  <meta name="citation_journal_title" content="{{ site.Params.registryName }}">
+  <meta name="citation_technical_report_number" content="{{ .rct_id }}">
+  <meta name="citation_technical_report_institution" content="{{ site.Params.registryName }}">
+  {{ with .doi }}<meta name="citation_doi" content="{{ . }}">{{ end }}
+  <meta name="citation_abstract_html_url" content="{{ $.Permalink }}">
+  <meta name="citation_public_url" content="{{ $.Permalink }}">
+  {{ with .language }}<meta name="citation_language" content="{{ . }}">{{ end }}
+  {{ with .keywords }}<meta name="citation_keywords" content="{{ delimit . "; " }}">{{ end }}
+  {{/* citation_pdf_url is emitted only when a PDF actually exists: Scholar
+       penalises pages that advertise a PDF the crawler cannot fetch. */}}
+  {{ with .pdf_url }}<meta name="citation_pdf_url" content="{{ . }}">{{ end }}
+{{ end }}

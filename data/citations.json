@@ -1,0 +1,43 @@
+{
+ "_comment": "PLACEHOLDER DATA. Replace with the export from the async citations process. Keys are trial DOIs; see HUGO.md for the linkage question.",
+ "_generated": "stub",
+ "citations": {
+  "10.1257/rct.6-3.0": [
+   {
+    "title": "Community Health Educators and Maternal Health: Experimental Evidence from Northern Nigeria",
+    "authors": [
+     "Björkman Nyqvist, Martina",
+     "Leight, Jessica",
+     "Sharma, Vandana"
+    ],
+    "year": "2023",
+    "venue": "The Journal of Development Studies",
+    "doi": "10.1080/00220388.2022.2110489",
+    "url": "https://doi.org/10.1080/00220388.2022.2110489"
+   },
+   {
+    "title": "Scaling community health worker programmes: a review of the evidence",
+    "authors": [
+     "Doe, Jane"
+    ],
+    "year": "2024",
+    "venue": "Health Policy and Planning",
+    "doi": "10.5555/example.2024.001",
+    "url": "https://doi.org/10.5555/example.2024.001"
+   }
+  ],
+  "10.1257/rct.5-8.0": [
+   {
+    "title": "Electoral accountability in low-information environments: a meta-analysis",
+    "authors": [
+     "Roe, Richard",
+     "Smith, Ada"
+    ],
+    "year": "2022",
+    "venue": "American Political Science Review",
+    "doi": "10.5555/example.2022.017",
+    "url": "https://doi.org/10.5555/example.2022.017"
+   }
+  ]
+ }
+}
