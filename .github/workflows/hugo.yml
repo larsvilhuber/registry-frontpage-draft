@@ -68,6 +68,10 @@ jobs:
 
   deploy:
     needs: build
+    # Publish only from the default branch.  A manual run on a topic branch
+    # still builds and downloads -- which is how a change to the build is
+    # verified on a real runner -- but must never replace the live site.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

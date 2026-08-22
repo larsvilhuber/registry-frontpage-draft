@@ -192,6 +192,15 @@ so term pages are excluded from the sitemap (set
 linked from trial pages and remain crawlable; they just do not compete with the
 records. This keeps the sitemap at about 9,830 URLs rather than about 20,100.
 
+At the other end of the same distribution, the largest terms are huge: `behavior`
+covers 3,429 trials, and one country value covers over a thousand more. The full
+export first exposed this once term pages stopped being an afterthought:
+`layouts/term.html` and `layouts/taxonomy.html` (the keyword index itself, which
+lists ~9,000 terms) render through `.Paginator` for the same reason `/trials/`
+does -- an unpaginated `countries/private/` page was 1.6 MB before this. It was
+not visible in the 25-trial sample, which is the kind of gap only a full-scale
+build catches.
+
 ## Known gaps
 
 - Article-to-citation linkage is unresolved (see above) — deliberately deferred.

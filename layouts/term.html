@@ -1,5 +1,10 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
+  {{ $paginator := .Paginator }}
   <p class="muted">{{ len .Pages }} registration{{ if ne (len .Pages) 1 }}s{{ end }}.</p>
-  {{ partial "trial-table.html" .Pages.ByDate.Reverse }}
+  {{/* Paginated for the same reason /trials/ is: the largest terms cover
+       several thousand registrations, and rendering them all produced a
+       multi-megabyte page. */}}
+  {{ partial "trial-table.html" $paginator.Pages }}
+  {{ partial "pager.html" $paginator }}
 {{ end }}
