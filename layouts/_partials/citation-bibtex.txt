@@ -1,0 +1,23 @@
+{{- /* Renders a full BibTeX entry for a trial.  Shared by layouts/trials/ and
+       layouts/md-prototype/ so both content models emit the same record. */ -}}
+{{- $t := . -}}
+{{- $title := partial "bibtex-escape.txt" $t.title -}}
+{{- $authorNames := slice -}}
+{{- range $t.authors -}}
+  {{- $authorNames = $authorNames | append (partial "bibtex-escape.txt" .citation_name) -}}
+{{- end -}}
+@techreport{ {{- $t.rct_id }},
+  title        = {{ printf "{%s}" $title }},
+  author       = {{ printf "{%s}" (delimit $authorNames " and ") }},
+  institution  = {{ printf "{%s}" site.Params.registryName }},
+  year         = {{ printf "{%s}" $t.year }},
+  type         = {{ printf "{%s}" site.Params.registryName }},
+  number       = {{ printf "{%s}" $t.rct_id }},
+{{- with $t.doi }}
+  doi          = {{ printf "{%s}" . }},
+{{- end }}
+{{- $url := $t.registry_url }}
+{{- with $t.doi }}{{ $url = printf "https://doi.org/%s" . }}{{ end }}
+  url          = {{ printf "{%s}" $url }},
+  note         = {{ printf "{Registered %s}" $t.registered }},
+}

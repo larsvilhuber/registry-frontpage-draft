@@ -1,0 +1,36 @@
+{{- /* "On this page" navigation for a trial detail page.
+
+       Rendered twice by the CSS, not the template: as a fixed sidebar to the
+       left of the article on wide viewports, and inside a <details> just
+       under the title on narrower ones where there is no room for a sidebar
+       (see the "left" media query in static/css/main.css). Only one copy is
+       ever visible; both exist in the DOM so no JavaScript is needed for
+       either presentation, matching this site's no-JS baseline. */ -}}
+{{- $t := . -}}
+{{- $links := slice (dict "id" "how-to-cite" "label" "How to cite") -}}
+{{- with $t.abstract }}{{ $links = $links | append (dict "id" "abstract" "label" "Abstract") }}{{ end -}}
+{{- with $t.intervention }}{{ $links = $links | append (dict "id" "intervention" "label" "Intervention") }}{{ end -}}
+{{- with $t.experimental_design }}{{ $links = $links | append (dict "id" "experimental-design" "label" "Experimental design") }}{{ end -}}
+{{- if or $t.randomization_method $t.sample_size_observations $t.primary_outcomes -}}
+  {{- $links = $links | append (dict "id" "design-details" "label" "Design details") -}}
+{{- end -}}
+{{- if or $t.public_data_url $t.program_files_url -}}
+  {{- $links = $links | append (dict "id" "materials" "label" "Materials") -}}
+{{- end -}}
+{{- with $t.papers }}{{ $links = $links | append (dict "id" "papers" "label" "Papers from this trial") }}{{ end -}}
+{{- $links = $links | append (dict "id" "cited-by" "label" "Cited by") -}}
+{{- with $t.keywords }}{{ $links = $links | append (dict "id" "keywords" "label" "Keywords") }}{{ end -}}
+<nav class="trial-toc" aria-label="Sections on this page">
+  <details class="trial-toc-mobile">
+    <summary>On this page</summary>
+    <ul>
+      {{ range $links }}<li><a href="#{{ .id }}">{{ .label }}</a></li>{{ end }}
+    </ul>
+  </details>
+  <div class="trial-toc-fixed">
+    <p class="trial-toc-heading">On this page</p>
+    <ul>
+      {{ range $links }}<li><a href="#{{ .id }}">{{ .label }}</a></li>{{ end }}
+    </ul>
+  </div>
+</nav>

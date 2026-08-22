@@ -5,8 +5,27 @@
      (content/md-prototype/) -- so the two can be compared without the templates
      drifting apart. */}}
 {{ $t := .Params.trial }}
+{{ partial "trial-toc.html" $t }}
+{{ partial "coins.html" $t }}
 <article class="trial" itemscope itemtype="https://schema.org/ScholarlyArticle">
   <h1 itemprop="headline">{{ $t.title }}</h1>
+
+  <details class="how-to-cite" id="how-to-cite" open>
+    <summary><h2>How to cite</h2></summary>
+    <p>{{ range $i, $a := $t.authors }}{{ if $i }}; {{ end }}{{ $a.citation_name }}{{ end }}.
+      {{ $t.year }}. "{{ $t.title }}." <em>{{ site.Params.registryName }}</em>. {{ $t.rct_id }}.
+      {{ with $t.doi }}<a href="https://doi.org/{{ . }}">https://doi.org/{{ . }}</a>{{ end }}</p>
+    <p class="citation-downloads">
+      Download:
+      {{ with .OutputFormats.Get "bibtex" }}<a href="{{ .RelPermalink }}" download>BibTeX</a>{{ end }}
+      &middot;
+      {{ with .OutputFormats.Get "ris" }}<a href="{{ .RelPermalink }}" download>RIS</a>{{ end }}
+      <span class="muted">&mdash; for reference managers without a browser
+        translator. <a href="https://www.zotero.org/">Zotero</a> and most
+        others pick up this page's citation metadata directly.</span>
+    </p>
+  </details>
+
   {{ partial "authors.html" $t }}
 
   <dl class="trial-meta">
@@ -28,17 +47,17 @@
   </dl>
 
   {{ with $t.abstract }}
-    <section><h2>Abstract</h2>{{ partial "paragraphs.html" . }}</section>
+    <section id="abstract"><h2>Abstract</h2>{{ partial "paragraphs.html" . }}</section>
   {{ end }}
   {{ with $t.intervention }}
-    <section><h2>Intervention</h2>{{ partial "paragraphs.html" . }}</section>
+    <section id="intervention"><h2>Intervention</h2>{{ partial "paragraphs.html" . }}</section>
   {{ end }}
   {{ with $t.experimental_design }}
-    <section><h2>Experimental design</h2>{{ partial "paragraphs.html" . }}</section>
+    <section id="experimental-design"><h2>Experimental design</h2>{{ partial "paragraphs.html" . }}</section>
   {{ end }}
 
   {{ if or $t.randomization_method $t.sample_size_observations $t.primary_outcomes }}
-    <section>
+    <section id="design-details">
       <h2>Design details</h2>
       <dl class="trial-meta">
         {{ with $t.randomization_method }}<dt>Randomization method</dt><dd>{{ . }}</dd>{{ end }}
@@ -55,7 +74,7 @@
   {{ end }}
 
   {{ if or $t.public_data_url $t.program_files_url }}
-    <section>
+    <section id="materials">
       <h2>Materials</h2>
       <ul>
         {{ with $t.public_data_url }}<li><a href="{{ . }}">Public data</a></li>{{ end }}
@@ -68,7 +87,7 @@
     {{/* Papers the registry itself records as arising from this trial. These
          are part of the database record -- distinct from the incoming
          citations below, which come from the separate citations process. */}}
-    <section>
+    <section id="papers">
       <h2>Papers from this trial</h2>
       <ol class="citation-list">
         {{ range . }}
@@ -84,18 +103,11 @@
   {{ partial "cited-by.html" $t }}
 
   {{ with $t.keywords }}
-    <section class="keywords">
+    <section class="keywords" id="keywords">
       <h2>Keywords</h2>
       <ul class="taglist">
         {{ range . }}<li><a href="{{ (printf "keywords/%s/" (urlize .)) | relURL }}">{{ . }}</a></li>{{ end }}
       </ul>
     </section>
   {{ end }}
-
-  <section class="how-to-cite">
-    <h2>How to cite</h2>
-    <p>{{ range $i, $a := $t.authors }}{{ if $i }}; {{ end }}{{ $a.citation_name }}{{ end }}.
-      {{ $t.year }}. "{{ $t.title }}." <em>{{ site.Params.registryName }}</em>. {{ $t.rct_id }}.
-      {{ with $t.doi }}<a href="https://doi.org/{{ . }}">https://doi.org/{{ . }}</a>{{ end }}</p>
-  </section>
 </article>

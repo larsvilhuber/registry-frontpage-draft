@@ -40,6 +40,31 @@ ignoreFiles = ['^_trials/', '^_data/', '^_includes/', '^_layouts/']
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  # Every trial page (Kind "page") also gets a BibTeX and a RIS export, so a
+  # reference manager without an embedded-metadata translator still gets a
+  # one-click download.  Section/home/taxonomy pages are a different Kind and
+  # are unaffected.
+  page = ["HTML", "BibTeX", "RIS"]
+
+[mediaTypes]
+  [mediaTypes."application/x-bibtex"]
+    suffixes = ["bib"]
+  [mediaTypes."application/x-research-info-systems"]
+    suffixes = ["ris"]
+
+[outputFormats]
+  [outputFormats.BibTeX]
+    mediaType = "application/x-bibtex"
+    baseName = "citation"
+    isPlainText = true
+    isHTML = false
+    notAlternative = true
+  [outputFormats.RIS]
+    mediaType = "application/x-research-info-systems"
+    baseName = "citation"
+    isPlainText = true
+    isHTML = false
+    notAlternative = true
 
 [sitemap]
   changefreq = "monthly"

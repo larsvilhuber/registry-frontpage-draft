@@ -1,0 +1,23 @@
+{{- /* Renders a RIS record for a trial. RIS is line-oriented plain text with
+       CRLF endings per the format spec; that is why this partial builds the
+       output as a joined slice rather than a template with literal newlines,
+       which would be LF-only. */ -}}
+{{- $t := . -}}
+{{- $lines := slice "TY  - RPRT" (printf "TI  - %s" $t.title) -}}
+{{- range $t.authors -}}
+  {{- $lines = $lines | append (printf "AU  - %s" .citation_name) -}}
+{{- end -}}
+{{- $lines = $lines | append (printf "PY  - %s" $t.year) -}}
+{{- $lines = $lines | append (printf "DA  - %s" (replace $t.registered "-" "/")) -}}
+{{- with $t.doi -}}{{- $lines = $lines | append (printf "DO  - %s" .) -}}{{- end -}}
+{{- $url := $t.registry_url -}}
+{{- with $t.doi -}}{{- $url = printf "https://doi.org/%s" . -}}{{- end -}}
+{{- with $url -}}{{- $lines = $lines | append (printf "UR  - %s" .) -}}{{- end -}}
+{{- $lines = $lines | append (printf "PB  - %s" site.Params.registryName) -}}
+{{- $lines = $lines | append (printf "M1  - %s" $t.rct_id) -}}
+{{- range $t.keywords -}}
+  {{- $lines = $lines | append (printf "KW  - %s" .) -}}
+{{- end -}}
+{{- with $t.abstract -}}{{- $lines = $lines | append (printf "AB  - %s" (replace (replace . "\r\n" " ") "\n" " ")) -}}{{- end -}}
+{{- $lines = $lines | append "ER  - " -}}
+{{- delimit $lines "\r\n" -}}
