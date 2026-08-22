@@ -39,7 +39,18 @@ main { overflow-x: auto; }
   display: inline-block; padding: .15rem .55rem; background: var(--band);
   border: 1px solid var(--rule); border-radius: 999px; font-size: .85rem; text-decoration: none;
 }
-.how-to-cite p { background: var(--band); border-left: 3px solid var(--accent); padding: .7rem .9rem; }
+details.how-to-cite {
+  background: var(--band); border-left: 3px solid var(--accent);
+  padding: .1rem 1rem 1rem; margin: 1rem 0 1.5rem; border-radius: 0 4px 4px 0;
+}
+details.how-to-cite summary { cursor: pointer; list-style: none; }
+details.how-to-cite summary::-webkit-details-marker { display: none; }
+details.how-to-cite summary::before { content: "\25B8  "; color: var(--muted); }
+details.how-to-cite[open] summary::before { content: "\25BE  "; }
+details.how-to-cite summary h2 { display: inline; margin: 0; border-bottom: none; padding-bottom: 0; }
+details.how-to-cite p { margin: .6rem 0 0; }
+.citation-downloads { font-size: .9rem; }
+.citation-downloads a { font-weight: 600; }
 .pager { display: flex; gap: 1rem; align-items: baseline; margin: 1.5rem 0; }
 .site-footer { border-top: 1px solid var(--rule); background: var(--band); padding: 1.25rem 0; font-size: .9rem; }
 
@@ -63,3 +74,36 @@ main { overflow-x: auto; }
 
 .license { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; font-size: .9rem; }
 .license img { display: block; }
+
+/* "On this page" navigation for a trial: a fixed sidebar on wide viewports
+   (outside the centered .wrapper), a collapsed <details> under the title
+   everywhere else. Both markups always exist in the DOM; only display
+   toggles, so this needs no JavaScript. */
+.trial-toc-fixed { display: none; }
+.trial-toc-mobile {
+  margin: 1rem 0; border: 1px solid var(--rule); border-radius: 4px;
+  padding: .5rem .75rem; font-size: .92rem;
+}
+.trial-toc-mobile summary { cursor: pointer; font-weight: 600; }
+.trial-toc-mobile ul { margin: .5rem 0 0; padding-left: 1.2rem; }
+.trial-toc-mobile li { margin-bottom: .3rem; }
+
+/* Wrapper is 54rem/2=27rem from center; sidebar (13rem) plus a 1.5rem gap on
+   each side needs at least 27+1.5+13=41.5rem of half-viewport, so the fixed
+   sidebar only has room from 84rem (~1344px) up. */
+@media (min-width: 84rem) {
+  .trial-toc-mobile { display: none; }
+  .trial-toc-fixed {
+    display: block; position: fixed; top: 6rem;
+    left: max(1rem, calc(50% - 41.5rem)); width: 13rem;
+    max-height: calc(100vh - 8rem); overflow-y: auto; font-size: .88rem;
+  }
+  .trial-toc-heading {
+    font-weight: 600; color: var(--muted); margin: 0 0 .5rem;
+    text-transform: uppercase; font-size: .72rem; letter-spacing: .04em;
+  }
+  .trial-toc-fixed ul { list-style: none; padding: 0; margin: 0; }
+  .trial-toc-fixed li { margin-bottom: .4rem; }
+  .trial-toc-fixed a { color: var(--fg); text-decoration: none; }
+  .trial-toc-fixed a:hover { color: var(--accent); text-decoration: underline; }
+}

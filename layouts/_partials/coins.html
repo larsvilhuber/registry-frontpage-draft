@@ -1,0 +1,25 @@
+{{- /* COinS (ContextObjects in Spans): an OpenURL 1.0 context object embedded
+       as an empty <span class="Z3988" title="...">, per info-uri.info/registry
+       and ocoins.info.  This is a fallback signal for reference managers that
+       do not read citation_* meta tags -- EndNote and RefWorks in particular
+       are commonly cited as relying on COinS, whereas Zotero and Mendeley read
+       citation_* directly (see HUGO.md). Dublin Core context format is used
+       since a trial registration is not a journal article and has no
+       volume/issue to report. */ -}}
+{{- $t := . -}}
+{{- $parts := slice
+      (printf "ctx_ver=%s" (urlquery "Z39.88-2004"))
+      (printf "rft_val_fmt=%s" (urlquery "info:ofi/fmt:kev:mtx:dc"))
+      (printf "rft.type=%s" (urlquery "report"))
+      (printf "rft.title=%s" (urlquery $t.title))
+      (printf "rft.date=%s" (urlquery $t.registered))
+      (printf "rft.identifier=%s" (urlquery $t.rct_id))
+-}}
+{{- range $t.authors -}}
+  {{- $parts = $parts | append (printf "rft.creator=%s" (urlquery .citation_name)) -}}
+{{- end -}}
+{{- with $t.doi -}}
+  {{- $parts = $parts | append (printf "rft.identifier=%s" (urlquery (printf "https://doi.org/%s" .))) -}}
+{{- end -}}
+{{- $parts = $parts | append (printf "rft.publisher=%s" (urlquery site.Params.registryName)) -}}
+<span class="Z3988" title="{{ delimit $parts "&" }}"></span>

@@ -35,6 +35,9 @@ python3 bin/export_hugo_data.py --limit 25 --markdown-out content/md-prototype
 | `layouts/_partials/trial-detail.html` | Shared page body for both content models. |
 | `static/js/search.js` | Client-side filter (progressive enhancement). |
 | `static/img/cc-by-nc.png` | Licence badge, recovered from tag `v2025`. |
+| `layouts/_partials/trial-toc.html` | "On this page" navigation for a trial (sidebar + mobile `<details>`). |
+| `layouts/_partials/coins.html` | COinS context object for EndNote/RefWorks. |
+| `layouts/_partials/citation-bibtex.txt`, `citation-ris.txt` | BibTeX/RIS record bodies. |
 | `.github/workflows/hugo.yml` | Download → export → build → deploy, plus a daily cron. |
 
 ## Decision: content adapter, not one file per trial
@@ -154,6 +157,63 @@ to a different licence needs no template edit.
 Note that the badge was an orphan in the Jekyll site — the image was committed
 but no page ever referenced it, and no licence text was ever stated — so this
 notice is new, not a restoration of previous wording.
+
+## Page layout: navigation, citing, and reference-manager export
+
+**"On this page" navigation.** A trial page's sections are listed in a sidebar
+fixed to the left of the article on wide viewports (from 84rem/~1344px, where
+there is room beside the centered 54rem content column), or in a collapsed
+`<details>` just under the title otherwise. Both markups are always in the
+DOM -- `layouts/_partials/trial-toc.html` renders both, `static/css/main.css`
+switches which is visible by media query -- so this needs no JavaScript and
+degrades correctly with it off.
+
+**"How to cite" moved to the top**, directly under the title, as a `<details
+open>` block so it is collapsible but visible by default. It now also links a
+BibTeX and a RIS download for that one record.
+
+**BibTeX and RIS downloads.** Every trial page gets `citation.bib` and
+`citation.ris` as real static files (Hugo output formats registered in
+`hugo.toml`, one Kind, `page`, applying only to actual trial detail pages --
+list/taxonomy pages are a different Kind and are unaffected). The rendering
+logic lives in `layouts/_partials/citation-bibtex.txt` and `citation-ris.txt`,
+shared by both content models exactly like the HTML body is.
+
+One non-obvious wrinkle: those two partials are named `.txt`, not `.html`.
+Hugo decides html/template-vs-text/template escaping for a **partial** by that
+partial's own file extension, independent of the calling page's output format
+-- an `.html`-named partial gets HTML-escaped even when called from a plain-text
+output format. The first version of this used `.html` partials and silently
+corrupted every ampersand into `\&amp;` inside `.bib` files (invalid
+BibTeX) before this was caught. Verified with `bibtexparser`/`rispy` against a
+random sample of 800 files from the full 9,823-trial export, and specifically
+against records containing `&`, `%`, `#`, `$` (66 titles/authors in the full
+export have one). BibTeX escapes those five for LaTeX; RIS, being plain text,
+does not.
+
+Author names, dates and keywords in these exports reuse the same
+`citation_name`/ISO-date fields the Scholar tags use, so all four citation
+surfaces (`citation_*` meta tags, the "How to cite" text, BibTeX, RIS) describe
+one record consistently.
+
+**Recognition by reference managers**, checked against each tool's own stated
+mechanism rather than assumed:
+- **Zotero**: reads the `citation_*` (Highwire) meta tags directly via its
+  generic embedded-metadata translator -- confirmed working against the live
+  site.
+- **Mendeley**: its Web Importer documentation states it reads five metadata
+  standards including Highwire tags, which this site already emits; nothing
+  further was needed.
+- **EndNote / RefWorks**: commonly rely on **COinS** (a `<span class="Z3988">`
+  carrying an OpenURL 1.0 context object) rather than `citation_*` tags, so this
+  was the one true gap. `layouts/_partials/coins.html` adds it, encoded as
+  Dublin Core (`info:ofi/fmt:kev:mtx:dc`) since a trial registration has no
+  volume/issue to report as a journal article. Not independently verified
+  against live EndNote/RefWorks installs -- only that the emitted context
+  object is well-formed and matches the documented convention.
+
+The BibTeX/RIS downloads exist for the remaining case: any reference manager
+with neither a `citation_*` translator nor COinS support.
 
 ## Deployment
 

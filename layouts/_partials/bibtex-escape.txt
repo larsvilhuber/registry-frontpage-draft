@@ -1,0 +1,19 @@
+{{- /* Escapes LaTeX-special characters for a BibTeX field value.
+
+       Applied only to prose fields (title, author) that a LaTeX-based
+       bibliography style would typeset -- not to url/doi fields, which
+       reference managers render verbatim and must not have escapes injected
+       into.  Backslash is escaped first so later replacements do not doubly
+       escape their own output. */ -}}
+{{- $s := . -}}
+{{- $s = replace $s "\\" "\\textbackslash{}" -}}
+{{- $s = replace $s "{" "\\{" -}}
+{{- $s = replace $s "}" "\\}" -}}
+{{- $s = replace $s "%" "\\%" -}}
+{{- $s = replace $s "$" "\\$" -}}
+{{- $s = replace $s "#" "\\#" -}}
+{{- $s = replace $s "_" "\\_" -}}
+{{- $s = replace $s "&" "\\&" -}}
+{{- $s = replace $s "~" "\\textasciitilde{}" -}}
+{{- $s = replace $s "^" "\\textasciicircum{}" -}}
+{{- return $s -}}
