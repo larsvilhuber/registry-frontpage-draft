@@ -60,3 +60,6 @@ main { overflow-x: auto; }
 .pager a, .pager-current { padding: .15rem .5rem; border: 1px solid var(--rule); border-radius: 3px; text-decoration: none; }
 .pager-current { background: var(--accent); color: #fff; border-color: var(--accent); }
 .pager .muted { border: 0; margin-left: auto; }
+
+.license { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; font-size: .9rem; }
+.license img { display: block; }

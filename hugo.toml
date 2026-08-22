@@ -18,6 +18,15 @@ ignoreFiles = ['^_trials/', '^_data/', '^_includes/', '^_layouts/']
   # with thin pages. They stay crawlable via links from each trial page.
   sitemapIncludeTerms = false
 
+# Licence notice shown in the footer of every page.  Scoped deliberately: the
+# registration records themselves belong to the AEA RCT Registry and are not
+# this site's to license, so the notice covers this site's own presentation.
+[params.license]
+  name = "CC BY-NC 4.0"
+  url = "https://creativecommons.org/licenses/by-nc/4.0/"
+  badge = "img/cc-by-nc.png"
+  scope = "The design and presentation of this site"
+
 [pagination]
   pagerSize = 50
 

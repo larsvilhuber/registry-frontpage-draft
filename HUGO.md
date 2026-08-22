@@ -34,6 +34,7 @@ python3 bin/export_hugo_data.py --limit 25 --markdown-out content/md-prototype
 | `layouts/_partials/citation-meta.html` | Google Scholar `citation_*` tags. |
 | `layouts/_partials/trial-detail.html` | Shared page body for both content models. |
 | `static/js/search.js` | Client-side filter (progressive enhancement). |
+| `static/img/cc-by-nc.png` | Licence badge, recovered from tag `v2025`. |
 | `.github/workflows/hugo.yml` | Download → export → build → deploy, plus a daily cron. |
 
 ## Decision: content adapter, not one file per trial
@@ -139,6 +140,21 @@ found while building that bear on it:
   reconciliation: resolving those URLs to DOIs gives a starting set of
   trial↔paper pairs to validate any matching approach against.
 
+## Licence notice
+
+Every page footer carries a CC BY-NC 4.0 notice with the badge recovered from
+the Jekyll site, marked up with `rel="license"` so it is machine-readable.
+
+It is scoped on purpose. The notice says *the design and presentation of this
+site* is licensed, not the registrations: those records belong to the AEA RCT
+Registry and are not this site's to license. Wording, version and badge all live
+in `[params.license]` in `hugo.toml`, so changing the scope sentence or moving
+to a different licence needs no template edit.
+
+Note that the badge was an orphan in the Jekyll site — the image was committed
+but no page ever referenced it, and no licence text was ever stated — so this
+notice is new, not a restoration of previous wording.
+
 ## Deployment
 
 `.github/workflows/hugo.yml` downloads the registry CSV, regenerates
@@ -188,6 +204,7 @@ records. This keeps the sitemap at about 9,830 URLs rather than about 20,100.
   published.
 - Country names are not case-folded the way keywords are. The 1,363 distinct
   values look cleaner than the keyword field, but they have not been audited.
-- The Jekyll site's CC BY-NC badge (`assets/cc-by-nc.png`) went with the rest of
-  the Jekyll files. No licence is currently stated on the Hugo site.
+- The licence notice covers this site's presentation only. Whether the
+  registration records carry their own terms is a question for the AEA; the
+  notice deliberately does not speak for them.
 - Only the lead investigator is shown in list tables, to keep rows scannable.
