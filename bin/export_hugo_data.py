@@ -13,6 +13,7 @@ Stdlib only -- no pandas -- so the GitHub Actions workflow needs no pip install.
 """
 
 import argparse
+import collections
 import csv
 import datetime
 import json
@@ -107,9 +108,9 @@ def parse_keywords(raw):
     try:
         parsed = json.loads(raw)
     except (ValueError, TypeError):
-        return [k.strip() for k in raw.split(",") if k.strip()]
+        return [re.sub(r"\s+", " ", k).strip() for k in raw.split(",") if k.strip()]
     if isinstance(parsed, list):
-        return [str(k).strip() for k in parsed if str(k).strip()]
+        return [re.sub(r"\s+", " ", str(k)).strip() for k in parsed if str(k).strip()]
     return []
 
 
@@ -143,6 +144,43 @@ def parse_papers(raw):
             current[field] = current.get(field, "") + line + "\n"
     flush()
     return papers
+
+
+def canonicalise_keywords(records):
+    """Fold keyword spellings that differ only in case or spacing.
+
+    Keywords are free text entered per registration, so the same concept
+    arrives as "Behavior", "behavior" and "EDUCATION". Hugo already merges
+    these into one taxonomy page (it normalises the term for the URL), but the
+    trial pages still displayed whichever spelling that record happened to use.
+
+    For each case-folded group the most frequently used spelling wins, so
+    acronyms survive: "HIV" beats a stray "hiv", while "behavior" beats
+    "Behavior" on volume. Ties prefer the all-lowercase spelling, then the
+    lexicographically smallest, so the result does not depend on row order.
+    """
+    spellings = collections.defaultdict(collections.Counter)
+    for record in records:
+        for keyword in record["keywords"]:
+            spellings[keyword.casefold()][keyword] += 1
+
+    canonical = {}
+    for key, counter in spellings.items():
+        canonical[key] = min(
+            counter,
+            key=lambda word: (-counter[word], not word.islower(), word),
+        )
+
+    for record in records:
+        seen, folded = set(), []
+        for keyword in record["keywords"]:
+            preferred = canonical[keyword.casefold()]
+            # Merging can make one record list the same keyword twice.
+            if preferred.casefold() not in seen:
+                seen.add(preferred.casefold())
+                folded.append(preferred)
+        record["keywords"] = folded
+    return records
 
 
 def iso_date(value):
@@ -247,7 +285,7 @@ def write_markdown(records, directory):
 def main():
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--input", default="_data/trials.csv", help="registry CSV export")
+    parser.add_argument("--input", default="exports/trials.csv", help="registry CSV export")
     parser.add_argument("--out", default="data/trials.json", help="JSON consumed by Hugo")
     parser.add_argument("--limit", type=int, default=0, help="export only the first N trials")
     parser.add_argument("--markdown-out", default="", help="also write one Markdown file per trial")
@@ -266,6 +304,7 @@ def main():
             if args.limit and len(records) >= args.limit:
                 break
 
+    canonicalise_keywords(records)
     records.sort(key=lambda r: int(r["number"]))
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
     with open(args.out, "w", encoding="utf-8") as handle:

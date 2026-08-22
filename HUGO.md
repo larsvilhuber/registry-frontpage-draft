@@ -1,16 +1,16 @@
 # Hugo rebuild — scaffold notes
 
-This is the Hugo rebuild described in `CLAUDE.md`. It lives alongside the
-existing Jekyll draft (`_config.yml`, `_trials/`, `_layouts/`) rather than
-replacing it, so the two can be compared before anything is deleted. Jekyll is
-configured to ignore Hugo's directories, so `bundle exec jekyll serve` still
-works.
+This is the Hugo rebuild described in `CLAUDE.md`. It has replaced the earlier
+Jekyll draft, which is preserved in full at tag
+[`v2025`](../../tree/v2025) — `_config.yml`, `_layouts/`, `_includes/`,
+`_trials/`, `Gemfile` and the pandas-based generator scripts all live there and
+are no longer in the working tree.
 
 ## Quick start
 
 ```bash
-python3 bin/download_data.py            # fetch _data/trials.csv from the registry
-python3 bin/export_hugo_data.py         # _data/trials.csv -> data/trials.json
+python3 bin/download_data.py            # fetch exports/trials.csv from the registry
+python3 bin/export_hugo_data.py         # exports/trials.csv -> data/trials.json
 hugo server                             # http://localhost:1313/
 ```
 
@@ -25,6 +25,7 @@ python3 bin/export_hugo_data.py --limit 25 --markdown-out content/md-prototype
 
 | Path | Purpose |
 | --- | --- |
+| `bin/download_data.py` | Fetch the registry CSV → `exports/trials.csv` (gitignored). |
 | `bin/export_hugo_data.py` | CSV export → `data/trials.json`. Stdlib only, no pandas. |
 | `data/trials.json` | The database export. Source of truth for the build. |
 | `data/citations.json` | **Stubbed** incoming citations, keyed by DOI. |
@@ -46,9 +47,9 @@ directly comparable: `/trials/6/` and `/md-prototype/6/` are the same record.
 - The export stays a single artifact. Refreshing the site is one regenerated
   JSON file, not ~10,000 rewritten Markdown files — which matters because the
   site rebuilds on a schedule.
-- Nothing generated needs committing. The Jekyll draft's `_trials/` is 40 MB of
-  generated Markdown; the equivalent Hugo content directory would be the same.
-  In CI the full export is generated fresh and never enters git history.
+- Nothing generated needs committing. The Jekyll draft carried 40 MB of
+  generated Markdown in `_trials/`; the equivalent Hugo content directory would
+  be the same. In CI the full export is generated fresh and never enters git.
 - It still produces *real* Hugo pages: permalinks, taxonomies, pagination and
   sitemap entries all behave normally. Nothing about Scholar indexing is
   weakened by generating pages this way — the emitted HTML is identical.
@@ -146,20 +147,34 @@ daily at 05:23 UTC, and on demand. The full export is never committed; the CSV
 download is sanity-checked (a response with fewer than 5,000 rows fails the
 build rather than publishing a site missing most of the registry).
 
-**One-time setup:** in the repository's Settings → Pages, set *Source* to
-*GitHub Actions*. While it is set to *Deploy from a branch*, GitHub builds the
-Jekyll draft instead and this workflow's deploy step will not take effect.
+Pages *Source* is set to *GitHub Actions*, so this workflow is what publishes
+the site.
 
 ## Scale
 
-The full export builds in about 32 seconds: 9,823 registration pages plus
-taxonomy pages, 30,457 pages total.
+The full export builds in about 40 seconds: 9,823 registration pages plus
+taxonomy and browse pages, roughly 30,000 pages total.
 
-Keyword cardinality is high — 11,188 distinct keywords, 7,971 of them on a
-single trial. Term pages are therefore excluded from the sitemap (set
-`params.sitemapIncludeTerms = true` in `hugo.toml` to include them); they stay
-linked from trial pages and remain crawlable, but they do not compete with the
-records themselves. This keeps the sitemap at 9,828 URLs rather than 20,125.
+Keyword cardinality is high. Keywords are free text entered per registration,
+so the raw export holds 11,188 distinct strings across 9,823 trials — more
+keywords than trials — and 71% of them occur on exactly one trial.
+
+The exporter folds spellings that differ only in case or spacing
+(`canonicalise_keywords`), which brings that down to 9,033 distinct keywords.
+The most-used spelling of each wins, so acronyms survive: `COVID-19` beats a
+stray `covid-19`, while `behavior` beats `Behavior` on volume.
+
+Note that the winning spelling is decided across whatever set is being exported.
+Regenerating the 25-trial sample with `--limit` counts only those 25 records, so
+a sample keyword can keep a spelling the full export would fold away. The
+deployed site always folds over the complete export.
+
+Even so, roughly two thirds of keyword term pages list a single trial. A page
+whose entire content is one link to a record already in the sitemap is filler,
+so term pages are excluded from the sitemap (set
+`params.sitemapIncludeTerms = true` in `hugo.toml` to include them). They stay
+linked from trial pages and remain crawlable; they just do not compete with the
+records. This keeps the sitemap at about 9,830 URLs rather than about 20,100.
 
 ## Known gaps
 
@@ -171,4 +186,8 @@ records themselves. This keeps the sitemap at 9,828 URLs rather than 20,125.
 - Affiliations are frequently missing or contain a repeated email address in the
   source data. Emails are stripped from both name and affiliation and are never
   published.
+- Country names are not case-folded the way keywords are. The 1,363 distinct
+  values look cleaner than the keyword field, but they have not been audited.
+- The Jekyll site's CC BY-NC badge (`assets/cc-by-nc.png`) went with the rest of
+  the Jekyll files. No licence is currently stated on the Hugo site.
 - Only the lead investigator is shown in list tables, to keep rows scannable.

@@ -42,18 +42,14 @@ jobs:
 
       - name: Download the registry export
         run: |
-          mkdir -p _data
-          # --fail so an error page is never mistaken for data; retries cover
-          # transient upstream blips.
-          curl -sSLf --retry 3 --retry-delay 10 \
-            -o _data/trials.csv "https://www.socialscienceregistry.org/site/csv"
-          ls -lh _data/trials.csv
+          python3 bin/download_data.py
+          ls -lh exports/trials.csv
 
       - name: Sanity-check the export
         run: |
           # A truncated or error response would otherwise publish a site that
           # silently drops thousands of registrations.
-          rows=$(python3 -c "import csv,sys;csv.field_size_limit(10**9);print(sum(1 for _ in csv.DictReader(open('_data/trials.csv',newline='',encoding='utf-8'))))")
+          rows=$(python3 -c "import csv,sys;csv.field_size_limit(10**9);print(sum(1 for _ in csv.DictReader(open('exports/trials.csv',newline='',encoding='utf-8'))))")
           echo "rows in export: $rows"
           if [ "$rows" -lt 5000 ]; then
             echo "::error::Registry export has only $rows rows; refusing to deploy."

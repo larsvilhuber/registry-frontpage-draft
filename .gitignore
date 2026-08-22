@@ -3,12 +3,6 @@
 /resources/_gen/
 .hugo_build.lock
 
-# Jekyll build output (the draft site this Hugo build replaces)
-/_site/
-/.jekyll-cache/
-/.jekyll-metadata
-/vendor/
-
-# Full registry export produced at build time; only the committed sample in
-# data/trials.json is version-controlled.
-/data/trials.full.json
+# Registry CSV export, downloaded at build time by bin/download_data.py.
+# Only the small sample in data/trials.json is version-controlled.
+/exports/

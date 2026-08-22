@@ -262,8 +262,8 @@
   "jel": [],
   "keywords": [
    "health",
-   "Nutrition",
-   "Anemia"
+   "nutrition",
+   "anemia"
   ],
   "last_update": "2013-05-15",
   "number": "10",
@@ -776,7 +776,7 @@
   "jel": [],
   "keywords": [
    "health",
-   "Maternal Mortality",
+   "maternal mortality",
    "family planning",
    "fertility",
    "women's health"
@@ -905,7 +905,6 @@
   "keywords": [
    "education",
    "finance",
-   "education",
    "subsidy",
    "crowd in",
    "migration",
@@ -1343,7 +1342,7 @@
   "keywords": [
    "education",
    "health",
-   "Gender"
+   "gender"
   ],
   "last_update": "2018-05-17",
   "number": "36",
