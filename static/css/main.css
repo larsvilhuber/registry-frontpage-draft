@@ -16,9 +16,26 @@ h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; padding-bottom: .25rem; border-bo
 .muted { color: var(--muted); font-size: .9rem; }
 
 .site-header { border-bottom: 1px solid var(--rule); background: var(--band); }
-.site-header .wrapper { display: flex; flex-wrap: wrap; gap: 1rem; align-items: baseline; padding-top: .9rem; padding-bottom: .9rem; }
-.site-title { font-weight: 700; font-size: 1.1rem; text-decoration: none; }
-.site-nav { margin-left: auto; display: flex; gap: 1rem; }
+.site-header .wrapper { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; padding-top: .9rem; padding-bottom: .9rem; }
+.site-title { display: flex; align-items: center; gap: .4rem; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+.home-icon { flex: none; color: var(--accent); }
+.site-nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 1rem; }
+
+/* Below this width the seven-item nav no longer fits comfortably next to the
+   site title, so it collapses into a <details> menu instead. Both markups
+   are always in the DOM (see header.html); only display toggles here, the
+   same no-JS pattern used for .trial-toc-fixed/.trial-toc-mobile. */
+.site-nav-toggle { display: none; margin-left: auto; }
+@media (max-width: 48rem) {
+  .site-nav { display: none; }
+  .site-nav-toggle { display: block; }
+}
+.site-nav-toggle summary {
+  cursor: pointer; list-style: none; font-weight: 600; padding: .3rem .6rem;
+  border: 1px solid var(--rule); border-radius: 4px;
+}
+.site-nav-toggle summary::-webkit-details-marker { display: none; }
+.site-nav-collapsed { display: flex; flex-direction: column; gap: .6rem; margin-top: .6rem; }
 
 main { padding-bottom: 3rem; }
 .authors { margin: .25rem 0; font-size: 1.02rem; }
