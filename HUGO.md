@@ -39,6 +39,40 @@ python3 bin/export_hugo_data.py --limit 25 --markdown-out content/md-prototype
 | `layouts/_partials/coins.html` | COinS context object for EndNote/RefWorks. |
 | `layouts/_partials/citation-bibtex.txt`, `citation-ris.txt` | BibTeX/RIS record bodies. |
 | `.github/workflows/hugo.yml` | Download → export → build → deploy, plus a daily cron. |
+| `content/about.md`, `data.md`, `faqs.md`, `registration-guidelines.md` | Documentation pages, adapted from [J-PAL/AEARegistryDocs](https://github.com/J-PAL/AEARegistryDocs). |
+| `layouts/_partials/nav-links.html` | The nav link list, shared by the wide and collapsed-menu header markups. |
+
+## Documentation pages
+
+`content/about.md`, `registration-guidelines.md`, `data.md` and `faqs.md` are
+adapted from [J-PAL/AEARegistryDocs](https://github.com/J-PAL/AEARegistryDocs)
+(MIT licensed), the Jekyll site behind docs.socialscienceregistry.org. Content
+is copied over largely as-is, with two changes:
+
+- Kramdown-only syntax (`{:target="_blank"}` attribute lists, the `* TOC` /
+  `{:toc}` block) and a raw `<img>` tag are converted to plain Markdown, since
+  Goldmark doesn't render either (raw HTML is dropped -- `unsafe = false` in
+  `hugo.toml` -- and kramdown IALs are passed through as literal text).
+- The source site's "Back to Registry" link/cookie mechanism (in its
+  `_layouts/page.html`) is dropped entirely. It existed to return a reader from
+  the docs subdomain to the registry; here the docs are pages on this same
+  site, reachable from the same nav as everything else, so there's nothing to
+  link back to.
+
+Each doc page sets `outputs: ["HTML"]` in its front matter to opt out of
+`hugo.toml`'s site-wide `page = ["HTML", "BibTeX", "RIS"]` default -- that
+default is meant for trial records; a doc page has no citation to export.
+
+**Header nav.** Adding the four doc pages brought the nav to seven links,
+too many to sit comfortably next to the site title under ~48rem/768px. Below
+that width it collapses into a `<details class="site-nav-toggle">` "Menu"
+instead of wrapping mid-row. Same no-JS pattern as `trial-toc-fixed`/
+`trial-toc-mobile`: both markups are always in the DOM
+(`layouts/_partials/header.html`, sharing one link list from
+`layouts/_partials/nav-links.html`), `static/css/main.css` toggles which is
+visible by media query. The site title also carries an inline SVG home icon
+linking to `/` -- the landing/catalog page -- since it's now one link among
+several rather than the only way back.
 
 ## Decision: content adapter, not one file per trial
 
