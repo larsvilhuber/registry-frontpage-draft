@@ -6,8 +6,8 @@ on:
   # The registry gains new registrations continuously and the citations dataset
   # updates on its own cadence, so the site rebuilds on a schedule as well as on
   # code changes.
-  schedule:
-    - cron: "23 5 * * *"
+  #schedule:
+  #  - cron: "23 5 * * *"
   workflow_dispatch:
 
 permissions:
